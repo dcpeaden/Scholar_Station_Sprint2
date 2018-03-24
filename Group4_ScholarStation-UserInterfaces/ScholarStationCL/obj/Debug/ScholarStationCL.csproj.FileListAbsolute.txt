@@ -1,0 +1,10 @@
+C:\Users\ryans\Desktop\School\SE2\Group4_ScholarStation-UserInterfaces\ScholarStationCL\bin\Debug\ScholarStationCL.dll
+C:\Users\ryans\Desktop\School\SE2\Group4_ScholarStation-UserInterfaces\ScholarStationCL\bin\Debug\ScholarStationCL.pdb
+C:\Users\ryans\Desktop\School\SE2\Group4_ScholarStation-UserInterfaces\ScholarStationCL\obj\Debug\ScholarStationCL.csprojResolveAssemblyReference.cache
+C:\Users\ryans\Desktop\School\SE2\Group4_ScholarStation-UserInterfaces\ScholarStationCL\obj\Debug\ScholarStationCL.dll
+C:\Users\ryans\Desktop\School\SE2\Group4_ScholarStation-UserInterfaces\ScholarStationCL\obj\Debug\ScholarStationCL.pdb
+C:\Users\ryans\Desktop\Group4_ScholarStation-UserInterfaces\ScholarStationCL\bin\Debug\ScholarStationCL.dll
+C:\Users\ryans\Desktop\Group4_ScholarStation-UserInterfaces\ScholarStationCL\bin\Debug\ScholarStationCL.pdb
+C:\Users\ryans\Desktop\Group4_ScholarStation-UserInterfaces\ScholarStationCL\obj\Debug\ScholarStationCL.csprojResolveAssemblyReference.cache
+C:\Users\ryans\Desktop\Group4_ScholarStation-UserInterfaces\ScholarStationCL\obj\Debug\ScholarStationCL.dll
+C:\Users\ryans\Desktop\Group4_ScholarStation-UserInterfaces\ScholarStationCL\obj\Debug\ScholarStationCL.pdb

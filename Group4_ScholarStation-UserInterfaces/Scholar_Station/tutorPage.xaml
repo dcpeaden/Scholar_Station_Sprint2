@@ -1,0 +1,74 @@
+﻿<Page x:Class="Scholar_Station.tutorPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Scholar_Station"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="tutorPage" Width="525" Height="350">
+
+    <Grid>
+        <ComboBox x:Name="departmentBox" HorizontalAlignment="Left" Margin="50,41,0,0" VerticalAlignment="Top" Width="128" SelectionChanged="departmentBox_SelectionChanged">
+            <ComboBox.Effect>
+                <DropShadowEffect ShadowDepth="1"/>
+            </ComboBox.Effect>
+        </ComboBox>
+        <ComboBox x:Name="timeBox" HorizontalAlignment="Left" Margin="50,89,0,0" VerticalAlignment="Top" Width="128" SelectionChanged="timeBox_SelectionChanged">
+            <ComboBox.Effect>
+                <DropShadowEffect ShadowDepth="1"/>
+            </ComboBox.Effect>
+        </ComboBox>
+        <ComboBox x:Name="classesBox" HorizontalAlignment="Left" Margin="199,41,0,0" VerticalAlignment="Top" Width="128" SelectionChanged="classesBox_SelectionChanged">
+            <ComboBox.Effect>
+                <DropShadowEffect ShadowDepth="1"/>
+            </ComboBox.Effect>
+        </ComboBox>
+        <ComboBox x:Name="sessionLengthBox" HorizontalAlignment="Left" Margin="199,89,0,0" VerticalAlignment="Top" Width="128" >
+            <ComboBox.Effect>
+                <DropShadowEffect ShadowDepth="1"/>
+            </ComboBox.Effect>
+        </ComboBox>
+        <ComboBox x:Name="dateBox" HorizontalAlignment="Left" Margin="342,41,0,0" VerticalAlignment="Top" Width="127" SelectionChanged="dateBox_SelectionChanged">
+            <ComboBox.Effect>
+                <DropShadowEffect ShadowDepth="1"/>
+            </ComboBox.Effect>
+        </ComboBox>
+        <Button x:Name="createSessionButton" Content="Create Session" HorizontalAlignment="Left" Margin="50,125,0,0" VerticalAlignment="Top" Width="127" FontWeight="Bold" Click="createSessionButton_Click">
+            <Button.Effect>
+                <DropShadowEffect ShadowDepth="1"/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="viewSessionsButton" Content="View Sessions" HorizontalAlignment="Left" Margin="49,300,0,0" VerticalAlignment="Top" Width="128" FontWeight="Bold" Click="viewSessionsButton_Click">
+            <Button.Effect>
+                <DropShadowEffect ShadowDepth="1"/>
+            </Button.Effect>
+        </Button>
+        <Label x:Name="label" Content="Select Department" HorizontalAlignment="Left" Margin="50,15,0,0" VerticalAlignment="Top" Width="120" FontWeight="Bold"/>
+        <Label x:Name="label_Copy" Content="Select Class" HorizontalAlignment="Left" Margin="199,15,0,0" VerticalAlignment="Top" Width="120" FontWeight="Bold"/>
+        <Label x:Name="label_Copy1" Content="Select Session Date" HorizontalAlignment="Left" Margin="342,15,0,0" VerticalAlignment="Top" Width="120" FontWeight="Bold"/>
+        <Label x:Name="label_Copy2" Content="Select Session Time" HorizontalAlignment="Left" Margin="50,63,0,0" VerticalAlignment="Top" Width="135" FontWeight="Bold"/>
+        <Label x:Name="label_Copy3" Content="Select Session Length" HorizontalAlignment="Left" Margin="199,63,0,0" VerticalAlignment="Top" Width="138" FontWeight="Bold"/>
+        <Button x:Name="homeButton" Content="Sign Out" HorizontalAlignment="Left" Margin="341,300,0,0" VerticalAlignment="Top" Width="127" Click="homeButton_Click" FontWeight="Bold">
+            <Button.Effect>
+                <DropShadowEffect ShadowDepth="1"/>
+            </Button.Effect>
+        </Button>
+        <Label x:Name="label_Copy4" Content="Cance Session" HorizontalAlignment="Left" Margin="341,63,0,0" VerticalAlignment="Top" Width="135" FontWeight="Bold"/>
+        <ComboBox x:Name="sessionIdBox" HorizontalAlignment="Left" Margin="341,89,0,0" VerticalAlignment="Top" Width="128" >
+            <ComboBox.Effect>
+                <DropShadowEffect ShadowDepth="1"/>
+            </ComboBox.Effect>
+        </ComboBox>
+        <Button x:Name="cancelSessionButton" Content="Cancel Session" HorizontalAlignment="Left" Margin="341,125,0,0" VerticalAlignment="Top" Width="127" FontWeight="Bold" Click="cancelSessionButton_Click">
+            <Button.Effect>
+                <DropShadowEffect ShadowDepth="1"/>
+            </Button.Effect>
+        </Button>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="125" Margin="50,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="418" ScrollViewer.VerticalScrollBarVisibility="Auto">
+            <TextBox.Effect>
+                <DropShadowEffect ShadowDepth="1"/>
+            </TextBox.Effect>
+        </TextBox>
+    </Grid>
+</Page>

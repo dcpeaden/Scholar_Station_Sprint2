@@ -1,0 +1,9 @@
+C:\Users\ryans\Desktop\School\SE2\Group4_ScholarStation-UserInterfaces\DataAccessControler\bin\Debug\DataAccessControler.dll
+C:\Users\ryans\Desktop\School\SE2\Group4_ScholarStation-UserInterfaces\DataAccessControler\bin\Debug\DataAccessControler.pdb
+C:\Users\ryans\Desktop\School\SE2\Group4_ScholarStation-UserInterfaces\DataAccessControler\obj\Debug\DataAccessControler.dll
+C:\Users\ryans\Desktop\School\SE2\Group4_ScholarStation-UserInterfaces\DataAccessControler\obj\Debug\DataAccessControler.pdb
+C:\Users\ryans\Desktop\School\SE2\Group4_ScholarStation-UserInterfaces\DataAccessControler\obj\Debug\DataAccessControler.csprojResolveAssemblyReference.cache
+C:\Users\ryans\Desktop\Group4_ScholarStation-UserInterfaces\DataAccessControler\bin\Debug\DataAccessControler.dll
+C:\Users\ryans\Desktop\Group4_ScholarStation-UserInterfaces\DataAccessControler\bin\Debug\DataAccessControler.pdb
+C:\Users\ryans\Desktop\Group4_ScholarStation-UserInterfaces\DataAccessControler\obj\Debug\DataAccessControler.dll
+C:\Users\ryans\Desktop\Group4_ScholarStation-UserInterfaces\DataAccessControler\obj\Debug\DataAccessControler.pdb
