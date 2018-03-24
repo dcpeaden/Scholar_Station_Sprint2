@@ -43,6 +43,8 @@
   <ItemGroup>
     <Compile Include="ConnectionControler.cs" />
     <Compile Include="IConnection.cs" />
+    <Compile Include="IRead.cs" />
+    <Compile Include="IUpdate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

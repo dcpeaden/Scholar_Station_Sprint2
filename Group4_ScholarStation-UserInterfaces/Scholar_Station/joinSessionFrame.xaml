@@ -9,40 +9,42 @@
       Title="Page1" Width="525" Height="350">
 
     <Grid HorizontalAlignment="Left" Width="525" Height="350" VerticalAlignment="Bottom">
-        <ComboBox x:Name="departmentBox" HorizontalAlignment="Left" Margin="75,111,0,0" VerticalAlignment="Top" Width="172" SelectionChanged="departmentBox_SelectionChanged" Height="22">
+        <ComboBox x:Name="departmentBox" HorizontalAlignment="Left" Margin="73,69,0,0" VerticalAlignment="Top" Width="172" SelectionChanged="departmentBox_SelectionChanged" Height="22">
             <ComboBox.Effect>
                 <DropShadowEffect ShadowDepth="1"/>
             </ComboBox.Effect>
         </ComboBox>
-        <ComboBox x:Name="classesBox" HorizontalAlignment="Left" Margin="75,163,0,0" VerticalAlignment="Top" Width="172" SelectionChanged="classesBox_SelectionChanged" Height="22">
+        <ComboBox x:Name="classesBox" HorizontalAlignment="Left" Margin="73,121,0,0" VerticalAlignment="Top" Width="172" SelectionChanged="classesBox_SelectionChanged" Height="22">
             <ComboBox.Effect>
                 <DropShadowEffect ShadowDepth="1"/>
             </ComboBox.Effect>
         </ComboBox>
-        <ComboBox x:Name="tutorBox" HorizontalAlignment="Left" Margin="275,111,0,0" VerticalAlignment="Top" Width="172" IsEditable="True" SelectionChanged="tutorBox_SelectionChanged" Height="22">
+        <ComboBox x:Name="tutorBox" HorizontalAlignment="Left" Margin="273,69,0,0" VerticalAlignment="Top" Width="172" IsEditable="True" SelectionChanged="tutorBox_SelectionChanged" Height="22">
             <ComboBox.Effect>
                 <DropShadowEffect ShadowDepth="1"/>
             </ComboBox.Effect>
         </ComboBox>
-        <Label x:Name="label" Content="Department" HorizontalAlignment="Left" Margin="69,85,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Height="29" Width="90"/>
-        <Label x:Name="label_Copy" Content="Classes" HorizontalAlignment="Left" Margin="69,138,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Height="29" Width="56"/>
-        <Label x:Name="label_Copy1" Content="Tutors" HorizontalAlignment="Left" Margin="269,85,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Height="29" Width="51"/>
-        <Button x:Name="joinSession" Content="Join Session" HorizontalAlignment="Left" Margin="75,228,0,0" VerticalAlignment="Top" Width="172" FontWeight="Bold" Height="20" Click="joinSession_Click_1">
+        <Label x:Name="label" Content="Department" HorizontalAlignment="Left" Margin="67,43,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Height="29" Width="90"/>
+        <Label x:Name="label_Copy" Content="Classes" HorizontalAlignment="Left" Margin="67,96,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Height="29" Width="56"/>
+        <Label x:Name="label_Copy1" Content="Tutors" HorizontalAlignment="Left" Margin="267,43,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Height="29" Width="51"/>
+        <Button x:Name="joinSession" Content="Join Session" HorizontalAlignment="Left" Margin="73,304,0,0" VerticalAlignment="Top" Width="172" FontWeight="Bold" Height="20" Click="joinSession_Click_1">
             <Button.Effect>
                 <DropShadowEffect ShadowDepth="1"/>
             </Button.Effect>
         </Button>
-        <ComboBox x:Name="SessionTimeBox" HorizontalAlignment="Left" Margin="275,163,0,0" VerticalAlignment="Top" Width="172" IsEditable="True" Height="22" >
+        <ComboBox x:Name="SessionTimeBox" HorizontalAlignment="Left" Margin="273,121,0,0" VerticalAlignment="Top" Width="172" IsEditable="True" Height="22" >
             <ComboBox.Effect>
                 <DropShadowEffect ShadowDepth="1"/>
             </ComboBox.Effect>
         </ComboBox>
-        <Label x:Name="timeLabel" Content="Available Sessions" HorizontalAlignment="Left" Margin="269,138,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Height="29" Width="129"/>
-        <Label x:Name="label1" Content="Scholar Station Session Creator" HorizontalAlignment="Left" Margin="90,32,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" Height="39" Width="332"/>
-        <Button x:Name="homeButton" Content="Sign Out" HorizontalAlignment="Left" Margin="275,228,0,0" VerticalAlignment="Top" Width="172" Click="homeButton_Click" FontWeight="Bold">
+        <Label x:Name="timeLabel" Content="Available Sessions" HorizontalAlignment="Left" Margin="267,96,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Height="29" Width="129"/>
+        <Label x:Name="label1" Content="Scholar Station Session Creator" HorizontalAlignment="Left" Margin="83,11,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" Height="39" Width="332"/>
+        <Button x:Name="homeButton" Content="Sign Out" HorizontalAlignment="Left" Margin="273,304,0,0" VerticalAlignment="Top" Width="172" Click="homeButton_Click" FontWeight="Bold">
             <Button.Effect>
                 <DropShadowEffect ShadowDepth="1"/>
             </Button.Effect>
         </Button>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="112" Margin="73,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="372" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+        <Label x:Name="label2" Content="Currently Enrolled Sessions" HorizontalAlignment="Left" Margin="67,148,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
     </Grid>
 </Page>

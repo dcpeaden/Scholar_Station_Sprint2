@@ -45,3 +45,29 @@ C:\Users\ryans\Desktop\Group4_ScholarStation-UserInterfaces\Scholar_Station\obj\
 C:\Users\ryans\repos\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\Scholar_Station\bin\Debug\Scholar_Station.exe.config
 C:\Users\ryans\repos\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\Scholar_Station\obj\Debug\Scholar_Station.exe
 C:\Users\ryans\repos\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\Scholar_Station\obj\Debug\Scholar_Station.pdb
+C:\Users\ryans\Desktop\New folder (3)\Group4_ScholarStation-UserInterfaces\Scholar_Station\bin\Debug\Scholar_Station.exe.config
+C:\Users\ryans\Desktop\New folder (3)\Group4_ScholarStation-UserInterfaces\Scholar_Station\obj\Debug\Scholar_Station.exe
+C:\Users\ryans\Desktop\New folder (3)\Group4_ScholarStation-UserInterfaces\Scholar_Station\obj\Debug\Scholar_Station.pdb
+C:\Users\ryans\Desktop\New folder (3)\Group4_ScholarStation-UserInterfaces\Scholar_Station\bin\Debug\Scholar_Station.exe
+C:\Users\ryans\Desktop\New folder (3)\Group4_ScholarStation-UserInterfaces\Scholar_Station\bin\Debug\Scholar_Station.pdb
+C:\Users\ryans\Desktop\New folder (3)\Group4_ScholarStation-UserInterfaces\Scholar_Station\bin\Debug\DataAccessControler.dll
+C:\Users\ryans\Desktop\New folder (3)\Group4_ScholarStation-UserInterfaces\Scholar_Station\bin\Debug\ScholarStationCL.dll
+C:\Users\ryans\Desktop\New folder (3)\Group4_ScholarStation-UserInterfaces\Scholar_Station\bin\Debug\DataAccessControler.pdb
+C:\Users\ryans\Desktop\New folder (3)\Group4_ScholarStation-UserInterfaces\Scholar_Station\bin\Debug\ScholarStationCL.pdb
+C:\Users\ryans\Desktop\New folder (3)\Group4_ScholarStation-UserInterfaces\Scholar_Station\obj\Debug\Scholar_Station.csprojResolveAssemblyReference.cache
+C:\Users\ryans\Desktop\New folder (3)\Group4_ScholarStation-UserInterfaces\Scholar_Station\obj\Debug\logInFrame.g.cs
+C:\Users\ryans\Desktop\New folder (3)\Group4_ScholarStation-UserInterfaces\Scholar_Station\obj\Debug\MainWindow.g.cs
+C:\Users\ryans\Desktop\New folder (3)\Group4_ScholarStation-UserInterfaces\Scholar_Station\obj\Debug\joinSessionFrame.g.cs
+C:\Users\ryans\Desktop\New folder (3)\Group4_ScholarStation-UserInterfaces\Scholar_Station\obj\Debug\SplashScreenWindow.g.cs
+C:\Users\ryans\Desktop\New folder (3)\Group4_ScholarStation-UserInterfaces\Scholar_Station\obj\Debug\tutorPage.g.cs
+C:\Users\ryans\Desktop\New folder (3)\Group4_ScholarStation-UserInterfaces\Scholar_Station\obj\Debug\App.g.cs
+C:\Users\ryans\Desktop\New folder (3)\Group4_ScholarStation-UserInterfaces\Scholar_Station\obj\Debug\Scholar_Station_MarkupCompile.cache
+C:\Users\ryans\Desktop\New folder (3)\Group4_ScholarStation-UserInterfaces\Scholar_Station\obj\Debug\Scholar_Station_MarkupCompile.lref
+C:\Users\ryans\Desktop\New folder (3)\Group4_ScholarStation-UserInterfaces\Scholar_Station\obj\Debug\logInFrame.baml
+C:\Users\ryans\Desktop\New folder (3)\Group4_ScholarStation-UserInterfaces\Scholar_Station\obj\Debug\MainWindow.baml
+C:\Users\ryans\Desktop\New folder (3)\Group4_ScholarStation-UserInterfaces\Scholar_Station\obj\Debug\joinSessionFrame.baml
+C:\Users\ryans\Desktop\New folder (3)\Group4_ScholarStation-UserInterfaces\Scholar_Station\obj\Debug\SplashScreenWindow.baml
+C:\Users\ryans\Desktop\New folder (3)\Group4_ScholarStation-UserInterfaces\Scholar_Station\obj\Debug\tutorPage.baml
+C:\Users\ryans\Desktop\New folder (3)\Group4_ScholarStation-UserInterfaces\Scholar_Station\obj\Debug\Scholar_Station.g.resources
+C:\Users\ryans\Desktop\New folder (3)\Group4_ScholarStation-UserInterfaces\Scholar_Station\obj\Debug\Scholar_Station.Properties.Resources.resources
+C:\Users\ryans\Desktop\New folder (3)\Group4_ScholarStation-UserInterfaces\Scholar_Station\obj\Debug\Scholar_Station.csproj.GenerateResource.Cache
