@@ -100,6 +100,10 @@
       <Project>{e6f2e850-bc91-4f6b-8e7e-a991c50eab4b}</Project>
       <Name>DataAccessControler</Name>
     </ProjectReference>
+    <ProjectReference Include="..\EmailControler\EmailControler.csproj">
+      <Project>{fc5f0708-cf5d-434d-9a17-9c896ec53f75}</Project>
+      <Name>EmailControler</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ScholarStationCL\ScholarStationCL.csproj">
       <Project>{49232f00-5d51-4613-8c29-ce2d88205a42}</Project>
       <Name>ScholarStationCL</Name>

@@ -1,0 +1,7 @@
+C:\Users\ryans\repos\Group4_ScholarStation\Scholar_Station_Sprint2\Group4_ScholarStation\EmailControler\bin\Debug\EmailControler.dll
+C:\Users\ryans\repos\Group4_ScholarStation\Scholar_Station_Sprint2\Group4_ScholarStation\EmailControler\bin\Debug\EmailControler.pdb
+C:\Users\ryans\repos\Group4_ScholarStation\Scholar_Station_Sprint2\Group4_ScholarStation\EmailControler\bin\Debug\MailBee.NET.dll
+C:\Users\ryans\repos\Group4_ScholarStation\Scholar_Station_Sprint2\Group4_ScholarStation\EmailControler\bin\Debug\MailBee.NET.xml
+C:\Users\ryans\repos\Group4_ScholarStation\Scholar_Station_Sprint2\Group4_ScholarStation\EmailControler\obj\Debug\EmailControler.dll
+C:\Users\ryans\repos\Group4_ScholarStation\Scholar_Station_Sprint2\Group4_ScholarStation\EmailControler\obj\Debug\EmailControler.pdb
+C:\Users\ryans\repos\Group4_ScholarStation\Scholar_Station_Sprint2\Group4_ScholarStation\EmailControler\obj\Debug\EmailControler.csprojResolveAssemblyReference.cache

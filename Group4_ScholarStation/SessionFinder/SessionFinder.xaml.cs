@@ -5,6 +5,8 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Windows;
+using EmailControler;
+using System.Collections;
 
 namespace SessionFinder
 {
@@ -104,6 +106,14 @@ namespace SessionFinder
             else MessageBox.Show("You must select course, tutor, and session!");
         }
 
+        public void SendEmail()
+        {
+            IMailHandler sendEmail = new MailHandler();
+            sendEmail.JoinSession(tutor[tutorBox.SelectedIndex].ToString(), sessionIdList[sessionLengthBox.SelectedIndex].ToString());
+            sendEmail.JoinSession(user.Email, sessionIdList[sessionLengthBox.SelectedIndex].ToString());
+            MessageBox.Show("Email notification sent!");
+        }
+
         private void departmentBox_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
             courseBox.Items.Clear();
@@ -127,6 +137,7 @@ namespace SessionFinder
         private void joinSession_Click(object sender, RoutedEventArgs e)
         {
             JoinTutorSession();
+            SendEmail();
         }
 
         private void cancleSession_Click(object sender, RoutedEventArgs e)

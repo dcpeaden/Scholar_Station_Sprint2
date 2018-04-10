@@ -40,6 +40,5 @@ C:\Users\ryans\Desktop\Group4Project_VERSION_1.0\Group4_ScholarStation\Group4_Sc
 C:\Users\ryans\Desktop\Group4Project_VERSION_1.0\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\DataAccessControler\obj\Debug\DataAccessControler.pdb
 C:\Users\ryans\repos\Group4_ScholarStation\Scholar_Station_Sprint2\Group4_ScholarStation\DataAccessControler\bin\Debug\DataAccessControler.dll
 C:\Users\ryans\repos\Group4_ScholarStation\Scholar_Station_Sprint2\Group4_ScholarStation\DataAccessControler\bin\Debug\DataAccessControler.pdb
-C:\Users\ryans\repos\Group4_ScholarStation\Scholar_Station_Sprint2\Group4_ScholarStation\DataAccessControler\obj\Debug\DataAccessControler.csprojResolveAssemblyReference.cache
 C:\Users\ryans\repos\Group4_ScholarStation\Scholar_Station_Sprint2\Group4_ScholarStation\DataAccessControler\obj\Debug\DataAccessControler.dll
 C:\Users\ryans\repos\Group4_ScholarStation\Scholar_Station_Sprint2\Group4_ScholarStation\DataAccessControler\obj\Debug\DataAccessControler.pdb

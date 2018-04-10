@@ -83,6 +83,11 @@ namespace SQLHandler
            return sessionIDs.GetSessionID(email);
         }
 
+        public string getSessionsID(string email, string sessionID)
+        {
+            return sessionIDs.GetSessionID(email, sessionID);
+        }
+
         public void CancelSessions(string cancel)
         {
             cancelSession.CancelSession(cancel);
