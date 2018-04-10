@@ -15,12 +15,14 @@ namespace SQLHandler.QueryClasses
         private IRead readFromDatabase;
         private IList<string> sessionIdList;
         private IConnection closeDbConnection;
+        private string sessionID;
 
         public SessionID()
         {
             this.readFromDatabase = new ConnectionControler();
             this.sessionIdList = new List<string>();
             this.closeDbConnection = new ConnectionControler();
+            this.sessionID = "";
         }
         public IList<string> GetSessionID(string email)
         {
@@ -32,6 +34,18 @@ namespace SQLHandler.QueryClasses
                 sessionIdList.Add(currentSessionList.GetValue(8).ToString());
             }
             return sessionIdList;
+        }
+
+        public string GetSessionID(string studentEmail, string tutorEmail)
+        {
+            String myCommand = "select * from t_session where ses_tutor_email = '" + studentEmail + "'AND ses_student_email = '" + tutorEmail + "'";
+            SqlDataReader SessionID = readFromDatabase.DataReader(myCommand);
+
+            while (SessionID.Read())
+            {
+                sessionID = SessionID.GetValue(8).ToString();
+            }
+            return sessionID;
         }
     }
 }

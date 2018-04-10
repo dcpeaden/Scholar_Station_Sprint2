@@ -9,5 +9,7 @@ namespace SQLHandler.Interfaces
     public interface ISessionID
     {
         IList<string>  GetSessionID(string email);
+
+        string GetSessionID(string studentEmail, string tutorEmail);
     }
 }
