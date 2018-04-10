@@ -34,7 +34,14 @@ namespace Scholar_Station
 
 		private void createSession_Click(object sender, RoutedEventArgs e)
 		{
-			this.NavigationService.Navigate(new tutorPage(user));
+
+			//These two lines are here only to view the other canvas so I can work.
+			//This code will be executed after there is a user type check to choose 
+			//which canvas to show.
+			professor.Visibility = Visibility.Visible;
+			stdUser.Visibility = Visibility.Hidden;
+
+			//this.NavigationService.Navigate(new tutorPage(user));
 		}
 
 		private void joinSession_Click(object sender, RoutedEventArgs e)
