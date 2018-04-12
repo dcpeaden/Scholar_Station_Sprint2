@@ -13,19 +13,21 @@ namespace Scholar_Station
     public partial class MainWindow : Window
     {
         private System.Windows.Threading.DispatcherTimer dispatcherTimer = new System.Windows.Threading.DispatcherTimer();
+        private IntroPage introPage;
         private SplashScreenWindow splashWindow;
         public MainWindow()
         {
             this.Hide();
             InitializeComponent();
             splashWindow = new SplashScreenWindow();
-            splashWindow.Show();
-            dispatcherTimer.Tick += new EventHandler(dispatcherTimer_Tick);
-            dispatcherTimer.Interval = new TimeSpan(0, 0, 7);
-            dispatcherTimer.Start();
+            introPage = new IntroPage();
+            introPage.Show();
+            //dispatcherTimer.Tick += new EventHandler(dispatcherTimer_Tick);
+            //dispatcherTimer.Interval = new TimeSpan(0, 0, 7);
+            //dispatcherTimer.Start();
         }
 
-        private void dispatcherTimer_Tick(object sender, EventArgs e)
+        /*private void dispatcherTimer_Tick(object sender, EventArgs e)
         {
             splashWindow.Hide();
             this.Show();
@@ -45,6 +47,6 @@ namespace Scholar_Station
             }
 
             base.OnClosing(e);
-        }
+        }*/
     }
 }
