@@ -69,9 +69,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>IntroPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="IntroPage1.xaml.cs">
-      <DependentUpon>IntroPage1.xaml</DependentUpon>
-    </Compile>
     <Compile Include="SessionLength\ISessionLength.cs" />
     <Compile Include="DateTime\ITime.cs" />
     <Compile Include="SessionLength\SessionLength.cs" />
@@ -82,10 +79,6 @@
     <Compile Include="tutorPage.xaml.cs">
       <DependentUpon>tutorPage.xaml</DependentUpon>
     </Compile>
-    <Page Include="IntroPage1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="logInFrame.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -152,6 +145,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CustomImageButton\CustomImageButton.csproj">
+      <Project>{98F6507E-A7F8-4328-836D-6F244FF3D804}</Project>
+      <Name>CustomImageButton</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DataAccessControler\DataAccessControler.csproj">
       <Project>{e6f2e850-bc91-4f6b-8e7e-a991c50eab4b}</Project>
       <Name>DataAccessControler</Name>

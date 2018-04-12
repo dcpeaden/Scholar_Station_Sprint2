@@ -14,12 +14,11 @@ namespace Scholar_Station
     {
         private System.Windows.Threading.DispatcherTimer dispatcherTimer = new System.Windows.Threading.DispatcherTimer();
         private IntroPage introPage;
-        private SplashScreenWindow splashWindow;
+        
         public MainWindow()
         {
             this.Hide();
             InitializeComponent();
-            splashWindow = new SplashScreenWindow();
             introPage = new IntroPage();
             introPage.Show();
             //dispatcherTimer.Tick += new EventHandler(dispatcherTimer_Tick);

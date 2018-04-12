@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27428.2005
+VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scholar_Station", "Scholar_Station\Scholar_Station.csproj", "{BD5FF951-C8E6-4658-9BBA-86226C4772D8}"
 EndProject
@@ -19,6 +19,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLHandler", "SQLHandler\SQLHandler.csproj", "{AB065320-E116-45AF-AEFD-4BA524D615F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomImageButton", "CustomImageButton\CustomImageButton.csproj", "{98F6507E-A7F8-4328-836D-6F244FF3D804}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,6 +52,10 @@ Global
 		{AB065320-E116-45AF-AEFD-4BA524D615F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB065320-E116-45AF-AEFD-4BA524D615F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB065320-E116-45AF-AEFD-4BA524D615F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98F6507E-A7F8-4328-836D-6F244FF3D804}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98F6507E-A7F8-4328-836D-6F244FF3D804}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98F6507E-A7F8-4328-836D-6F244FF3D804}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98F6507E-A7F8-4328-836D-6F244FF3D804}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
