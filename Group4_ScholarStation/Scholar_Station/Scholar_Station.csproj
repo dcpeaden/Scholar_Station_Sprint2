@@ -134,6 +134,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Desktop\Group4Project_VERSION_1.0\WorkOfThisOne\Group4_ScholarStation\SessionFinder\SessionFinder.csproj">
+      <Project>{1f7a0069-bfa7-431d-bb0f-6eb92ecf369b}</Project>
+      <Name>SessionFinder</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DataAccessControler\DataAccessControler.csproj">
       <Project>{e6f2e850-bc91-4f6b-8e7e-a991c50eab4b}</Project>
       <Name>DataAccessControler</Name>

@@ -33,3 +33,8 @@ C:\Users\ryans\Desktop\Group4Project_VERSION_1.0\Group4_ScholarStation\Group4_Sc
 C:\Users\ryans\Desktop\Group4Project_VERSION_1.0\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\ScholarStationCL\obj\Debug\ScholarStationCL.csproj.CoreCompileInputs.cache
 C:\Users\ryans\Desktop\Group4Project_VERSION_1.0\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\ScholarStationCL\obj\Debug\ScholarStationCL.dll
 C:\Users\ryans\Desktop\Group4Project_VERSION_1.0\Group4_ScholarStation\Group4_ScholarStation-UserInterfaces\ScholarStationCL\obj\Debug\ScholarStationCL.pdb
+C:\Users\ryans\repos\Group4_ScholarStation\Group4_ScholarStation\ScholarStationCL\bin\Debug\ScholarStationCL.dll
+C:\Users\ryans\repos\Group4_ScholarStation\Group4_ScholarStation\ScholarStationCL\bin\Debug\ScholarStationCL.pdb
+C:\Users\ryans\repos\Group4_ScholarStation\Group4_ScholarStation\ScholarStationCL\obj\Debug\ScholarStationCL.csprojResolveAssemblyReference.cache
+C:\Users\ryans\repos\Group4_ScholarStation\Group4_ScholarStation\ScholarStationCL\obj\Debug\ScholarStationCL.dll
+C:\Users\ryans\repos\Group4_ScholarStation\Group4_ScholarStation\ScholarStationCL\obj\Debug\ScholarStationCL.pdb

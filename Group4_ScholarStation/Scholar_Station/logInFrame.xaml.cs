@@ -2,7 +2,7 @@
 using System.Windows.Controls;
 using ScholarStation;
 using System.Text.RegularExpressions;
-
+using SessionFinder;
 namespace Scholar_Station
 {
     /// <summary>
@@ -34,8 +34,10 @@ namespace Scholar_Station
                      {
                         if (userSelectBox.SelectedIndex == 1)
                         {
-                           this.NavigationService.Navigate(new joinSessionFrame(newUser));
-                        }
+                        SessionFinder.MainWindow session = new SessionFinder.MainWindow(newUser);
+                        session.Show();
+
+                    }
                         else if (userSelectBox.SelectedIndex == 0)
                         {
                            this.NavigationService.Navigate(new tutorPage(newUser));
