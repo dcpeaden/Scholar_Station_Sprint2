@@ -1,0 +1,12 @@
+Server/*
+*.dll
+*.pdb
+*.cache
+*.exe
+*.exe.config
+*.ide
+*.ide-wal
+*.ide-shm
+*.baml
+Group4_ScholarStation-UserInterfaces/.vs/*
+Debug/*
