@@ -61,6 +61,9 @@
     </ApplicationDefinition>
     <Compile Include="DateTime\Date.cs" />
     <Compile Include="DateTime\IDate.cs" />
+    <Compile Include="LandingPage.xaml.cs">
+      <DependentUpon>LandingPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SessionLength\ISessionLength.cs" />
     <Compile Include="DateTime\ITime.cs" />
     <Compile Include="SessionLength\SessionLength.cs" />
@@ -71,6 +74,10 @@
     <Compile Include="tutorPage.xaml.cs">
       <DependentUpon>tutorPage.xaml</DependentUpon>
     </Compile>
+    <Page Include="LandingPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="logInFrame.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

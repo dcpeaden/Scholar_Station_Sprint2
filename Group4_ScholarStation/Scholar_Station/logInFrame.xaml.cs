@@ -30,21 +30,11 @@ namespace Scholar_Station
                 user = new UserFactory();
                 User newUser = user.CreateUser("name", 1, UserType.Standard, emailBox.Text);
 
-                     if (emailBox.Text != null)
-                     {
-                        if (userSelectBox.SelectedIndex == 1)
-                        {
-                           this.NavigationService.Navigate(new joinSessionFrame(newUser));
-                        }
-                        else if (userSelectBox.SelectedIndex == 0)
-                        {
-                           this.NavigationService.Navigate(new tutorPage(newUser));
-                        }
-                        else
-                        {
-                           MessageBox.Show("You must select a user type!");
-                        }
-                     }
+                if (emailBox.Text != null)
+                {
+
+                    this.NavigationService.Navigate(new LandingPage(newUser));
+                }
             }
             else
             {

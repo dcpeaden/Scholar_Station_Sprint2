@@ -17,9 +17,24 @@ namespace SQLHandler.Interfaces
         {
             this.readFromDatabase = new ConnectionControler();
         }
+
         public IDataReader ViewCurrentSession(string email)
         {
             String myCommand = "select * from t_session where ses_tutor_email = '" + email + "'";
+            SqlDataReader currentSessionList = readFromDatabase.DataReader(myCommand);
+            return currentSessionList;
+        }
+
+        public IDataReader ViewCurrentSessionStudent(string email)
+        {
+            String myCommand = "select * from t_session where ses_student_email = '" + email + "'";
+            SqlDataReader currentSessionList = readFromDatabase.DataReader(myCommand);
+            return currentSessionList;
+        }
+
+        public IDataReader ViewCurrentSessionByID(string id)
+        {
+            String myCommand = "select * from t_session where sessionId = '" + id + "'";
             SqlDataReader currentSessionList = readFromDatabase.DataReader(myCommand);
             return currentSessionList;
         }
