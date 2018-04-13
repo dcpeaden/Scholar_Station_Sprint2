@@ -8,6 +8,6 @@ namespace SQLHandler.Interfaces
 {
     public interface ICancelSession
     {
-        void CancelSession(string sessionToCance);
+        void CancelSession(string sessionToCancel);
     }
 }

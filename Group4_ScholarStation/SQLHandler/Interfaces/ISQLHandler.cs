@@ -29,5 +29,7 @@ using System.Threading.Tasks;
         void CancelSessions(string cancelSession);
 
         IDataReader ViewCurrentSession(string email);
+
+        IDataReader ViewCurrentSessionStudent(string email);
     }
 }

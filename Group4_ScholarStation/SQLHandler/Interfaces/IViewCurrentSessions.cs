@@ -10,5 +10,6 @@ namespace SQLHandler.Interfaces
     public interface IViewCurrentSessions
     {
         IDataReader ViewCurrentSession(string email);
+        IDataReader ViewCurrentSessionStudent(string email);
     }
 }

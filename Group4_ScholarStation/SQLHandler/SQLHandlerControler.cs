@@ -92,5 +92,10 @@ namespace SQLHandler
         {
             return viewSessions.ViewCurrentSession(email);
         }
+
+        public IDataReader ViewCurrentSessionStudent(string email)
+        {
+            return viewSessions.ViewCurrentSessionStudent(email);
+        }
     }
 }
