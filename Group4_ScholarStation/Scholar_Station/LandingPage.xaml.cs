@@ -136,7 +136,17 @@ namespace Scholar_Station
             sessionDetails.Visibility = Visibility.Visible;
             professor.Visibility = Visibility.Hidden;
             stdUser.Visibility = Visibility.Hidden;
-            details.Content = "<bold>Session ID:  </bold>" + tutorSessionIDs[selectedTutorSession].ToString();
+            string str = "";
+            IDataReader sessions = sqlHandler.ViewCurrentSessionByID(tutorSessionIDs[selectedTutorSession].ToString());
+            while (sessions.Read())
+            {
+                 str += "Session ID:  " + tutorSessionIDs[selectedTutorSession].ToString() + "\n"
+                                  + "Date:  " + sessions.GetValue(2).ToString() + "\n"
+                                  + "Start Time:  " + sessions.GetValue(3).ToString() + "\n"
+                                  + "Duration:  " + sessions.GetValue(4).ToString() + " minutes\n"
+                                  + "Course of interest:  " + sessions.GetValue(7).ToString() + "\n";
+            }
+            details.Content = str;
         }
 
         private void studentSessionDetails_Click(object sender, RoutedEventArgs e)
