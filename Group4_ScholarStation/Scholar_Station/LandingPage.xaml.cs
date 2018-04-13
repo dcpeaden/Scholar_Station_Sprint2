@@ -1,5 +1,6 @@
 ﻿using ScholarStation;
 using SQLHandler;
+using SQLHandler.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -25,11 +26,10 @@ namespace Scholar_Station
     {
         private User user;
         private ISQLHandler sqlHandler;
+        private string currentID;
         private IList<string> tutorSessionIDs;
         private IList<string> studentSessionIDs;
-        private int selectedTutorSession;
-        private int selectedStudentSession;
-
+        
         public LandingPage(User user)
         {
             this.user = user;
@@ -117,17 +117,13 @@ namespace Scholar_Station
 
         private void tutorSessionsSelect_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            selectedTutorSession = tutorSessionsSelect.SelectedIndex;
-
-            if (selectedTutorSession == 0)  tutorSessionDetails.IsEnabled = false;
+            if (tutorSessionsSelect.SelectedIndex == 0)  tutorSessionDetails.IsEnabled = false;
             else tutorSessionDetails.IsEnabled = true;
         }
 
         private void studentSessionsSelect_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            selectedStudentSession = studentSessionsSelect.SelectedIndex;
-
-            if (selectedStudentSession == 0) studentSessionDetails.IsEnabled = false;
+            if (studentSessionsSelect.SelectedIndex == 0) studentSessionDetails.IsEnabled = false;
             else studentSessionDetails.IsEnabled = true;
         }
 
@@ -136,15 +132,19 @@ namespace Scholar_Station
             sessionDetails.Visibility = Visibility.Visible;
             professor.Visibility = Visibility.Hidden;
             stdUser.Visibility = Visibility.Hidden;
+
             string str = "";
-            IDataReader sessions = sqlHandler.ViewCurrentSessionByID(tutorSessionIDs[selectedTutorSession].ToString());
+            currentID = tutorSessionIDs[tutorSessionsSelect.SelectedIndex].ToString();
+
+            IDataReader sessions = sqlHandler.ViewCurrentSessionByID(tutorSessionIDs[tutorSessionsSelect.SelectedIndex].ToString());
             while (sessions.Read())
             {
-                 str += "Session ID:  " + tutorSessionIDs[selectedTutorSession].ToString() + "\n"
-                                  + "Date:  " + sessions.GetValue(2).ToString() + "\n"
+                 str += "Session ID:  " + tutorSessionIDs[tutorSessionsSelect.SelectedIndex].ToString() + "\n"
+                                  + "Date:  " + getDate(sessions, 2) + "\n"
                                   + "Start Time:  " + sessions.GetValue(3).ToString() + "\n"
                                   + "Duration:  " + sessions.GetValue(4).ToString() + " minutes\n"
-                                  + "Course of interest:  " + sessions.GetValue(7).ToString() + "\n";
+                                  + "Course of interest:  " + sessions.GetValue(7).ToString() + "\n"
+                                  + "Tutor:  " + sessions.GetValue(0).ToString();
             }
             details.Content = str;
         }
@@ -154,12 +154,13 @@ namespace Scholar_Station
             sessionDetails.Visibility = Visibility.Visible;
             professor.Visibility = Visibility.Hidden;
             stdUser.Visibility = Visibility.Hidden;
-            details.Content = "Session ID:  " + studentSessionIDs[selectedStudentSession].ToString();
+            details.Content = "Session ID:  " + studentSessionIDs[studentSessionsSelect.SelectedIndex].ToString();
         }
 
         private void cancelSession_Click(object sender, RoutedEventArgs e)
         {
-            
+            sqlHandler.CancelSessions(currentID);
+            MessageBox.Show("Session Canceled");
         }
 
         private void closeSession_Click(object sender, RoutedEventArgs e)

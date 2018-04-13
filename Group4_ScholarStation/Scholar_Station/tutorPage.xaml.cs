@@ -116,7 +116,7 @@ namespace Scholar_Station
             if (sessionIdBox.SelectedIndex != -1)
             {
                 sqlHandler.CancelSessions(sessionIdList[sessionIdBox.SelectedIndex]);
-                MessageBox.Show("Session Cancled");
+                MessageBox.Show("Session Canceled");
                 sessionIdBox.Items.RemoveAt(sessionIdBox.SelectedIndex);
             }
             else
