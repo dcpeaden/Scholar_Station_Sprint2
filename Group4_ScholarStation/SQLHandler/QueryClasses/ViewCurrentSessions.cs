@@ -32,11 +32,11 @@ namespace SQLHandler.Interfaces
             return currentSessionList;
         }
 
-        /*public IDataReader ViewSessionByID(string email)
+        public IDataReader ViewCurrentSessionByID(string id)
         {
-            String myCommand = "select * from t_session where ses_tutor_email = '" + email + "'";
+            String myCommand = "select * from t_session where sessionId = '" + id + "'";
             SqlDataReader currentSessionList = readFromDatabase.DataReader(myCommand);
             return currentSessionList;
-        }*/
+        }
     }
 }

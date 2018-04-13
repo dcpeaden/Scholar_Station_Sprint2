@@ -31,5 +31,8 @@ using System.Threading.Tasks;
         IDataReader ViewCurrentSession(string email);
 
         IDataReader ViewCurrentSessionStudent(string email);
+
+        IDataReader ViewCurrentSessionByID(string id);
+
     }
 }

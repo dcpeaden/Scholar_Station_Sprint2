@@ -11,5 +11,6 @@ namespace SQLHandler.Interfaces
     {
         IDataReader ViewCurrentSession(string email);
         IDataReader ViewCurrentSessionStudent(string email);
+        IDataReader ViewCurrentSessionByID(string id);
     }
 }
