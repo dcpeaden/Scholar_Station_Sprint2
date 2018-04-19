@@ -38,6 +38,10 @@
   <PropertyGroup>
     <ApplicationIcon>images\graduation_education_icon.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -145,9 +149,17 @@
       <Project>{e6f2e850-bc91-4f6b-8e7e-a991c50eab4b}</Project>
       <Name>DataAccessControler</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Feedback_Form\Feedback_Form.csproj">
+      <Project>{8b47ce0f-26d2-47a4-bce2-f397bd9aa99e}</Project>
+      <Name>Feedback_Form</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ScholarStationCL\ScholarStationCL.csproj">
       <Project>{49232f00-5d51-4613-8c29-ce2d88205a42}</Project>
       <Name>ScholarStationCL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SessionFinder\SessionFinder.csproj">
+      <Project>{1f7a0069-bfa7-431d-bb0f-6eb92ecf369b}</Project>
+      <Name>SessionFinder</Name>
     </ProjectReference>
     <ProjectReference Include="..\SQLHandler\SQLHandler.csproj">
       <Project>{ab065320-e116-45af-aefd-4ba524d615f6}</Project>

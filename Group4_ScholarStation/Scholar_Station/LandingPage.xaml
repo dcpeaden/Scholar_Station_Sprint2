@@ -9,7 +9,7 @@
       Title="UserHome">
     <Grid>
         <Canvas x:Name="welcomeBanner" Width="525" Height="48" VerticalAlignment="Top" Margin="0,0,0,0" Canvas.Bottom="0" >
-            <Label x:Name="welcome"  HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="280" Height="48" FontSize="16" FontWeight="Bold" Grid.ColumnSpan="2"/>
+            <Label x:Name="welcome"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="280" Height="48" FontSize="16" FontWeight="Bold" Grid.ColumnSpan="2"/>
         </Canvas>
         <Canvas x:Name="professor" Width="525" Height="302" VerticalAlignment="Bottom" Margin="0,0,0,0" Canvas.Bottom="0" Visibility="Hidden">
             <Label x:Name="welcome1"  Content="This will contain class information" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="280" Height="48" FontSize="16" FontWeight="Bold" Grid.ColumnSpan="2"/>
@@ -20,7 +20,7 @@
             <Button x:Name="closeSession" Content="Close Session" HorizontalAlignment="Right" Margin="257,185,0,0" VerticalAlignment="Bottom" Width="114" IsEnabled="True" Click="closeSession_Click"/>
         </Canvas>
         <Canvas x:Name="stdUser" Width="525" Height="302" VerticalAlignment="Bottom" Visibility="Visible">
-            <TextBlock Margin="354,10,-369,-10" Grid.Column="1" FontSize="14"><Hyperlink Click="logOut_Click">Log Out</Hyperlink></TextBlock>
+            <TextBlock Grid.Column="1" FontSize="14" Canvas.Left="431" Canvas.Top="-44"><Hyperlink Click="logOut_Click">Log Out</Hyperlink></TextBlock>
             <Label x:Name="tutorSessionsLabel" Content="Sessions you're tutoring:" HorizontalAlignment="Left" Margin="23.05,83,0,0" VerticalAlignment="Top" Width="181" FontSize="14" FontWeight="Bold" Grid.Column="1"/>
             <Label x:Name="studentSessionsLabel" Content="Sessions you're attending:" HorizontalAlignment="Left" Margin="23.05,159,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Grid.Column="1"/>
             <ComboBox x:Name="tutorSessionsSelect" HorizontalAlignment="Left" Margin="23,109,0,0" VerticalAlignment="Top" Width="221" Grid.Column="1" SelectionChanged="tutorSessionsSelect_SelectionChanged" SelectedIndex="0"/>

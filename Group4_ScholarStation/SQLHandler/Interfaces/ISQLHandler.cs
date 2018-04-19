@@ -21,13 +21,7 @@ using System.Threading.Tasks;
 
         IDataReader GetAvailableSessions(string email);
 
-        void JoinSession(string userEmail, string sessionID);
-
-        void CreateSession(string email, string date, string time, string length, string classes);
-
         IList<string> getSessionsID(string email);
-
-        void CancelSessions(string cancelSession);
 
         IDataReader ViewCurrentSession(string email);
 
@@ -37,5 +31,12 @@ using System.Threading.Tasks;
 
         IDataReader GetUserType(string email);
 
+        void LeaveSessionFeedback(string email, string sessionID, string feedback);
+
+        void JoinSession(string userEmail, string sessionID);
+
+        void CreateSession(string email, string date, string time, string length, string classes);
+
+        void CancelSessions(string cancelSession);
     }
 }

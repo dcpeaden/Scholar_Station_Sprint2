@@ -16,7 +16,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using SessionFinder;
 namespace Scholar_Station
 {
     /// <summary>
@@ -56,7 +56,8 @@ namespace Scholar_Station
 
         private void joinSession_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new joinSessionFrame(user));
+            SessionFinder.MainWindow session = new SessionFinder.MainWindow(user);
+            session.Show();
         }
 
         private void logOut_Click(object sender, RoutedEventArgs e)
@@ -89,7 +90,6 @@ namespace Scholar_Station
         {
             studentSessionsSelect.Items.Add("--Select Session--");
             studentSessionsSelect.SelectedIndex = 0;
-            
             AddStudentSessionsToComboBox();
         }
 
@@ -165,7 +165,8 @@ namespace Scholar_Station
 
         private void closeSession_Click(object sender, RoutedEventArgs e)
         {
-
+            Feedback_Form.MainWindow feedback = new Feedback_Form.MainWindow(user);
+            feedback.Show();
         }
     }
 }
