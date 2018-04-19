@@ -56,6 +56,11 @@ namespace SQLHandler
             throw new NotImplementedException();
         }
 
+        public IDataReader GetCourseByProfessor(string email)
+        {
+            return course.GetCourseByProfessor(email);
+        }
+
         public IDataReader GetDepartment()
         {
             return department.GetDepartment();

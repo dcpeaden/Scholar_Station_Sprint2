@@ -12,7 +12,9 @@
             <Label x:Name="welcome"  HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="280" Height="48" FontSize="16" FontWeight="Bold" Grid.ColumnSpan="2"/>
         </Canvas>
         <Canvas x:Name="professor" Width="525" Height="302" VerticalAlignment="Bottom" Margin="0,0,0,0" Canvas.Bottom="0" Visibility="Hidden">
-            <Label x:Name="welcome1"  Content="This will contain class information" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="280" Height="48" FontSize="16" FontWeight="Bold" Grid.ColumnSpan="2"/>
+            <Label x:Name="professorCoursesLabel" Content="Courses you're teaching:" HorizontalAlignment="Left" Margin="23.05,83,0,0" VerticalAlignment="Top" Width="181" FontSize="14" FontWeight="Bold" Grid.Column="1"/>
+            <ComboBox x:Name="professorCourseSelect" HorizontalAlignment="Left" Margin="23,185,0,0" VerticalAlignment="Top" Width="221" Grid.Column="1" SelectionChanged="professorCourseSelect_SelectionChanged" SelectedIndex="0" Cursor="None"/>
+            <Button x:Name="professorCourseDetails" Content="View Course Details" HorizontalAlignment="Left" Margin="157,185,0,0" VerticalAlignment="Top" Width="114" IsEnabled="False" Grid.Column="1" Click="professorCourseDetails_Click"/>
         </Canvas>
         <Canvas x:Name="sessionDetails" Width="525" Height="302" VerticalAlignment="Bottom" Margin="0,0,0,0" Canvas.Bottom="0" Visibility="Hidden">
             <Label x:Name="details" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="280" Height="280" FontSize="16" FontWeight="DemiBold" Grid.ColumnSpan="2"/>

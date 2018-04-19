@@ -29,7 +29,8 @@ namespace Scholar_Station
         private string currentID;
         private IList<string> tutorSessionIDs;
         private IList<string> studentSessionIDs;
-        
+        private IList<string> professorCourses;
+
         public LandingPage(User user)
         {
             this.user = user;
@@ -38,12 +39,11 @@ namespace Scholar_Station
             welcome.Content = "Welcome, " + user.Email + "!";
             populateSessionsComboBox();
             populateStudentSessionsComboBox();
-            routeToView(user.Type);
-            
-            
+            populateProfessorCoursesComboBox();
+            routeView(user.Type);
         }
 
-        private void routeToView(UserType type)
+        private void routeView(UserType type)
         {
             if(type == UserType.Standard)
             {
@@ -59,14 +59,7 @@ namespace Scholar_Station
 
         private void createSession_Click(object sender, RoutedEventArgs e)
         {
-
-            //These two lines are here only to view the other canvas so I can work.
-            //This code will be executed after there is a user type check to choose 
-            //which canvas to show.
-            professor.Visibility = Visibility.Visible;
-            stdUser.Visibility = Visibility.Hidden;
-
-            //this.NavigationService.Navigate(new tutorPage(user));
+            this.NavigationService.Navigate(new tutorPage(user));
         }
 
         private void joinSession_Click(object sender, RoutedEventArgs e)
@@ -123,9 +116,7 @@ namespace Scholar_Station
 
         private String getDate(IDataReader reader, int column)
         {
-            String[] temp;
-            
-            temp = reader.GetValue(column).ToString().Split(' ');
+            String[] temp = reader.GetValue(column).ToString().Split(' ');
             
             return temp[0];
         }
@@ -173,7 +164,7 @@ namespace Scholar_Station
             string str = "";
             currentID = studentSessionIDs[studentSessionsSelect.SelectedIndex].ToString();
 
-            IDataReader sessions = sqlHandler.ViewCurrentSessionByID(studentSessionIDs[tutorSessionsSelect.SelectedIndex].ToString());
+            IDataReader sessions = sqlHandler.ViewCurrentSessionByID(studentSessionIDs[studentSessionsSelect.SelectedIndex].ToString());
 
             while (sessions.Read())
             {
@@ -197,5 +188,37 @@ namespace Scholar_Station
         {
 
         }
+
+        private void populateProfessorCoursesComboBox()
+        {
+            professorCourseSelect.Items.Add("--Select Course--");
+            professorCourseSelect.SelectedIndex = 0;
+
+            AddProfessorCoursesToComboBox();
+        }
+
+        public void AddProfessorCoursesToComboBox()
+        {
+            IDataReader courses = sqlHandler.GetCourseByProfessor(user.Email);
+            professorCourses = new List<string>();
+            professorCourses.Add("null");
+            while (courses.Read())
+            {
+                professorCourses.Add(courses.GetValue(0).ToString());
+                professorCourseSelect.Items.Add(courses.GetValue(0).ToString() + "   " + courses.GetValue(1).ToString());
+            }
+        }
+
+        private void professorCourseSelect_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (professorCourseSelect.SelectedIndex == 0) professorCourseDetails.IsEnabled = false;
+            else professorCourseDetails.IsEnabled = true;
+        }
+
+        private void professorCourseDetails_Click(object sender, RoutedEventArgs e)
+        {
+           
+        }
+
     }
 }

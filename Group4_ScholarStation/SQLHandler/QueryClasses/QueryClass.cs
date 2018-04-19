@@ -33,5 +33,12 @@ namespace SQLHandler
             SqlDataReader listOfCourses_dr = read.DataReader(myCommand);
             return listOfCourses_dr;
         }
+
+        public IDataReader GetCourseByProfessor(string email)
+        {
+            string myCommand = "select * from course where cr_instructor = '" + email + "'";
+            SqlDataReader listOfCourses_dr = read.DataReader(myCommand);
+            return listOfCourses_dr;
+        }
     }
 }
