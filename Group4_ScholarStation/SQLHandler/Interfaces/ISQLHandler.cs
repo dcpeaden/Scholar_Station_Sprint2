@@ -1,4 +1,5 @@
 ﻿using ScholarStation;
+using SQLHandler.Interfaces;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -33,6 +34,8 @@ using System.Threading.Tasks;
         IDataReader ViewCurrentSessionStudent(string email);
 
         IDataReader ViewCurrentSessionByID(string id);
+
+        IDataReader GetUserType(string email);
 
     }
 }

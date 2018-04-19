@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using ScholarStation;
 using SQLHandler.Interfaces;
 using SQLHandler.QueryClasses;
 
@@ -18,6 +19,7 @@ namespace SQLHandler
         private ISessionID sessionIDs;
         private IViewCurrentSessions viewSessions;
         private ICancelSession cancelSession;
+        private IUserType userType;
 
         public SQLHandlerControler()
         {
@@ -30,6 +32,7 @@ namespace SQLHandler
             this.sessionIDs = new SessionID();
             this.viewSessions = new ViewCurrentSessions();
             this.cancelSession = new CancelSessions();
+            this.userType = new QueryUserType();
         }
 
         public IDataReader GetAllCourses()
@@ -102,5 +105,11 @@ namespace SQLHandler
         {
             return viewSessions.ViewCurrentSessionByID(id);
         }
+
+        public IDataReader GetUserType(string email)
+        {
+            return userType.GetUserType(email);
+        }
+
     }
 }
