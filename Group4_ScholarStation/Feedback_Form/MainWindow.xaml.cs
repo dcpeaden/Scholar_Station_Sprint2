@@ -32,9 +32,27 @@ namespace Feedback_Form
             this.handler = new SQLHandlerControler();
         }
 
+        public void SendFeedback()
+        {
+            if (String.IsNullOrEmpty(sessionIDBox.Text) || String.IsNullOrEmpty(feedbackBox.Text))
+            {
+                 MessageBox.Show("You must enter session id!");
+            }
+            else if(String.IsNullOrEmpty(feedbackBox.Text))
+            {
+                MessageBox.Show("You must enter feedback!");
+            }
+            else
+            {
+                handler.LeaveSessionFeedback(user.Email, sessionIDBox.Text, feedbackBox.Text);
+                MessageBox.Show("Feedback Sent");
+                this.Close();
+            }
+        }
+
         private void SubmitButton_Click(object sender, RoutedEventArgs e)
         {
-            handler.LeaveSessionFeedback(user.Email, sessionIDBox.Text, feedbackBox.Text);
+            SendFeedback();
         }
 
         private void CancelButton_Click(object sender, RoutedEventArgs e)
