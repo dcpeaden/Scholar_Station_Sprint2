@@ -20,6 +20,7 @@ namespace SQLHandler
         private IViewCurrentSessions viewSessions;
         private ICancelSession cancelSession;
         private IUserType userType;
+        private ILeaveSessionFeedback feedback;
 
         public SQLHandlerControler()
         {
@@ -33,6 +34,7 @@ namespace SQLHandler
             this.viewSessions = new ViewCurrentSessions();
             this.cancelSession = new CancelSessions();
             this.userType = new QueryUserType();
+            this.feedback = new AddSessionFeedback();
         }
 
         public IDataReader GetAllCourses()
@@ -111,5 +113,9 @@ namespace SQLHandler
             return userType.GetUserType(email);
         }
 
+        public void LeaveSessionFeedback(string email, string sessionID, string feedBack)
+        {
+            feedback.LeaveFeedback(email, sessionID, feedBack);
+        }
     }
 }

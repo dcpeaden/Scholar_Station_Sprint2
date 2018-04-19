@@ -39,3 +39,9 @@ C:\Users\Kenneth Dale\Desktop\CEN3032\Scholar_Station_Sprint2\Group4_ScholarStat
 C:\Users\Kenneth Dale\Desktop\CEN3032\Scholar_Station_Sprint2\Group4_ScholarStation\ScholarStationCL\obj\Debug\ScholarStationCL.csproj.CoreCompileInputs.cache
 C:\Users\Kenneth Dale\Desktop\CEN3032\Scholar_Station_Sprint2\Group4_ScholarStation\ScholarStationCL\obj\Debug\ScholarStationCL.dll
 C:\Users\Kenneth Dale\Desktop\CEN3032\Scholar_Station_Sprint2\Group4_ScholarStation\ScholarStationCL\obj\Debug\ScholarStationCL.pdb
+C:\Users\ryans\Desktop\REPO\Scholar_Station_Sprint2\Group4_ScholarStation\ScholarStationCL\bin\Debug\ScholarStationCL.dll
+C:\Users\ryans\Desktop\REPO\Scholar_Station_Sprint2\Group4_ScholarStation\ScholarStationCL\bin\Debug\ScholarStationCL.pdb
+C:\Users\ryans\Desktop\REPO\Scholar_Station_Sprint2\Group4_ScholarStation\ScholarStationCL\obj\Debug\ScholarStationCL.csprojResolveAssemblyReference.cache
+C:\Users\ryans\Desktop\REPO\Scholar_Station_Sprint2\Group4_ScholarStation\ScholarStationCL\obj\Debug\ScholarStationCL.csproj.CoreCompileInputs.cache
+C:\Users\ryans\Desktop\REPO\Scholar_Station_Sprint2\Group4_ScholarStation\ScholarStationCL\obj\Debug\ScholarStationCL.dll
+C:\Users\ryans\Desktop\REPO\Scholar_Station_Sprint2\Group4_ScholarStation\ScholarStationCL\obj\Debug\ScholarStationCL.pdb

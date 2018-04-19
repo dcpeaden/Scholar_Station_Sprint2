@@ -37,5 +37,7 @@ using System.Threading.Tasks;
 
         IDataReader GetUserType(string email);
 
+        void LeaveSessionFeedback(string email, string sessionID, string feedback);
+
     }
 }
