@@ -38,6 +38,10 @@
   <PropertyGroup>
     <ApplicationIcon>images\graduation_education_icon.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -148,6 +152,10 @@
     <ProjectReference Include="..\ScholarStationCL\ScholarStationCL.csproj">
       <Project>{49232f00-5d51-4613-8c29-ce2d88205a42}</Project>
       <Name>ScholarStationCL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SessionFinder\SessionFinder.csproj">
+      <Project>{1f7a0069-bfa7-431d-bb0f-6eb92ecf369b}</Project>
+      <Name>SessionFinder</Name>
     </ProjectReference>
     <ProjectReference Include="..\SQLHandler\SQLHandler.csproj">
       <Project>{ab065320-e116-45af-aefd-4ba524d615f6}</Project>

@@ -16,7 +16,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using SessionFinder;
 namespace Scholar_Station
 {
     /// <summary>
@@ -56,7 +56,8 @@ namespace Scholar_Station
 
         private void joinSession_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new joinSessionFrame(user));
+            SessionFinder.MainWindow session = new SessionFinder.MainWindow(user);
+            session.Show();
         }
 
         private void logOut_Click(object sender, RoutedEventArgs e)
