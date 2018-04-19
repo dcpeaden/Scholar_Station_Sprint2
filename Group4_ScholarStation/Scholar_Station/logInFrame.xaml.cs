@@ -33,7 +33,9 @@ namespace Scholar_Station
         {
             int thisType = 0;
             string type = "";
+
             IDataReader userType = sqlHandler.GetUserType(email);
+
             while (userType.Read())
             {
                 type = userType.GetValue(0).ToString();
@@ -42,8 +44,8 @@ namespace Scholar_Station
             
             if (thisType == 0) return UserType.Administrator;
             else if(thisType == 1) return UserType.Standard;
-            if (thisType == 0) return UserType.Professor;
-
+            if (thisType == 2) return UserType.Professor;
+           
             return UserType.Null;
         }
 
@@ -52,7 +54,7 @@ namespace Scholar_Station
             if (Regex.IsMatch(emailBox.Text, @"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$"))
            {
                 user = new UserFactory();
-                User newUser = user.CreateUser("name", 1, getUserType(emailBox.Text)/*UserType.Standard*/, emailBox.Text);
+                User newUser = user.CreateUser("name", 1, getUserType(emailBox.Text), emailBox.Text);
 
                 if (emailBox.Text != null)
                 {
