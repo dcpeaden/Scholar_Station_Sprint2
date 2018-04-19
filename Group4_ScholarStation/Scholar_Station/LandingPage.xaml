@@ -19,7 +19,8 @@
             <Button x:Name="cancelSession" Content="Cancel Session" HorizontalAlignment="Left" Margin="30,185,0,0" VerticalAlignment="Bottom" Width="114" IsEnabled="False" Click="cancelSession_Click"/>
             <Button x:Name="closeSession" Content="Close Session" HorizontalAlignment="Right" Margin="257,185,0,0" VerticalAlignment="Bottom" Width="114" IsEnabled="True" Click="closeSession_Click"/>
         </Canvas>
-        <Canvas x:Name="stdUser" Width="525" Height="302" VerticalAlignment="Bottom" Visibility="Visible">
+        
+        <Canvas x:Name="stdUser" Width="525" Height="302" VerticalAlignment="Bottom" Visibility="Hidden">
             <TextBlock Margin="354,10,-369,-10" Grid.Column="1" FontSize="14"><Hyperlink Click="logOut_Click">Log Out</Hyperlink></TextBlock>
             <Label x:Name="tutorSessionsLabel" Content="Sessions you're tutoring:" HorizontalAlignment="Left" Margin="23.05,83,0,0" VerticalAlignment="Top" Width="181" FontSize="14" FontWeight="Bold" Grid.Column="1"/>
             <Label x:Name="studentSessionsLabel" Content="Sessions you're attending:" HorizontalAlignment="Left" Margin="23.05,159,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Grid.Column="1"/>

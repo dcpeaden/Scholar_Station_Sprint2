@@ -38,8 +38,23 @@ namespace Scholar_Station
             welcome.Content = "Welcome, " + user.Email + "!";
             populateSessionsComboBox();
             populateStudentSessionsComboBox();
+            routeToView(user.Type);
             
             
+        }
+
+        private void routeToView(UserType type)
+        {
+            if(type == UserType.Standard)
+            {
+                professor.Visibility = Visibility.Hidden;
+                stdUser.Visibility = Visibility.Visible;
+            }
+            else if(type == UserType.Professor)
+            {
+                professor.Visibility = Visibility.Visible;
+                stdUser.Visibility = Visibility.Hidden;
+            }
         }
 
         private void createSession_Click(object sender, RoutedEventArgs e)
@@ -154,7 +169,22 @@ namespace Scholar_Station
             sessionDetails.Visibility = Visibility.Visible;
             professor.Visibility = Visibility.Hidden;
             stdUser.Visibility = Visibility.Hidden;
-            details.Content = "Session ID:  " + studentSessionIDs[studentSessionsSelect.SelectedIndex].ToString();
+
+            string str = "";
+            currentID = studentSessionIDs[studentSessionsSelect.SelectedIndex].ToString();
+
+            IDataReader sessions = sqlHandler.ViewCurrentSessionByID(studentSessionIDs[tutorSessionsSelect.SelectedIndex].ToString());
+
+            while (sessions.Read())
+            {
+                str += "Session ID:  " + studentSessionIDs[studentSessionsSelect.SelectedIndex].ToString() + "\n"
+                                 + "Date:  " + getDate(sessions, 2) + "\n"
+                                 + "Start Time:  " + sessions.GetValue(3).ToString() + "\n"
+                                 + "Duration:  " + sessions.GetValue(4).ToString() + " minutes\n"
+                                 + "Course of interest:  " + sessions.GetValue(7).ToString() + "\n"
+                                 + "Tutor:  " + sessions.GetValue(0).ToString();
+            }
+            details.Content = str;
         }
 
         private void cancelSession_Click(object sender, RoutedEventArgs e)
