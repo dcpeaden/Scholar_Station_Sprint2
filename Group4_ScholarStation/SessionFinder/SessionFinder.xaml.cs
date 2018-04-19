@@ -138,7 +138,7 @@ namespace SessionFinder
 
         private void cancleSession_Click(object sender, RoutedEventArgs e)
         {
-            this.Hide();
+            this.Close();
         }
     }
 }

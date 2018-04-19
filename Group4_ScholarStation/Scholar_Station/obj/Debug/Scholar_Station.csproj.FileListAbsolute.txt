@@ -358,3 +358,5 @@ C:\Users\ryans\Desktop\repo\Scholar_Station_Sprint2\Group4_ScholarStation\Schola
 C:\Users\ryans\Desktop\repo\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\EmailControler.dll
 C:\Users\ryans\Desktop\repo\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\SessionFinder.pdb
 C:\Users\ryans\Desktop\repo\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\EmailControler.pdb
+C:\Users\ryans\Desktop\REPO\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\Feedback_Form.exe
+C:\Users\ryans\Desktop\REPO\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\Feedback_Form.pdb

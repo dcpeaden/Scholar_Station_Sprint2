@@ -21,7 +21,7 @@ namespace Scholar_Station
             splashWindow = new SplashScreenWindow();
             splashWindow.Show();
             dispatcherTimer.Tick += new EventHandler(dispatcherTimer_Tick);
-            dispatcherTimer.Interval = new TimeSpan(0, 0, 7);
+            dispatcherTimer.Interval = new TimeSpan(0, 0, 3);
             dispatcherTimer.Start();
         }
 
