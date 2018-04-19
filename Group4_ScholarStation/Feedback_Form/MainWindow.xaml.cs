@@ -34,7 +34,7 @@ namespace Feedback_Form
 
         public void SendFeedback()
         {
-            if (String.IsNullOrEmpty(sessionIDBox.Text) || String.IsNullOrEmpty(feedbackBox.Text))
+            if (String.IsNullOrEmpty(sessionIDBox.Text))
             {
                  MessageBox.Show("You must enter session id!");
             }
