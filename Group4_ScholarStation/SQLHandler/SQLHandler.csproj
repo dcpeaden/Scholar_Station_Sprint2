@@ -49,7 +49,9 @@
     <Compile Include="Interfaces\ISessions.cs" />
     <Compile Include="Interfaces\ISQLHandler.cs" />
     <Compile Include="Interfaces\ITutor.cs" />
+    <Compile Include="Interfaces\IUserType.cs" />
     <Compile Include="Interfaces\IViewCurrentSessions.cs" />
+    <Compile Include="QueryClasses\QueryUserType.cs" />
     <Compile Include="QueryClasses\ViewCurrentSessions.cs" />
     <Compile Include="QueryClasses\CancelSessions.cs" />
     <Compile Include="QueryClasses\CreateSession.cs" />

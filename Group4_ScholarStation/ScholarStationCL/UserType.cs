@@ -8,10 +8,10 @@ namespace ScholarStation
 {
     public enum UserType
     {
+        Administrator,
         Standard,
         Professor,
-        Department,
-        Administrator, 
+        Department, 
         Null
     }
 }

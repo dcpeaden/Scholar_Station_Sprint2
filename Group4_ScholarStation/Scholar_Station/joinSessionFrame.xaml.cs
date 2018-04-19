@@ -31,7 +31,7 @@ namespace Scholar_Station
             this.user = newStudentUser;
             InitializeComponent();
             AddDepartmentsToComboBox();
-            ViewurrentEnrolledSessions();
+            ViewCurrentEnrolledSessions();
         }
 
         /* Add departments to comboBox
@@ -106,10 +106,10 @@ namespace Scholar_Station
                 MessageBox.Show("Session Joined!");
             }
             else MessageBox.Show("You must select course, tutor, and session!");
-            ViewurrentEnrolledSessions();
+            ViewCurrentEnrolledSessions();
         }
 
-        public void ViewurrentEnrolledSessions()
+        public void ViewCurrentEnrolledSessions()
         {
             readFromDatabase = new ConnectionControler();
 
