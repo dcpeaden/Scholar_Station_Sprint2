@@ -17,9 +17,13 @@ using System.Threading.Tasks;
 
         IDataReader GetCourse(string selectedDepartment);
 
+        IDataReader GetCourseByProfessor(string email);
+
         IDataReader GetTutor(string selectedTutor);
 
         IDataReader GetAvailableSessions(string email);
+
+        IDataReader GetCompletedSessionsByCourse(string courseNum);
 
         void JoinSession(string userEmail, string sessionID);
 

@@ -13,5 +13,7 @@ namespace SQLHandler
         IDataReader GetCourse(string selectedDepartment);
 
         IDataReader GetAllCourses();
+
+        IDataReader GetCourseByProfessor(string email);
     }
 }

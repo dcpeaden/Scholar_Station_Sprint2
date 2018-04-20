@@ -48,6 +48,11 @@ namespace SQLHandler
             return session.GetAvailableSessions(email);
         }
 
+        public IDataReader GetCompletedSessionsByCourse(string courseNum)
+        {
+            return session.GetCompletedSessionsByCourse(courseNum);
+        }
+
         public IDataReader GetCourse(string selectedDepartment)
         {
             return course.GetCourse(selectedDepartment);
@@ -56,6 +61,11 @@ namespace SQLHandler
         public IDataReader GetCourse()
         {
             throw new NotImplementedException();
+        }
+
+        public IDataReader GetCourseByProfessor(string email)
+        {
+            return course.GetCourseByProfessor(email);
         }
 
         public IDataReader GetDepartment()
