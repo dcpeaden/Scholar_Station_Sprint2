@@ -10,5 +10,6 @@ namespace SQLHandler
     public interface ISessions
     {
         IDataReader GetAvailableSessions(string StudentEmail);
+        IDataReader GetCompletedSessionsByCourse(string courseNum);
     }
 }

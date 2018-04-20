@@ -48,6 +48,11 @@ namespace SQLHandler
             return session.GetAvailableSessions(email);
         }
 
+        public IDataReader GetCompletedSessionsByCourse(string courseNum)
+        {
+            return session.GetCompletedSessionsByCourse(courseNum);
+        }
+
         public IDataReader GetCourse(string selectedDepartment)
         {
             return course.GetCourse(selectedDepartment);

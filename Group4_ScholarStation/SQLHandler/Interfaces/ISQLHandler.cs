@@ -23,6 +23,8 @@ using System.Threading.Tasks;
 
         IDataReader GetAvailableSessions(string email);
 
+        IDataReader GetCompletedSessionsByCourse(string courseNum);
+
         void JoinSession(string userEmail, string sessionID);
 
         void CreateSession(string email, string date, string time, string length, string classes);

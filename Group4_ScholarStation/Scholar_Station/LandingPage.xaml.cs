@@ -30,6 +30,7 @@ namespace Scholar_Station
         private IList<string> tutorSessionIDs;
         private IList<string> studentSessionIDs;
         private IList<string> professorCourses;
+        private IList<string> feedbackSessionIDs;
 
         public LandingPage(User user)
         {
@@ -40,6 +41,7 @@ namespace Scholar_Station
             populateSessionsComboBox();
             populateStudentSessionsComboBox();
             populateProfessorCoursesComboBox();
+            
             routeView(user.Type);
 
         }
@@ -236,8 +238,43 @@ namespace Scholar_Station
 
         private void professorCourseDetails_Click(object sender, RoutedEventArgs e)
         {
-           
+            populateSessionSelectComboBox();
+            sessionsLabel.Content = "Tutoring sessions related to " + professorCourses[professorCourseSelect.SelectedIndex] + ":";
+            sessionsLabel.Visibility = Visibility.Visible;
+            sessionSelect.Visibility = Visibility.Visible;
+            viewSessionFeedback.Visibility = Visibility.Visible;
         }
 
+        private void sessionSelect_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (sessionSelect.SelectedIndex == 0) viewSessionFeedback.IsEnabled = false;
+            else viewSessionFeedback.IsEnabled = true;
+        }
+
+        private void viewSessionFeedback_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void populateSessionSelectComboBox()
+        {
+            sessionSelect.Items.Add("--Select Session--");
+            sessionSelect.SelectedIndex = 0;
+
+            AddFeedbackSessionsToComboBox();
+        }
+
+        public void AddFeedbackSessionsToComboBox()
+        {
+            IDataReader sessions = sqlHandler.GetCompletedSessionsByCourse(professorCourses[professorCourseSelect.SelectedIndex].ToString()); ;
+            feedbackSessionIDs = new List<string>();
+            feedbackSessionIDs.Add("null");
+            while (sessions.Read())
+            {
+                feedbackSessionIDs.Add(sessions.GetValue(8).ToString());
+                sessionSelect.Items.Add(getDate(sessions, 2) + "   "
+                                                    + sessions.GetValue(3).ToString());
+            }
+        }
     }
 }

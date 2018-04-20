@@ -23,7 +23,7 @@ namespace EmailControler
             try { 
             SmtpClient SmtpServer = new SmtpClient("smtp.live.com");
             var mail = new MailMessage();
-            mail.From = new MailAddress("scholarstation@hotmail.com");
+            mail.From = new MailAddress("scholarstation2018@hotmail.com");
             mail.To.Add(address.ToString());
             mail.Subject = subject.ToString();
             mail.IsBodyHtml = true;
@@ -32,7 +32,7 @@ namespace EmailControler
             mail.Body = htmlBody;
             SmtpServer.Port = 587;
             SmtpServer.UseDefaultCredentials = false;
-            SmtpServer.Credentials = new System.Net.NetworkCredential("scholarstation@hotmail.com", "se2se2se2se2!");
+            SmtpServer.Credentials = new System.Net.NetworkCredential("scholarstation2018@hotmail.com", "se2se2se2se2!");
             SmtpServer.EnableSsl = true;
             SmtpServer.Send(mail);
             result = "Message Sent Successfully";
