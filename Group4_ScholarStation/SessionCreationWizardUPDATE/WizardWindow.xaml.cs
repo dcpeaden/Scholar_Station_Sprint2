@@ -24,9 +24,17 @@ namespace SessionCreationWizardUPDATE
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        public void FirstNameTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
+            if(string.IsNullOrEmpty(FirstNameTextBox.Text))
+            {
+                Page1.CanSelectNextPage = false;
+            }
 
+            else
+            {
+                Page1.CanSelectNextPage = true;
+            }
         }
     }
 }

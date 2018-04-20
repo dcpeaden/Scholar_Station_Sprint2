@@ -24,5 +24,12 @@ namespace SessionCreationWizardUPDATE
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            WizardWindow win = new WizardWindow();
+            win.ShowDialog();
+            MessageBox.Show("Hello " + win.FirstNameTextBox.Text + "!");
+        }
     }
 }
