@@ -8,7 +8,7 @@
       d:DesignHeight="300" d:DesignWidth="300"
       Title="logInFrame" Width="525" Height="350">
 
-    <Grid>
+    <Grid Background="White" Height="351">
         <Grid.RowDefinitions>
             <RowDefinition Height="3*"/>
             <RowDefinition Height="347*"/>

@@ -36,7 +36,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>images\graduation_education_icon.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -63,29 +64,26 @@
     </ApplicationDefinition>
     <Compile Include="DateTime\Date.cs" />
     <Compile Include="DateTime\IDate.cs" />
-    <Compile Include="IntroPage.cs">
-      <SubType>Form</SubType>
+    <Compile Include="IntroPage1.xaml.cs">
+      <DependentUpon>IntroPage1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>IntroPage.cs</DependentUpon>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="SessionLength\ISessionLength.cs" />
     <Compile Include="DateTime\ITime.cs" />
     <Compile Include="SessionLength\SessionLength.cs" />
-    <Compile Include="SplashScreenWindow.xaml.cs">
-      <DependentUpon>SplashScreenWindow.xaml</DependentUpon>
-    </Compile>
     <Compile Include="DateTime\Time.cs" />
     <Compile Include="tutorPage.xaml.cs">
       <DependentUpon>tutorPage.xaml</DependentUpon>
     </Compile>
-    <Page Include="logInFrame.xaml">
+    <Page Include="IntroPage1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
+    <Page Include="logInFrame.xaml">
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
@@ -94,15 +92,11 @@
     <Compile Include="logInFrame.xaml.cs">
       <DependentUpon>logInFrame.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
     <Page Include="joinSessionFrame.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="SplashScreenWindow.xaml">
+    <Page Include="MainWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -128,9 +122,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="IntroPage.resx">
-      <DependentUpon>IntroPage.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -169,9 +160,31 @@
     <Resource Include="images\TrainStation.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="images\graduation_education_icon.ico" />
+    <Resource Include="images\872773_find_512x512.png" />
+    <Resource Include="images\orange-graduation-cap-512.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="images\IntroPageSS1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\padlock-10-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\orange-graduation-cap-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\orange-graduation-cap-128.png" />
+    <Resource Include="images\orange-graduation-cap-256.png" />
+    <Resource Include="images\orange-graduation-cap-48.png" />
+    <Resource Include="images\orange-graduation-cap-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\White.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\glass32.png" />
+    <Resource Include="images\glass48.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("graduation_education_icon.ico")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/glass32.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/glass48.png")]
 
 

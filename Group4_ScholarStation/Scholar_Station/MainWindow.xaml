@@ -5,32 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Scholar_Station"
         mc:Ignorable="d"
-        Title="Scholar Station" Height="379" Width="525" ResizeMode="NoResize"
-        WindowStartupLocation="CenterScreen">
-    
-    
-  
-    <Window.Background>
-        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-            <GradientStop Color="Black" Offset="0"/>
-            <GradientStop Color="#FF6D7DC7" Offset="0.461"/>
-            <GradientStop Color="#FF003241" Offset="0.117"/>
-        </LinearGradientBrush>
-    </Window.Background>
-
-
+        Title="" Height="350" Width="525" Background="{x:Null}" WindowStartupLocation="CenterScreen" ShowInTaskbar="False" Icon="images/White.png" WindowStyle="None">
     <Grid>
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
             <ColumnDefinition/>
             <ColumnDefinition Width="0*"/>
-            <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
-        <Frame x:Name="mainWindowFrame" Content="" HorizontalAlignment="Left" Height="350" VerticalAlignment="Top" Width="525" NavigationUIVisibility="Hidden" Grid.ColumnSpan="3" Margin="0,0,-6,0">
-            <Frame.Background>
-                <ImageBrush ImageSource="images/blue-wallpaper3.png"/>
-            </Frame.Background>
-
-        </Frame>
+        <Frame x:Name="MainWindowFrame" Content="Frame" HorizontalAlignment="Left" Height="342" VerticalAlignment="Top" Width="517" Navigated="MainWindowFrame_Navigated" Grid.ColumnSpan="2" Margin="0,0,0,-21" NavigationUIVisibility="Hidden"/>
 
     </Grid>
 </Window>

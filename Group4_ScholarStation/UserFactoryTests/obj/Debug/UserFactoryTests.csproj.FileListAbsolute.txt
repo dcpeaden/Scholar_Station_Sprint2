@@ -42,3 +42,4 @@ C:\Users\Joshua\Documents\School\SEII\Scholar_Station_Sprint2\Group4_ScholarStat
 C:\Users\Joshua\Documents\School\SEII\Scholar_Station_Sprint2\Group4_ScholarStation\UserFactoryTests\obj\Debug\UserFactoryTests.csproj.CoreCompileInputs.cache
 C:\Users\Joshua\Documents\School\SEII\Scholar_Station_Sprint2\Group4_ScholarStation\UserFactoryTests\obj\Debug\UserFactoryTests.dll
 C:\Users\Joshua\Documents\School\SEII\Scholar_Station_Sprint2\Group4_ScholarStation\UserFactoryTests\obj\Debug\UserFactoryTests.pdb
+C:\Users\Joshua\Documents\School\SEII\Scholar_Station_Sprint2\Group4_ScholarStation\UserFactoryTests\obj\Debug\UserFactoryTests.csproj.CopyComplete

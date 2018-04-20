@@ -80,3 +80,6 @@ C:\Users\Joshua\Documents\School\SEII\Scholar_Station_Sprint2\Group4_ScholarStat
 C:\Users\Joshua\Documents\School\SEII\Scholar_Station_Sprint2\Group4_ScholarStation\DataControlerUnitTest\obj\Debug\DataControlerUnitTest.csproj.CoreCompileInputs.cache
 C:\Users\Joshua\Documents\School\SEII\Scholar_Station_Sprint2\Group4_ScholarStation\DataControlerUnitTest\obj\Debug\DataControlerUnitTest.dll
 C:\Users\Joshua\Documents\School\SEII\Scholar_Station_Sprint2\Group4_ScholarStation\DataControlerUnitTest\obj\Debug\DataControlerUnitTest.pdb
+C:\Users\Joshua\Documents\School\SEII\Scholar_Station_Sprint2\Group4_ScholarStation\DataControlerUnitTest\bin\Debug\CustomImageButton.dll
+C:\Users\Joshua\Documents\School\SEII\Scholar_Station_Sprint2\Group4_ScholarStation\DataControlerUnitTest\bin\Debug\CustomImageButton.pdb
+C:\Users\Joshua\Documents\School\SEII\Scholar_Station_Sprint2\Group4_ScholarStation\DataControlerUnitTest\obj\Debug\DataControlerUnitTest.csproj.CopyComplete
