@@ -23,6 +23,7 @@ namespace SessionCreationWizardUPDATE
         public WizardWindow()
         {
             InitializeComponent();
+            _combo.Width = 20;
             foreach (var item in sessionTypes)
             {
                 _combo.Items.Add(item);
