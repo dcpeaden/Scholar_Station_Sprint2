@@ -20,7 +20,7 @@ namespace EmailControler
         public string SelectedEmailType(string reciverEmail, string sessionID)
         {
             body = "Student " + reciverEmail + " has joined tutoring session " + sessionID + ".";
-            return mailControler.SendEmail(reciverEmail, "Cancled Session", body);
+            return mailControler.SendEmail(reciverEmail, "Joined Session", body);
         }
     }
 }

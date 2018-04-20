@@ -22,18 +22,21 @@ namespace SQLHandler.QueryClasses
 
         public void LeaveFeedback(string userEmail, string sessionId, string feedback)
         {
-            string isUserTutor = "Select * From t_sessions Where ses_tutor_email = '" + userEmail + "' AND sessionID = '" + sessionId + "'";
+            string isUserTutor = "Select * From t_session Where ses_tutor_email = '" + userEmail + "' AND sessionID = '" + sessionId + "'";
             string courseID = " ";
-            string courseIDQuery = "SELECT t_session.ses_course " + 
-                                   "FROM t_session " +
-                                   "WHERE t_session.sessionId = '" + sessionId + 
-                                   "' AND ses_tutor_email = '" + userEmail + "'";
-            IDataReader getCourseIDForSession = reader.DataReader(courseIDQuery);
-
+            IDataReader getCourseIDForSession;
 
             if (reader.DataReader(isUserTutor) == null)
             {
-                while (getCourseIDForSession.Read()){
+                string courseIDQuery = "SELECT ses_course " +
+                                       "FROM t_session " +
+                                       "WHERE sessionId = '" + sessionId +
+                                       "' AND ses_tutor_email = '" + userEmail + "'";
+
+                getCourseIDForSession = reader.DataReader(courseIDQuery);
+
+                while (getCourseIDForSession.Read())
+                {
                     courseID = getCourseIDForSession.GetValue(0).ToString();
                 }
                 string addToFeedbackTable = "INSERT INTO tutorFeedback  (courseID , sessionID , feedback) VALUES('" + courseID + "','" + sessionId + "','" + feedback + "')";
@@ -41,6 +44,14 @@ namespace SQLHandler.QueryClasses
             }
             else
             {
+
+                string courseIDQuery = "SELECT ses_course " +
+                                       "FROM t_session " +
+                                       "WHERE sessionId = '" + sessionId +
+                                       "' AND ses_student_email = '" + userEmail + "'";
+
+                getCourseIDForSession = reader.DataReader(courseIDQuery);
+
                 while (getCourseIDForSession.Read())
                 {
                     courseID = getCourseIDForSession.GetValue(0).ToString();

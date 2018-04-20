@@ -13,23 +13,17 @@
             <RowDefinition Height="3*"/>
             <RowDefinition Height="347*"/>
         </Grid.RowDefinitions>
-        <ComboBox x:Name="userSelectBox" HorizontalAlignment="Left" Margin="177,132,0,0" Grid.Row="1" VerticalAlignment="Top" Width="144">
-            <ComboBox.Effect>
-                <DropShadowEffect/>
-            </ComboBox.Effect>
-        </ComboBox>
-        <Button x:Name="LogInButton" Content="Log In" HorizontalAlignment="Left" Margin="188,221,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" Click="LogInButton_Click" FontWeight="Bold">
+        <Button x:Name="LogInButton" Content="Log In" HorizontalAlignment="Left" Margin="188,194.667,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" Click="LogInButton_Click" FontWeight="Bold">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <Label x:Name="label" Content="Select User" HorizontalAlignment="Left" Margin="175,106,0,0" Grid.Row="1" VerticalAlignment="Top" Width="133" RenderTransformOrigin="0.509,0.553" FontWeight="Bold"/>
-        <Label x:Name="label1" Content="User Sign In" HorizontalAlignment="Left" Margin="175,64,0,0" Grid.Row="1" VerticalAlignment="Top" Width="155" FontSize="24" FontWeight="Bold"/>
-        <TextBox x:Name="emailBox" HorizontalAlignment="Left" Height="23" AcceptsReturn="False" Margin="177,179,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" >
+        <Label x:Name="label1" Content="User Sign In" HorizontalAlignment="Left" Margin="175,79.667,0,0" Grid.Row="1" VerticalAlignment="Top" Width="155" FontSize="24" FontWeight="Bold"/>
+        <TextBox x:Name="emailBox" HorizontalAlignment="Left" Height="23" AcceptsReturn="False" Margin="177,152.667,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" >
             <TextBox.Effect>
                 <DropShadowEffect/>
             </TextBox.Effect>
         </TextBox>
-        <Label x:Name="label_Copy" Content="Enter Email" HorizontalAlignment="Left" Margin="175,153,0,0" Grid.Row="1" VerticalAlignment="Top" Width="133" RenderTransformOrigin="0.509,0.553" FontWeight="Bold"/>
+        <Label x:Name="label_Copy" Content="Enter Email" HorizontalAlignment="Left" Margin="175,126.667,0,0" Grid.Row="1" VerticalAlignment="Top" Width="133" RenderTransformOrigin="0.509,0.553" FontWeight="Bold"/>
     </Grid>
 </Page>
