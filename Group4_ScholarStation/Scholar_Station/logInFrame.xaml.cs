@@ -20,8 +20,6 @@ namespace Scholar_Station
         {
             InitializeComponent();
             sqlHandler = new SQLHandlerControler();
-            userSelectBox.Items.Add("Tutor");
-            userSelectBox.Items.Add("Student");
         }
 
         private void LogInButton_Click(object sender, RoutedEventArgs e)
