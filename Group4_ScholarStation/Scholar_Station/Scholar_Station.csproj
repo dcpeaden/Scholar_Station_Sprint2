@@ -136,10 +136,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CustomImageButton\CustomImageButton.csproj">
-      <Project>{98F6507E-A7F8-4328-836D-6F244FF3D804}</Project>
-      <Name>CustomImageButton</Name>
-    </ProjectReference>
     <ProjectReference Include="..\DataAccessControler\DataAccessControler.csproj">
       <Project>{e6f2e850-bc91-4f6b-8e7e-a991c50eab4b}</Project>
       <Name>DataAccessControler</Name>
