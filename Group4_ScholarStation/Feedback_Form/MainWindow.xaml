@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Feedback_Form"
         mc:Ignorable="d"
-        Title="Feedback Form" Height="350" Width="418.909" Icon="graduation_education_icon.ico">
+        Title="Feedback Form" Height="350" Width="418.909" Icon="graduation_education_icon.ico" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid Background="#FFF1F1F1" HorizontalAlignment="Left" Width="409">
         <TextBox x:Name="sessionIDBox" HorizontalAlignment="Left" Height="23" Margin="23,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="feedbackBox" HorizontalAlignment="Left" Height="154" Margin="23,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="365" SpellCheck.IsEnabled="True"/>
