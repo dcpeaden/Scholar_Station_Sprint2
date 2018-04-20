@@ -19,21 +19,13 @@ namespace SessionCreationWizardUPDATE
     /// </summary>
     public partial class WizardWindow : Window
     {
+        private List<string> sessionTypes = new List<string> { "Tutor Session", "Study Session" };
         public WizardWindow()
         {
             InitializeComponent();
-        }
-
-        public void FirstNameTextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if(string.IsNullOrEmpty(FirstNameTextBox.Text))
+            foreach (var item in sessionTypes)
             {
-                Page1.CanSelectNextPage = false;
-            }
-
-            else
-            {
-                Page1.CanSelectNextPage = true;
+                _combo.Items.Add(item);
             }
         }
     }

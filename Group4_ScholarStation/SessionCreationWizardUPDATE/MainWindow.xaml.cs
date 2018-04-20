@@ -29,7 +29,7 @@ namespace SessionCreationWizardUPDATE
         {
             WizardWindow win = new WizardWindow();
             win.ShowDialog();
-            MessageBox.Show("Hello " + win.FirstNameTextBox.Text + "!");
+            MessageBox.Show("Done");
         }
     }
 }

@@ -14,7 +14,7 @@
                                    Description="This Wizard will walk you though how to create a new session." />
             <xctk:WizardPage x:Name="Page1" PageType="Interior"
                                    Title="Page 1"
-                                   Description="This is the first page in the process."
+                                   Description="Please select a session type."
                                    NextPage="{Binding ElementName=Page2}"
                                    PreviousPage="{Binding ElementName=IntroPage}"
                              CanSelectNextPage="False">
@@ -28,8 +28,14 @@
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-                    <TextBlock Text="First Name:"/>
-                    <TextBox Grid.Column="2" Name="FirstNameTextBox" TextChanged="FirstNameTextBox_TextChanged"/>
+                    <TextBlock Text="Type:"/>
+                    <xctk:CheckComboBox x:Name="_combo" 
+                             HorizontalAlignment="Center" 
+                             VerticalAlignment="Center" 
+                             DisplayMemberPath="Color"
+                             ValueMemberPath="Level"
+                             SelectedValue="{Binding SelectedValue}"
+                             />
                 </Grid>
             </xctk:WizardPage>
             <xctk:WizardPage x:Name="Page2" PageType="Interior"
