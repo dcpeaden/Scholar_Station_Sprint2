@@ -364,3 +364,11 @@ C:\Users\ryans\Desktop\REPO\Scholar_Station_Sprint2\Group4_ScholarStation\Schola
 C:\Users\ryans\Desktop\REPO\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\Feedback_Form.exe
 C:\Users\ryans\Desktop\REPO\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\Feedback_Form.pdb
 C:\Users\ryans\Desktop\REPO\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\Feedback_Form.exe.config
+C:\Users\Kenneth Dale\Desktop\CEN3032\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\Feedback_Form.exe
+C:\Users\Kenneth Dale\Desktop\CEN3032\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\SessionFinder.exe
+C:\Users\Kenneth Dale\Desktop\CEN3032\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\EmailControler.dll
+C:\Users\Kenneth Dale\Desktop\CEN3032\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\Feedback_Form.pdb
+C:\Users\Kenneth Dale\Desktop\CEN3032\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\Feedback_Form.exe.config
+C:\Users\Kenneth Dale\Desktop\CEN3032\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\SessionFinder.pdb
+C:\Users\Kenneth Dale\Desktop\CEN3032\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\SessionFinder.exe.config
+C:\Users\Kenneth Dale\Desktop\CEN3032\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\EmailControler.pdb

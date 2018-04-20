@@ -50,12 +50,28 @@ namespace Scholar_Station
             {
                 professor.Visibility = Visibility.Hidden;
                 stdUser.Visibility = Visibility.Visible;
+                contactAdmin.Visibility = Visibility.Hidden;
             }
             else if(type == UserType.Professor)
             {
                 professor.Visibility = Visibility.Visible;
                 stdUser.Visibility = Visibility.Hidden;
+                contactAdmin.Visibility = Visibility.Hidden;
             }
+            else
+            {
+                professor.Visibility = Visibility.Hidden;
+                stdUser.Visibility = Visibility.Hidden;
+                contactAdmin.Visibility = Visibility.Visible;
+                welcomeBanner.Visibility = Visibility.Hidden;
+                contactAdminLabel.Content = user.Email + " does not exist in system.\n" 
+                                            + "To use Scholar Station, please contact admin.";
+            }
+        }
+
+        private void toLogin_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new logInFrame());
         }
 
         private void createSession_Click(object sender, RoutedEventArgs e)
