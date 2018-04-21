@@ -83,7 +83,7 @@ namespace Scholar_Station
 
         private void joinSession_Click(object sender, RoutedEventArgs e)
         {
-            SessionFinder.MainWindow sessionSearch = new SessionFinder.MainWindow(user);
+            SessionFinder sessionSearch = new SessionFinder(user);
             sessionSearch.Show();
         }
 

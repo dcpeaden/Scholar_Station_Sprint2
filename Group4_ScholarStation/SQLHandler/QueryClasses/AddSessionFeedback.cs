@@ -26,7 +26,7 @@ namespace SQLHandler.QueryClasses
             string courseID = " ";
             IDataReader getCourseIDForSession;
 
-            if (reader.DataReader(isUserTutor) == null)
+            if (reader.DataReader(isUserTutor).HasRows)
             {
                 string courseIDQuery = "SELECT ses_course " +
                                        "FROM t_session " +
