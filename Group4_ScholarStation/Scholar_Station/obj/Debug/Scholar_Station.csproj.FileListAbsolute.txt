@@ -498,15 +498,12 @@ C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Sc
 C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\DataAccessControler.dll
 C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\Feedback_Form.exe
 C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\ScholarStationCL.dll
-C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\SessionFinder.exe
 C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\SQLHandler.dll
 C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\EmailControler.dll
 C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\DataAccessControler.pdb
 C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\Feedback_Form.pdb
 C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\Feedback_Form.exe.config
 C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\ScholarStationCL.pdb
-C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\SessionFinder.pdb
-C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\SessionFinder.exe.config
 C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\SQLHandler.pdb
 C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\EmailControler.pdb
 C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\Scholar_Station.csprojResolveAssemblyReference.cache

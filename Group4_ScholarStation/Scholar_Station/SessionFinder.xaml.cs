@@ -29,9 +29,12 @@ namespace Scholar_Station
         private IList<string> departments;
         private IList<string> classes;
         private ISQLHandler sqlHandler;
-        
-        public SessionFinder(User newStudentUser)
+        private LandingPage lp;
+
+
+        public SessionFinder(User newStudentUser, LandingPage p)
         {
+            lp = p;
             sqlHandler = new SQLHandlerControler();
             this.user = newStudentUser;
             InitializeComponent();
@@ -108,7 +111,7 @@ namespace Scholar_Station
             {
                 sqlHandler.JoinSession(user.Email, sessionIdList[sessionLengthBox.SelectedIndex].ToString());
                 MessageBox.Show("Session Joined!");
-                SendEmail();
+                //SendEmail();
             }
             else MessageBox.Show("You must select course, tutor, and session!");
         }
@@ -149,6 +152,8 @@ namespace Scholar_Station
         private void cancleSession_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+            lp.studentSessionsSelect.Items.Clear();
+            lp.AddStudentSessionsToComboBox();
         }
     }
 }

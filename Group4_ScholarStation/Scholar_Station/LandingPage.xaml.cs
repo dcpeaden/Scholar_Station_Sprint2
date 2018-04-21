@@ -83,7 +83,7 @@ namespace Scholar_Station
 
         private void joinSession_Click(object sender, RoutedEventArgs e)
         {
-            SessionFinder sessionSearch = new SessionFinder(user);
+            SessionFinder sessionSearch = new SessionFinder(user, this);
             sessionSearch.Show();
         }
 
@@ -117,7 +117,6 @@ namespace Scholar_Station
         {
             studentSessionsSelect.Items.Add("--Select Session--");
             studentSessionsSelect.SelectedIndex = 0;
-            
             AddStudentSessionsToComboBox();
         }
 

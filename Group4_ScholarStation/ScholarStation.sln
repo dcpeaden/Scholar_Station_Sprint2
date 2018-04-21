@@ -22,8 +22,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLHandler", "SQLHandler\SQ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailControler", "EmailControler\EmailControler.csproj", "{FC5F0708-CF5D-434D-9A17-9C896EC53F75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SessionFinder", "SessionFinder\SessionFinder.csproj", "{1F7A0069-BFA7-431D-BB0F-6EB92ECF369B}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Feedback_Form", "Feedback_Form\Feedback_Form.csproj", "{8B47CE0F-26D2-47A4-BCE2-F397BD9AA99E}"
 EndProject
 Global
@@ -60,10 +58,6 @@ Global
 		{FC5F0708-CF5D-434D-9A17-9C896EC53F75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC5F0708-CF5D-434D-9A17-9C896EC53F75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC5F0708-CF5D-434D-9A17-9C896EC53F75}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1F7A0069-BFA7-431D-BB0F-6EB92ECF369B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1F7A0069-BFA7-431D-BB0F-6EB92ECF369B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1F7A0069-BFA7-431D-BB0F-6EB92ECF369B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1F7A0069-BFA7-431D-BB0F-6EB92ECF369B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8B47CE0F-26D2-47A4-BCE2-F397BD9AA99E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8B47CE0F-26D2-47A4-BCE2-F397BD9AA99E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B47CE0F-26D2-47A4-BCE2-F397BD9AA99E}.Release|Any CPU.ActiveCfg = Release|Any CPU
