@@ -39,7 +39,7 @@ using System.Threading.Tasks;
 
         IDataReader ViewCurrentSessionByID(string id);
 
-        IDataReader GetUserType(string email);
+        IDataReader GetUserType(string email, string password);
 
         void LeaveSessionFeedback(string email, string sessionID, string feedback);
 

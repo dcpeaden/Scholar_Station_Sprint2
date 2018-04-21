@@ -20,9 +20,9 @@ namespace SQLHandler.QueryClasses
             this.read = new ConnectionControler();
         }
 
-        public IDataReader GetUserType(string email)
+        public IDataReader GetUserType(string email, string password)
         {
-            string myCommand = "select user_type from users where user_email = '" + email + "'";
+            string myCommand = "select user_type from users where user_email = '" + email + "' And user_password = '" + password + "'";
             SqlDataReader userType = read.DataReader(myCommand);
 
             return userType;
