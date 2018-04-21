@@ -16,21 +16,13 @@ namespace Scholar_Station
         private SplashScreenWindow splashWindow;
         public MainWindow()
         {
-            this.Hide();
             InitializeComponent();
-            splashWindow = new SplashScreenWindow();
-            splashWindow.Show();
-            dispatcherTimer.Tick += new EventHandler(dispatcherTimer_Tick);
-            dispatcherTimer.Interval = new TimeSpan(0, 0, 2);
-            dispatcherTimer.Start();
+            mainWindowFrame.NavigationService.Navigate(new IntroPage1());
         }
 
         private void dispatcherTimer_Tick(object sender, EventArgs e)
         {
-            splashWindow.Hide();
-            this.Show();
-            mainWindowFrame.NavigationService.Navigate(new logInFrame());
-            dispatcherTimer.Stop();
+            mainWindowFrame.NavigationService.Navigate(new IntroPage1());
         }
         protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
         {
