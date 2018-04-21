@@ -24,5 +24,10 @@ namespace SessionCreationWizardUPDATE
         {
             InitializeComponent();
         }
+
+        private void DatePickerDateChosen(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

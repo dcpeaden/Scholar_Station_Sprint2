@@ -9,6 +9,12 @@
       Title="Page2">
 
     <Grid>
-        <TextBlock Text="This will be the date selection page."/>
+        <TextBlock Text="Date Selection" HorizontalAlignment="Center"/>
+        <Label Content="Date:" VerticalAlignment="Center" Margin="50"/>
+        <DatePicker VerticalAlignment="Center" HorizontalAlignment="Center" CalendarClosed="DatePickerDateChosen"/>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Height="35">
+            <Button Content="Back" Margin="110,0,0,0" MaxHeight="20"/>
+            <Button Content="Next" Margin="15,0,0,0" MaxHeight="20"/>
+        </StackPanel>
     </Grid>
 </Page>
