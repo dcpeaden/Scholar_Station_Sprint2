@@ -533,3 +533,5 @@ C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Sc
 C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\Scholar_Station.pdb
 C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\SessionFinder.g.cs
 C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\SessionFinder.baml
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\FeedbackForm.g.cs
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\FeedbackForm.baml

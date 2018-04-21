@@ -21,7 +21,9 @@ namespace Scholar_Station
 
         private void SearchButton_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new logInFrame());
+            User user = null;
+            SessionFinder finder = new SessionFinder(user);
+            finder.Show();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
