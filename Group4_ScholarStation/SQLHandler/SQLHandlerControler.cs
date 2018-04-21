@@ -118,9 +118,9 @@ namespace SQLHandler
             return viewSessions.ViewCurrentSessionByID(id);
         }
 
-        public IDataReader GetUserType(string email)
+        public IDataReader GetUserType(string email, string password)
         {
-            return userType.GetUserType(email);
+            return userType.GetUserType(email, password);
         }
 
         public void LeaveSessionFeedback(string email, string sessionID, string feedBack)

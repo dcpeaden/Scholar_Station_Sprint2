@@ -10,6 +10,6 @@ namespace SQLHandler.Interfaces
 {
     interface IUserType
     {
-        IDataReader GetUserType(string email);
+        IDataReader GetUserType(string email, string password);
     }
 }
