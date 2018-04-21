@@ -24,27 +24,25 @@ namespace Feedback_Form
     {
         ISQLHandler handler;
         private User user;
+        private string sessionID;
 
-        public MainWindow(User user)
+        public MainWindow(User user, string currentID)
         {
             InitializeComponent();
             this.user = user;
             this.handler = new SQLHandlerControler();
+            this.sessionID = currentID;
         }
 
         public void SendFeedback()
         {
-            if (String.IsNullOrEmpty(sessionIDBox.Text))
-            {
-                 MessageBox.Show("You must enter session id!");
-            }
-            else if(String.IsNullOrEmpty(feedbackBox.Text))
+            if(String.IsNullOrEmpty(feedbackBox.Text))
             {
                 MessageBox.Show("You must enter feedback!");
             }
             else
             {
-                handler.LeaveSessionFeedback(user.Email, sessionIDBox.Text, feedbackBox.Text);
+                handler.LeaveSessionFeedback(user.Email, sessionID, feedbackBox.Text);
                 MessageBox.Show("Feedback Sent");
                 this.Close();
             }
