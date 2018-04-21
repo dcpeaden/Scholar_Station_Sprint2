@@ -206,7 +206,7 @@ namespace Scholar_Station
 
         private void closeSession_Click(object sender, RoutedEventArgs e)
         {
-            Feedback_Form.MainWindow feedback = new Feedback_Form.MainWindow(user);
+            Feedback_Form.MainWindow feedback = new Feedback_Form.MainWindow(user, currentID);
             feedback.Show();
         }
 
