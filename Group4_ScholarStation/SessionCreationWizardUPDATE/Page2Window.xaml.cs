@@ -15,23 +15,13 @@ using System.Windows.Shapes;
 namespace SessionCreationWizardUPDATE
 {
     /// <summary>
-    /// Interaction logic for WizardWindow.xaml
+    /// Interaction logic for Page2Window.xaml
     /// </summary>
-    public partial class WizardWindow : Window
+    public partial class Page2Window : Window
     {
-        public WizardWindow()
+        public Page2Window()
         {
             InitializeComponent();
-        }
-
-        private void BtnClickWizardPage1(object sender, RoutedEventArgs e)
-        {
-            MainFrame.Content = new Page1();
-        }
-
-        private void BtnClickWizardPage2(object sender, RoutedEventArgs e)
-        {
-            MainFrame.Content = new Page2();
         }
     }
 }

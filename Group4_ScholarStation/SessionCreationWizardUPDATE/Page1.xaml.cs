@@ -10,28 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace SessionCreationWizardUPDATE
 {
     /// <summary>
-    /// Interaction logic for WizardWindow.xaml
+    /// Interaction logic for Page1.xaml
     /// </summary>
-    public partial class WizardWindow : Window
+    public partial class Page1 : Page
     {
-        public WizardWindow()
+        public Page1()
         {
             InitializeComponent();
-        }
-
-        private void BtnClickWizardPage1(object sender, RoutedEventArgs e)
-        {
-            MainFrame.Content = new Page1();
-        }
-
-        private void BtnClickWizardPage2(object sender, RoutedEventArgs e)
-        {
-            MainFrame.Content = new Page2();
         }
     }
 }

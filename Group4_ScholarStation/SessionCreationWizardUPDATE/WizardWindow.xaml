@@ -3,48 +3,14 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         xmlns:local="clr-namespace:SessionCreationWizardUPDATE"
         mc:Ignorable="d"
         Title="WizardWindow" Height="350" Width="525">
     <Grid>
-        <xctk:Wizard FinishButtonClosesWindow="True">
-            <xctk:WizardPage x:Name="IntroPage" 
-                                   Title="Session Creation Wizard"
-                                   Description="This Wizard will walk you though how to create a new session." />
-            <xctk:WizardPage x:Name="Page1" PageType="Interior"
-                                   Title="Page 1"
-                                   Description="Please select a session type."
-                                   NextPage="{Binding ElementName=Page2}"
-                                   PreviousPage="{Binding ElementName=IntroPage}"
-                             CanSelectNextPage="False">
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="5px"/>
-                        <ColumnDefinition Width="2*"/>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
-                    <TextBlock Text="Type:"/>
-                    <xctk:CheckComboBox x:Name="_combo" 
-                             HorizontalAlignment="Center" 
-                             VerticalAlignment="Center" 
-                             DisplayMemberPath="Color"
-                             ValueMemberPath="Level"
-                             SelectedValue="{Binding SelectedValue}"
-                             />
-                </Grid>
-            </xctk:WizardPage>
-            <xctk:WizardPage x:Name="Page2" PageType="Interior"
-                                   Title="Page 2"
-                                   Description="This is the second page in the process"/>
-            <xctk:WizardPage x:Name="LastPage" PageType="Interior"
-                                   Title="Last Page"
-                                   Description="This is the last page in the process"
-                                   CanFinish="True"/>
-        </xctk:Wizard>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="35">
+            <Button Content="Page1" MinWidth="100" Click="BtnClickWizardPage1"/>
+            <Button Content="Page2" MinWidth="100" Margin="15,0,0,0" Click="BtnClickWizardPage2"/>
+        </StackPanel>
+        <Frame x:Name="MainFrame" Margin="0,35,0,0"/>
     </Grid>
 </Window>
