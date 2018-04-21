@@ -1,22 +1,34 @@
-﻿using System.Windows;
+﻿using ScholarStation;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls;
-using ScholarStation;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
 
 namespace Scholar_Station
 {
     /// <summary>
-    /// Interaction logic for IntroPage1.xaml
+    /// Interaction logic for IntroPage.xaml
     /// </summary>
-    public partial class IntroPage1 : Page
+    public partial class IntroPage : Window
     {
-        public IntroPage1()
+        private MainWindow mainWindow;
+        public IntroPage(MainWindow main)
         {
+            this.mainWindow = main;
             InitializeComponent();
         }
-
         private void SignInButton_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new logInFrame());
+            mainWindow.Show();
         }
 
         private void SearchButton_Click(object sender, RoutedEventArgs e)

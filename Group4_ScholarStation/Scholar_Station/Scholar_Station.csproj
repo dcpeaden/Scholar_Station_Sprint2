@@ -64,8 +64,8 @@
     <Compile Include="FeedbackForm.xaml.cs">
       <DependentUpon>FeedbackForm.xaml</DependentUpon>
     </Compile>
-    <Compile Include="IntroPage1.xaml.cs">
-      <DependentUpon>IntroPage1.xaml</DependentUpon>
+    <Compile Include="IntroPage.xaml.cs">
+      <DependentUpon>IntroPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="LandingPage.xaml.cs">
       <DependentUpon>LandingPage.xaml</DependentUpon>
@@ -87,9 +87,9 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="IntroPage1.xaml">
-      <Generator>MSBuild:Compile</Generator>
+    <Page Include="IntroPage.xaml">
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="LandingPage.xaml">
       <SubType>Designer</SubType>

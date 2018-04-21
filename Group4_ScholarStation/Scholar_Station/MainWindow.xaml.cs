@@ -11,13 +11,14 @@ namespace Scholar_Station
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
-    {
-        private System.Windows.Threading.DispatcherTimer dispatcherTimer = new System.Windows.Threading.DispatcherTimer();
-        private SplashScreenWindow splashWindow;
+    { 
         public MainWindow()
         {
             InitializeComponent();
-            mainWindowFrame.NavigationService.Navigate(new IntroPage1());
+            this.Hide();
+            IntroPage introPage = new IntroPage(this);
+            mainWindowFrame.NavigationService.Navigate(new logInFrame());
+            introPage.Show();
         }
 
         protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
