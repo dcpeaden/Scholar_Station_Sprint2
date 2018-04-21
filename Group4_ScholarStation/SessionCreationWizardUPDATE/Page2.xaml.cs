@@ -27,7 +27,8 @@ namespace SessionCreationWizardUPDATE
 
         private void DatePickerDateChosen(object sender, RoutedEventArgs e)
         {
-
+            string dateString = this.datePicker.SelectedDate.Value.ToShortDateString();
+            MessageBox.Show(dateString);
         }
     }
 }

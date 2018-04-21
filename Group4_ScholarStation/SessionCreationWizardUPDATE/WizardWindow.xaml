@@ -10,7 +10,8 @@
         <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="35">
             <Button Content="Page1" MinWidth="100" Click="BtnClickWizardPage1"/>
             <Button Content="Page2" MinWidth="100" Margin="15,0,0,0" Click="BtnClickWizardPage2"/>
+            <Button Content="Page3" MinWidth="100" Margin="15,0,0,0" Click="BtnClickWizardPage3"/>
         </StackPanel>
-        <Frame x:Name="MainFrame" Margin="0,35,0,0"/>
+        <Frame x:Name="MainFrame" Margin="0,35,0,0" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>

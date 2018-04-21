@@ -33,5 +33,10 @@ namespace SessionCreationWizardUPDATE
         {
             MainFrame.Content = new Page2();
         }
+
+        private void BtnClickWizardPage3(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Content = new Page3();
+        }
     }
 }
