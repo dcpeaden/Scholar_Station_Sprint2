@@ -19,11 +19,8 @@ namespace Scholar_Station
             InitializeComponent();
             mainWindowFrame.NavigationService.Navigate(new IntroPage1());
         }
+        
 
-        private void dispatcherTimer_Tick(object sender, EventArgs e)
-        {
-            mainWindowFrame.NavigationService.Navigate(new IntroPage1());
-        }
         protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
         {
             bool wasCodeClosed = new StackTrace().GetFrames().FirstOrDefault(x => x.GetMethod() == typeof(Window).GetMethod("Close")) != null;
