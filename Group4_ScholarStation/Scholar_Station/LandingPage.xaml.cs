@@ -53,18 +53,24 @@ namespace Scholar_Station
                 professor.Visibility = Visibility.Hidden;
                 stdUser.Visibility = Visibility.Visible;
                 contactAdmin.Visibility = Visibility.Hidden;
+                sessionDetails.Visibility = Visibility.Hidden;
+                sessionFeedback.Visibility = Visibility.Hidden;
             }
             else if(type == UserType.Professor)
             {
                 professor.Visibility = Visibility.Visible;
                 stdUser.Visibility = Visibility.Hidden;
                 contactAdmin.Visibility = Visibility.Hidden;
+                sessionFeedback.Visibility = Visibility.Hidden;
+                sessionDetails.Visibility = Visibility.Hidden;
             }
             else
             {
                 professor.Visibility = Visibility.Hidden;
                 stdUser.Visibility = Visibility.Hidden;
                 contactAdmin.Visibility = Visibility.Visible;
+                sessionFeedback.Visibility = Visibility.Hidden;
+                sessionDetails.Visibility = Visibility.Hidden;
                 welcomeBanner.Visibility = Visibility.Hidden;
                 contactAdminLabel.Content = user.Email + " does not exist in system.\n" 
                                             + "To use Scholar Station, please contact admin.";
@@ -253,7 +259,8 @@ namespace Scholar_Station
 
         private void viewSessionFeedback_Click(object sender, RoutedEventArgs e)
         {
-            
+            professor.Visibility = Visibility.Hidden;
+            sessionFeedback.Visibility = Visibility.Visible;
         }
 
         private void populateSessionSelectComboBox()
