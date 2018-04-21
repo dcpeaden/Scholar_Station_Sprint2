@@ -504,7 +504,6 @@ C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Sc
 C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\SQLHandler.pdb
 C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\EmailControler.pdb
 C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\Scholar_Station.csprojResolveAssemblyReference.cache
-C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\IntroPage1.g.cs
 C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\LandingPage.g.cs
 C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\logInFrame.g.cs
 C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\MainWindow.g.cs
@@ -514,7 +513,6 @@ C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Sc
 C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\App.g.cs
 C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\Scholar_Station_MarkupCompile.cache
 C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\Scholar_Station_MarkupCompile.lref
-C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\IntroPage1.baml
 C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\LandingPage.baml
 C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\logInFrame.baml
 C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\MainWindow.baml
@@ -532,3 +530,5 @@ C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Sc
 C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\SessionFinder.baml
 C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\FeedbackForm.g.cs
 C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\FeedbackForm.baml
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\IntroPage.g.cs
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\IntroPage.baml
