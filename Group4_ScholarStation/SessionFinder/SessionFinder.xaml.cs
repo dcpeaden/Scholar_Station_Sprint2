@@ -98,6 +98,7 @@ namespace SessionFinder
             {
                 sqlHandler.JoinSession(user.Email, sessionIdList[sessionLengthBox.SelectedIndex].ToString());
                 MessageBox.Show("Session Joined!");
+                SendEmail();
             }
             else MessageBox.Show("You must select course, tutor, and session!");
         }
@@ -133,7 +134,6 @@ namespace SessionFinder
         private void joinSession_Click(object sender, RoutedEventArgs e)
         {
             JoinTutorSession();
-            SendEmail();
         }
 
         private void cancleSession_Click(object sender, RoutedEventArgs e)
