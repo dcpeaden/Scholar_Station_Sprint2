@@ -67,6 +67,9 @@
     <Compile Include="LandingPage.xaml.cs">
       <DependentUpon>LandingPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SessionFinder.xaml.cs">
+      <DependentUpon>SessionFinder.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SessionLength\ISessionLength.cs" />
     <Compile Include="DateTime\ITime.cs" />
     <Compile Include="SessionLength\SessionLength.cs" />
@@ -105,6 +108,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="joinSessionFrame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SessionFinder.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -151,6 +158,10 @@
     <ProjectReference Include="..\DataAccessControler\DataAccessControler.csproj">
       <Project>{e6f2e850-bc91-4f6b-8e7e-a991c50eab4b}</Project>
       <Name>DataAccessControler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EmailControler\EmailControler.csproj">
+      <Project>{fc5f0708-cf5d-434d-9a17-9c896ec53f75}</Project>
+      <Name>EmailControler</Name>
     </ProjectReference>
     <ProjectReference Include="..\Feedback_Form\Feedback_Form.csproj">
       <Project>{8b47ce0f-26d2-47a4-bce2-f397bd9aa99e}</Project>

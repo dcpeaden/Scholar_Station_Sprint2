@@ -19,7 +19,6 @@ namespace Scholar_Station
             InitializeComponent();
             mainWindowFrame.NavigationService.Navigate(new IntroPage1());
         }
-        
 
         protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
         {
