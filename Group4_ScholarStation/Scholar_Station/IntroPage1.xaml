@@ -6,36 +6,43 @@
       xmlns:local="clr-namespace:Scholar_Station"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="IntroPage1" Width="525" Height="350">
+      Title="IntroPage1" Width="650" Height="350">
+    <Page.Background>
+        <ImageBrush/>
+    </Page.Background>
 
-    <Grid Width="525" Height="351" Background="#FFE6E6E6">
-        <Grid HorizontalAlignment="Left" Height="74" VerticalAlignment="Top" Width="525" Background="White">
-            <Image HorizontalAlignment="Left" Height="64" Margin="27,6,0,0" VerticalAlignment="Top" Width="65" Source="images/orange-graduation-cap-64.png"/>
-            <Button Content="X" HorizontalAlignment="Left" Margin="482,1,0,0" VerticalAlignment="Top" Width="24" Background="{x:Null}" FontFamily="Microsoft Sans Serif" FontWeight="Bold" Foreground="Black" BorderBrush="{x:Null}" Click="Button_Click"/>
-            <Button Content="_" HorizontalAlignment="Left" Margin="462,0,0,0" VerticalAlignment="Top" Width="24" Background="{x:Null}" FontFamily="Microsoft Sans Serif" FontWeight="Bold" Foreground="Black" BorderBrush="{x:Null}"/>
-            <Button x:Name="SignInButton" Content="Sign in" HorizontalAlignment="Left" Margin="379,0,0,55" VerticalAlignment="Bottom" Width="48" Background="{x:Null}" FontFamily="Arial Rounded MT Bold" Foreground="DarkSlateGray" BorderBrush="{x:Null}" FontSize="11" IsHitTestVisible="True"  Click="SignInButton_Click"/>
-            <Button Content="?" HorizontalAlignment="Left" Margin="442,1,0,0" VerticalAlignment="Top" Width="24" Background="{x:Null}" FontFamily="Microsoft Sans Serif" FontWeight="Bold" Foreground="Black" BorderBrush="{x:Null}"/>
-            <Image HorizontalAlignment="Left" Height="17" Margin="425,0,0,0" VerticalAlignment="Top" Width="23" Source="images/padlock-10-512.png"/>
-            <Image HorizontalAlignment="Left" Height="74" Margin="334,38,0,-38" VerticalAlignment="Top" Width="100"/>
-        </Grid>
-        <Grid HorizontalAlignment="Left" Height="277" Margin="0,74,0,0" VerticalAlignment="Top" Width="525">
+    <Grid Height="351" Margin="0,0,0,-1">
+        <Grid.Background>
+            <SolidColorBrush Color="#FFE6E6E6" Opacity="0"/>
+        </Grid.Background>
+        <Grid HorizontalAlignment="Left" Height="74" VerticalAlignment="Top" Width="650">
             <Grid.Background>
-                <ImageBrush ImageSource="images/IntroPageSS1.png"/>
+                <SolidColorBrush Color="White" Opacity="0"/>
             </Grid.Background>
-            <Label HorizontalAlignment="Left" Margin="193,34,0,0" VerticalAlignment="Top">
-                <Label Content="Scholar" Width="118" FontFamily="Arial Rounded MT Bold" FontSize="27" FontWeight="Bold" Foreground="DarkSlateGray"/>
-            </Label>
-            <Label HorizontalAlignment="Left" Margin="197,60,0,0" VerticalAlignment="Top">
-                <Label Content="Station" Width="109" FontFamily="Arial Rounded MT Bold" FontSize="27" FontWeight="Bold" Foreground="DarkSlateGray"/>
-            </Label>
-            <Label HorizontalAlignment="Left" Margin="212,-36,0,0" VerticalAlignment="Top" FontSize="18">
-                <Label Content="Search" Width="77" FontFamily="Arial Rounded MT Bold" FontSize="18" FontWeight="Bold" Foreground="DarkSlateGray"/>
-            </Label>
-            <Button x:Name="SearchButton" Content="&#xD;&#xA;" HorizontalAlignment="Left" Margin="232,-62,0,0" VerticalAlignment="Top" Width="43" Foreground="{x:Null}" BorderBrush="{x:Null}" IsHitTestVisible="True" Click="SearchButton_Click">
+            <Image HorizontalAlignment="Left" Height="64" Margin="27,6,0,0" VerticalAlignment="Top" Width="65" Source="images/orange-graduation-cap-64.png"/>
+            <Button x:Name="SignInButton" Content="Sign in" HorizontalAlignment="Left" Margin="560,0,0,51" VerticalAlignment="Bottom" Width="48" Background="{x:Null}" FontFamily="Arial Rounded MT Bold" Foreground="DarkSlateGray" BorderBrush="{x:Null}" FontSize="11" IsHitTestVisible="True"  Click="SignInButton_Click"/>
+            <Image HorizontalAlignment="Left" Height="17" Margin="608,5,0,0" VerticalAlignment="Top" Width="23" Source="images/padlock-10-512.png"/>
+            <Image HorizontalAlignment="Left" Height="74" Margin="334,38,0,-38" VerticalAlignment="Top" Width="100"/>
+            <Label Content="Search" FontFamily="Arial Rounded MT Bold" FontSize="18" FontWeight="Bold" Foreground="DarkSlateGray" Margin="280,39,293,4"/>
+        </Grid>
+        <Grid Height="277" Margin="10,74,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="640">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="168*"/>
+                <RowDefinition Height="109*"/>
+            </Grid.RowDefinitions>
+            <Grid.Background>
+                <ImageBrush ImageSource="images/White.png" Opacity="0"/>
+            </Grid.Background>
+            <Label HorizontalAlignment="Left" Margin="193,34,0,0" VerticalAlignment="Top"/>
+            <Label HorizontalAlignment="Left" Margin="197,60,0,0" VerticalAlignment="Top"/>
+            <Label HorizontalAlignment="Left" Margin="212,-36,0,0" VerticalAlignment="Top" FontSize="18"/>
+            <Button x:Name="SearchButton" Content="&#xD;&#xA;" HorizontalAlignment="Left" Margin="286,-62,0,0" VerticalAlignment="Top" Width="43" Foreground="{x:Null}" BorderBrush="{x:Null}" IsHitTestVisible="True" Click="SearchButton_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="images/glass48.png"/>
                 </Button.Background>
             </Button>
+            <Label Content="Station" FontFamily="Arial Rounded MT Bold" FontSize="27" FontWeight="Bold" Foreground="DarkSlateGray" Margin="256,84,240,42"/>
+            <Label Content="Scholar" FontFamily="Arial Rounded MT Bold" FontSize="27" FontWeight="Bold" Foreground="DarkSlateGray" Margin="247,54,240,73"/>
         </Grid>
 
     </Grid>

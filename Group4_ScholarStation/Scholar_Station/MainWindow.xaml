@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Scholar_Station"
         mc:Ignorable="d"
-        Title="Scholar Station" Height="379" Width="525" ResizeMode="NoResize"
+        Title="Scholar Station" Height="379" Width="650" ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen" Icon="images/graduation_education_icon.ico">
 
 
@@ -23,7 +23,7 @@
             <ColumnDefinition Width="0*"/>
             <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
-        <Frame x:Name="mainWindowFrame" Content="" HorizontalAlignment="Left" Height="350" VerticalAlignment="Top" Width="525" NavigationUIVisibility="Hidden" Grid.ColumnSpan="3" Margin="0,0,-6,0">
+        <Frame x:Name="mainWindowFrame" Content="" HorizontalAlignment="Left" Height="350" VerticalAlignment="Top" Width="650" NavigationUIVisibility="Hidden" Grid.ColumnSpan="3" Margin="0,0,-6,0">
             <Frame.Background>
                 <ImageBrush ImageSource="images/IntroPageSS1.png"/>
             </Frame.Background>
