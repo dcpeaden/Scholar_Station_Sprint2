@@ -8,6 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("graduation_education_icon.ico")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/872773_find_512x512.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/glass32.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/glass48.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/intropagess1.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/orange-graduation-cap-128.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/orange-graduation-cap-256.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/orange-graduation-cap-32.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/orange-graduation-cap-48.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/orange-graduation-cap-512.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/orange-graduation-cap-64.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/padlock-10-512.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/white.png")]
 
 
