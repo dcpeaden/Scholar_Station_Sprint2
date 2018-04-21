@@ -41,6 +41,14 @@ namespace Scholar_Station
             AddDepartmentsToComboBox();
         }
 
+        public SessionFinder(User newStudentUser)
+        {
+            sqlHandler = new SQLHandlerControler();
+            this.user = newStudentUser;
+            InitializeComponent();
+            AddDepartmentsToComboBox();
+        }
+
         /* Add departments to comboBox
        * Connect to database and create a paramaterized sql query 
        * to retreve content from database to show in comboBox*/
@@ -107,10 +115,16 @@ namespace Scholar_Station
         //Join the session
         public void JoinTutorSession()
         {
-            if (sessionLengthBox.SelectedIndex != -1)
+            if (user == null)
+            {
+                MessageBox.Show("You must login before joining a session");
+            }
+            else if (sessionLengthBox.SelectedIndex != -1)
             {
                 sqlHandler.JoinSession(user.Email, sessionIdList[sessionLengthBox.SelectedIndex].ToString());
                 MessageBox.Show("Session Joined!");
+                lp.studentSessionsSelect.Items.Clear();
+                lp.AddStudentSessionsToComboBox();
                 //SendEmail();
             }
             else MessageBox.Show("You must select course, tutor, and session!");
@@ -152,8 +166,6 @@ namespace Scholar_Station
         private void cancleSession_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
-            lp.studentSessionsSelect.Items.Clear();
-            lp.AddStudentSessionsToComboBox();
         }
     }
 }

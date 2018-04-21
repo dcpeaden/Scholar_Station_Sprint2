@@ -11,13 +11,13 @@
         <Canvas x:Name="welcomeBanner" Width="525" Height="48" VerticalAlignment="Top" Margin="0,0,0,0" Canvas.Bottom="0" >
             <Label x:Name="welcome"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="280" Height="48" FontSize="16" FontWeight="Bold" Grid.ColumnSpan="2"/>
         </Canvas>
-        
+
         <Canvas x:Name="contactAdmin" Width="525" Height="302" VerticalAlignment="Bottom" Margin="0,0,0,0" Canvas.Bottom="0" Visibility="Hidden">
             <Label x:Name="contactAdminLabel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="347" FontSize="14" FontWeight="Bold" Grid.Column="1" Canvas.Left="89" Canvas.Top="100" Height="50"/>
             <Button x:Name="backButton1" Content="To Login" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="114" Click="toLogin_Click" Canvas.Left="204" Canvas.Top="237"/>
         </Canvas>
-        
-        <Canvas x:Name="professor" Width="525" Height="302" VerticalAlignment="Bottom" Margin="0,0,0,0" Canvas.Bottom="0" Visibility="Visible">
+
+        <Canvas x:Name="professor" Width="525" Height="302" VerticalAlignment="Bottom" Margin="0,0,0.333,0" Canvas.Bottom="0" Visibility="Visible" HorizontalAlignment="Right">
             <Label x:Name="professorCoursesLabel" Content="Courses you're teaching:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="181" FontSize="14" FontWeight="Bold" Grid.Column="1" Canvas.Left="23" Canvas.Top="29"/>
             <ComboBox x:Name="professorCourseSelect" HorizontalAlignment="Left" VerticalAlignment="Top" Width="221" Grid.Column="1" SelectionChanged="professorCourseSelect_SelectionChanged" SelectedIndex="0" Cursor="None" Canvas.Left="23" Canvas.Top="63"/>
             <Button x:Name="professorCourseDetails" Content="View Course Sessions" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" IsEnabled="False" Grid.Column="1" Click="professorCourseDetails_Click" Canvas.Left="318" Canvas.Top="63"/>
@@ -25,7 +25,7 @@
             <ComboBox x:Name="sessionSelect" HorizontalAlignment="Left" VerticalAlignment="Top" Width="221" Grid.Column="1" SelectionChanged="sessionSelect_SelectionChanged" SelectedIndex="0" Cursor="None" Canvas.Left="23" Canvas.Top="155" Visibility="Hidden"/>
             <Button x:Name="viewSessionFeedback" Content="View Session Feedback" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" IsEnabled="False" Grid.Column="1" Click="viewSessionFeedback_Click" Canvas.Left="318" Canvas.Top="155" Visibility="Hidden"/>
         </Canvas>
-        
+
         <Canvas x:Name="sessionDetails" Width="525" Height="302" VerticalAlignment="Bottom" Margin="0,0,0,0" Canvas.Bottom="0" Visibility="Hidden">
             <Label x:Name="details" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="280" Height="280" FontSize="16" FontWeight="DemiBold" Grid.ColumnSpan="2"/>
             <Button x:Name="cancelSession" Content="Cancel Session" HorizontalAlignment="Left" Margin="30,185,0,0" VerticalAlignment="Bottom" Width="114" IsEnabled="False" Click="cancelSession_Click"/>

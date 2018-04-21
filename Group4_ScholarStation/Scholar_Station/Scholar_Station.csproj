@@ -61,6 +61,9 @@
     </ApplicationDefinition>
     <Compile Include="DateTime\Date.cs" />
     <Compile Include="DateTime\IDate.cs" />
+    <Compile Include="FeedbackForm.xaml.cs">
+      <DependentUpon>FeedbackForm.xaml</DependentUpon>
+    </Compile>
     <Compile Include="IntroPage1.xaml.cs">
       <DependentUpon>IntroPage1.xaml</DependentUpon>
     </Compile>
@@ -80,6 +83,10 @@
     <Compile Include="tutorPage.xaml.cs">
       <DependentUpon>tutorPage.xaml</DependentUpon>
     </Compile>
+    <Page Include="FeedbackForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="IntroPage1.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -162,10 +169,6 @@
     <ProjectReference Include="..\EmailControler\EmailControler.csproj">
       <Project>{fc5f0708-cf5d-434d-9a17-9c896ec53f75}</Project>
       <Name>EmailControler</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Feedback_Form\Feedback_Form.csproj">
-      <Project>{8b47ce0f-26d2-47a4-bce2-f397bd9aa99e}</Project>
-      <Name>Feedback_Form</Name>
     </ProjectReference>
     <ProjectReference Include="..\ScholarStationCL\ScholarStationCL.csproj">
       <Project>{49232f00-5d51-4613-8c29-ce2d88205a42}</Project>
