@@ -64,5 +64,10 @@ namespace Scholar_Station
                MessageBox.Show("You Must Enter a vaild Email!");
             }
         }
+
+        private void SignInButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new UserCreationWizard());
+        }
     }
 }

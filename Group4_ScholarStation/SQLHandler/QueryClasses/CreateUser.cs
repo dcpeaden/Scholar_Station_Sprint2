@@ -29,10 +29,10 @@ namespace SQLHandler.QueryClasses
             }
             else
             {
-                string addUser = "INSERT INTO users  (user_fname , user_lname , user_email, user_password, user_type) " + 
-                                 "VALUES('" + firstName + "','" + lastName + "','" + email + "' " + password + "' " + '1' + "')";
+                string addUser = "INSERT INTO users  (user_email , user_password , user_type, user_fname, user_lname) " + 
+                                 "VALUES('" + email + "','" + password + "','" + '1' + "','" + firstName + "','" + lastName + "')";
                 update.ExecuteQueries(addUser);
-                return "User Added";
+                return addUser;
             }
         }
     }
