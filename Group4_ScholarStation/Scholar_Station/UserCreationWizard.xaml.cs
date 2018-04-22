@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ScholarStation;
+using SQLHandler;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,16 +22,38 @@ namespace Scholar_Station
     /// </summary>
     public partial class UserCreationWizard : Page
     {
+        private ISQLHandler sqlHandler;
+        private IUserFactory user;
+
         public UserCreationWizard()
         {
             InitializeComponent();
+            this.sqlHandler = new SQLHandlerControler();
         }
 
         private void signUpButton_Click(object sender, RoutedEventArgs e)
         {
-            if(passwordBox1.Equals(passwordBox2.Text))
-            {
+            user = new UserFactory();
+            string name = firstNameBox.Text + " " + lastNameBox.Text;
+            string id = passwordBox1.Text;
+            int userType = 1;
+            string userEmail = emailBox.Text;
 
+
+            user = new UserFactory();
+            User newUser = user.CreateUser(name, userType, UserType.Standard, emailBox.Text);
+
+            if (passwordBox1.Text == passwordBox2.Text)
+            {
+                if (String.IsNullOrEmpty(firstNameBox.Text) && String.IsNullOrEmpty(lastNameBox.Text) && String.IsNullOrEmpty(emailBox.Text))
+                {
+                    MessageBox.Show("Please fill out enter form!");
+                }
+                else
+                {
+                    MessageBox.Show(sqlHandler.CreateAccout(firstNameBox.Text, lastNameBox.Text, emailBox.Text, passwordBox1.Text));
+                }
+                this.NavigationService.Navigate(new LandingPage(newUser));
             }
             else
             {
@@ -41,7 +65,7 @@ namespace Scholar_Station
 
         private void cancleButton_Click(object sender, RoutedEventArgs e)
         {
-
+            this.NavigationService.Navigate(new logInFrame());
         }
     }
 }
