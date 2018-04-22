@@ -52,7 +52,7 @@ namespace Scholar_Station
             if (Regex.IsMatch(emailBox.Text, @"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$"))
            {
                 user = new UserFactory();
-                User newUser = user.CreateUser("name", 1, getUserType(emailBox.Text, passwordBox.Text), emailBox.Text);
+                User newUser = user.CreateUser("name", 1, getUserType(emailBox.Text, passwordBox.Password), emailBox.Text);
 
                 if (emailBox.Text != null)
                 {

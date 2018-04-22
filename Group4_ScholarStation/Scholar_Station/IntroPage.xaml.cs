@@ -29,6 +29,7 @@ namespace Scholar_Station
         private void SignInButton_Click(object sender, RoutedEventArgs e)
         {
             mainWindow.Show();
+            this.Close();
         }
 
         private void SearchButton_Click(object sender, RoutedEventArgs e)
