@@ -572,3 +572,5 @@ C:\Users\ryans\Desktop\Repo\Scholar_Station_Sprint2\Group4_ScholarStation\Schola
 C:\Users\ryans\Desktop\Repo\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\FeedbackForm.baml
 C:\Users\ryans\Desktop\Repo\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\IntroPage.baml
 C:\Users\ryans\Desktop\Repo\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\SessionFinder.baml
+C:\Users\ryans\Desktop\Repo\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\UserCreationWizard.g.cs
+C:\Users\ryans\Desktop\Repo\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\UserCreationWizard.baml
