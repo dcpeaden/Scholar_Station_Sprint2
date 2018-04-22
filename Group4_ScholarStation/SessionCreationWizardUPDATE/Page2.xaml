@@ -9,10 +9,10 @@
       Title="Page2">
 
     <Grid>
-        <TextBlock Text="Date Selection" HorizontalAlignment="Center"/>
-        <Label Content="Date:" VerticalAlignment="Center" Margin="50"/>
+        <TextBlock Text="Please select a preferred date." HorizontalAlignment="Center" FontSize="20"/>
+        <Label Content="Date:" VerticalAlignment="Center" Margin="150"/>
         <DatePicker x:Name="datePicker" VerticalAlignment="Center" HorizontalAlignment="Center" CalendarClosed="DatePickerDateChosen"/>
-        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Height="35">
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Height="35" Margin="115,0,120,0">
             <Button Content="Back" Margin="110,0,0,0" MaxHeight="20"/>
             <Button Content="Next" Margin="15,0,0,0" MaxHeight="20"/>
         </StackPanel>

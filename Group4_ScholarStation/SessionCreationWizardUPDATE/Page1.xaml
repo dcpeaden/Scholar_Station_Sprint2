@@ -9,6 +9,14 @@
       Title="Page1">
 
     <Grid>
-        <TextBlock Text="This will be the session selection page."/>
+        <TextBlock Text="Please select the type of session you prefer." HorizontalAlignment="Center" FontSize="20"/>
+        <Label Content="Type:" VerticalAlignment="Center" Margin="150,0,150,20"/>
+        <StackPanel Margin="180,150,180,150">
+            <RadioButton Content="Study Session" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <RadioButton Content="Tutor Session" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"/>
+        </StackPanel>
+        <StackPanel VerticalAlignment="Bottom" Height="35">
+            <Button Content="Next" MaxHeight="20" MaxWidth="50"/>
+        </StackPanel>
     </Grid>
 </Page>
