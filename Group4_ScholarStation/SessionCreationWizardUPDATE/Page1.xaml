@@ -8,15 +8,12 @@
       d:DesignHeight="350" d:DesignWidth="525"
       Title="Page1">
 
-    <Grid>
-        <TextBlock Text="Please select the type of session you prefer." HorizontalAlignment="Center" FontSize="20"/>
-        <Label Content="Type:" VerticalAlignment="Center" Margin="150,0,150,20"/>
-        <StackPanel Margin="180,150,180,150">
-            <RadioButton Content="Study Session" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <RadioButton Content="Tutor Session" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"/>
-        </StackPanel>
-        <StackPanel VerticalAlignment="Bottom" Height="35">
-            <Button Content="Next" MaxHeight="20" MaxWidth="50"/>
-        </StackPanel>
+    <Grid Background="#FFE9E9E9">
+        <Label Content="Please select a session type." HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20" FontFamily="Arial Rounded MT Bold" Background="{x:Null}" Foreground="DarkSlateGray"/>
+        <RadioButton Content="Study Session" HorizontalAlignment="Left" Margin="214,186,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" Foreground="DarkSlateGray"/>
+        <RadioButton Content="Tutor Session" HorizontalAlignment="Left" Margin="214,206,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" Foreground="DarkSlateGray"/>
+        <Button Content="Next" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="75" Foreground="DarkSlateGray" FontFamily="Arial Rounded MT Bold" Margin="0,0,0,5" Click="Button_Click"/>
+        <Label Content="Type:" HorizontalAlignment="Left" Margin="152,188,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" Foreground="DarkSlateGray"/>
+
     </Grid>
 </Page>

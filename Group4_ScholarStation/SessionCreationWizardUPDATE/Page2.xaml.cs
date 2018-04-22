@@ -30,5 +30,15 @@ namespace SessionCreationWizardUPDATE
             string dateString = this.datePicker.SelectedDate.Value.ToShortDateString();
             MessageBox.Show(dateString);
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new Page3());
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new Page1());
+        }
     }
 }

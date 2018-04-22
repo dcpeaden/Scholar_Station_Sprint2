@@ -6,15 +6,15 @@
       xmlns:local="clr-namespace:SessionCreationWizardUPDATE"
       mc:Ignorable="d" 
       d:DesignHeight="350" d:DesignWidth="525"
-      Title="Page2">
+      Title="Page2" >
 
-    <Grid>
+    <Grid Background="#FFE9E9E9">
         <TextBlock Text="Please select a preferred date." HorizontalAlignment="Center" FontSize="20"/>
         <Label Content="Date:" VerticalAlignment="Center" Margin="150"/>
         <DatePicker x:Name="datePicker" VerticalAlignment="Center" HorizontalAlignment="Center" CalendarClosed="DatePickerDateChosen"/>
         <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Height="35" Margin="115,0,120,0">
-            <Button Content="Back" Margin="110,0,0,0" MaxHeight="20"/>
-            <Button Content="Next" Margin="15,0,0,0" MaxHeight="20"/>
+            <Button Content="Back" Margin="110,0,0,0" MaxHeight="20" Click="Button_Click_1"/>
+            <Button Content="Next" Margin="15,0,0,0" MaxHeight="20" RenderTransformOrigin="0.503,0.716" Click="Button_Click"/>
         </StackPanel>
     </Grid>
 </Page>

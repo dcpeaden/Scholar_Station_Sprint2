@@ -22,21 +22,7 @@ namespace SessionCreationWizardUPDATE
         public WizardWindow()
         {
             InitializeComponent();
-        }
-
-        private void BtnClickWizardPage1(object sender, RoutedEventArgs e)
-        {
             MainFrame.Content = new Page1();
-        }
-
-        private void BtnClickWizardPage2(object sender, RoutedEventArgs e)
-        {
-            MainFrame.Content = new Page2();
-        }
-
-        private void BtnClickWizardPage3(object sender, RoutedEventArgs e)
-        {
-            MainFrame.Content = new Page3();
         }
     }
 }
