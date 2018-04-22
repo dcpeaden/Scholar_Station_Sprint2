@@ -181,7 +181,13 @@ namespace Scholar_Station
             stdUser.Visibility = Visibility.Hidden;
 
             string str = "";
-            currentID = studentSessionIDs[studentSessionsSelect.SelectedIndex].ToString();
+
+            if (studentSessionsSelect.SelectedIndex != -1)
+            {
+                currentID = studentSessionIDs[studentSessionsSelect.SelectedIndex].ToString();
+            }
+            else MessageBox.Show("You must select a session to view!");
+            
 
             IDataReader sessions = sqlHandler.ViewCurrentSessionByID(studentSessionIDs[studentSessionsSelect.SelectedIndex].ToString());
 
