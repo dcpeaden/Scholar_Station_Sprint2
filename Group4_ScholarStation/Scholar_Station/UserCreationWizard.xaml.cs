@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -35,32 +36,46 @@ namespace Scholar_Station
         {
             user = new UserFactory();
             string name = firstNameBox.Text + " " + lastNameBox.Text;
-            string id = passwordBox1.Text;
+            string id = passwordBox1.Password;
             int userType = 1;
             string userEmail = emailBox.Text;
 
 
             user = new UserFactory();
             User newUser = user.CreateUser(name, userType, UserType.Standard, emailBox.Text);
-
-            if (passwordBox1.Text == passwordBox2.Text)
+            if (Regex.IsMatch(emailBox.Text, @"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$"))
             {
-                if (String.IsNullOrEmpty(firstNameBox.Text) && String.IsNullOrEmpty(lastNameBox.Text) && String.IsNullOrEmpty(emailBox.Text))
+                if (passwordBox1.Password == passwordBox2.Password)
                 {
-                    MessageBox.Show("Please fill out enter form!");
+                    if (String.IsNullOrEmpty(firstNameBox.Text) && String.IsNullOrEmpty(lastNameBox.Text) && String.IsNullOrEmpty(emailBox.Text))
+                    {
+                        MessageBox.Show("Please fill out enter form!");
+                    }
+                    else if (passwordBox1.Password.Length >= 7)
+                    {
+                        MessageBox.Show(sqlHandler.CreateAccout(firstNameBox.Text, lastNameBox.Text, emailBox.Text, passwordBox1.Password));
+                        this.NavigationService.Navigate(new logInFrame());
+                    }
+                    else
+                    {
+                        MessageBox.Show("Password must be at least seven characters!");
+                        passwordBox1.Clear();
+                        passwordBox2.Clear();
+                    }
                 }
                 else
                 {
-                    MessageBox.Show(sqlHandler.CreateAccout(firstNameBox.Text, lastNameBox.Text, emailBox.Text, passwordBox1.Text));
+                    MessageBox.Show("Your passwords do not match!");
+                    passwordBox1.Clear();
+                    passwordBox2.Clear();
                 }
-                this.NavigationService.Navigate(new LandingPage(newUser));
             }
             else
             {
-                MessageBox.Show("Your passwords do not match!");
-                passwordBox1.Clear();
-                passwordBox2.Clear();
+                MessageBox.Show("Invalid Email!");
+                emailBox.Clear();
             }
+            
         }
 
         private void cancleButton_Click(object sender, RoutedEventArgs e)

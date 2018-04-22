@@ -9,33 +9,28 @@
 
     <Grid Width="650" Height="350">
         <TextBox HorizontalAlignment="Left" Height="23" Margin="172,90,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="lastNameBox" HorizontalAlignment="Left" Height="23" Margin="326,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120">
+        <TextBox x:Name="lastNameBox" HorizontalAlignment="Left" Height="23" Margin="326,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyboardNavigation.TabIndex="1">
             <TextBox.Effect>
                 <DropShadowEffect/>
             </TextBox.Effect>
         </TextBox>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="172,91,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="emailBox" HorizontalAlignment="Left" Height="23" Margin="172,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="275">
+        <TextBox x:Name="emailBox" HorizontalAlignment="Left" Height="23" Margin="172,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="275" KeyboardNavigation.TabIndex="2">
             <TextBox.Effect>
                 <DropShadowEffect/>
             </TextBox.Effect>
         </TextBox>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="172,91,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="passwordBox1" HorizontalAlignment="Left" Height="23" Margin="172,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="274">
+        <TextBox x:Name="firstNameBox" HorizontalAlignment="Left" Height="23" Margin="172,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyboardNavigation.TabIndex="0">
             <TextBox.Effect>
                 <DropShadowEffect/>
             </TextBox.Effect>
         </TextBox>
-        <TextBox x:Name="firstNameBox" HorizontalAlignment="Left" Height="23" Margin="172,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120">
-            <TextBox.Effect>
+        <PasswordBox x:Name="passwordBox1" Margin="172,194,204,133" KeyboardNavigation.TabIndex="3">
+            <PasswordBox.Effect>
                 <DropShadowEffect/>
-            </TextBox.Effect>
-        </TextBox>
-        <TextBox x:Name="passwordBox2" HorizontalAlignment="Left" Height="23" Margin="172,253,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="275">
-            <TextBox.Effect>
-                <DropShadowEffect/>
-            </TextBox.Effect>
-        </TextBox>
+            </PasswordBox.Effect>
+        </PasswordBox>
         <Label Content="First Name" HorizontalAlignment="Left" Margin="172,63,0,0" VerticalAlignment="Top"/>
         <Label Content="Last Name" HorizontalAlignment="Left" Margin="327,63,0,0" VerticalAlignment="Top"/>
         <Label Content="Email" HorizontalAlignment="Left" Margin="172,114,0,0" VerticalAlignment="Top"/>
@@ -52,6 +47,11 @@
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
+        <PasswordBox x:Name="passwordBox2" Margin="172,253,204,74" KeyboardNavigation.TabIndex="4">
+            <PasswordBox.Effect>
+                <DropShadowEffect/>
+            </PasswordBox.Effect>
+        </PasswordBox>
 
     </Grid>
 </Page>
