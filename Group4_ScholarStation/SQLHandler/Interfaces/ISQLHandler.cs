@@ -43,5 +43,7 @@ using System.Threading.Tasks;
 
         void LeaveSessionFeedback(string email, string sessionID, string feedback);
 
+        string CreateAccout(string firstName, string lastName, string email, string password);
+
     }
 }

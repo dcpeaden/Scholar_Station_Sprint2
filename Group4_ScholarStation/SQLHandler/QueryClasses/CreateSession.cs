@@ -27,7 +27,7 @@ namespace SQLHandler.QueryClasses
         public void AddNewSession(string email, string date, string time, string length, string classes)
         {
             Random ran = new Random();
-            int numberOfAllowedSessions = 10000;
+            numberOfAllowedSessions = 10000;
             sessID = IsSessionIDUnique(ran.Next(numberOfAllowedSessions));
 
             string insertIntoSessions = "INSERT into t_session (ses_tutor_email , ses_student_email, ses_date, ses_start_time, ses_duration, ses_creator, ses_complete, ses_course, sessionId ) " +

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\
+C:\Users\ryans\Desktop\Repo\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\
 Scholar_Station
 none
 false
 DEBUG;TRACE
-C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\App.xaml
-9893741238
+C:\Users\ryans\Desktop\Repo\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\App.xaml
+10-1146587481
 
-2317492885
-17545836837
-FeedbackForm.xaml;IntroPage.xaml;LandingPage.xaml;logInFrame.xaml;MainWindow.xaml;joinSessionFrame.xaml;SessionFinder.xaml;SplashScreenWindow.xaml;tutorPage.xaml;
+24-1780884819
+171702521279
+FeedbackForm.xaml;IntroPage.xaml;LandingPage.xaml;logInFrame.xaml;MainWindow.xaml;joinSessionFrame.xaml;SessionFinder.xaml;SplashScreenWindow.xaml;tutorPage.xaml;UserCreationWizard.xaml;
 
-True
+False
 
