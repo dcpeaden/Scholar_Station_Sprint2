@@ -124,8 +124,10 @@ namespace Scholar_Station
                 sqlHandler.JoinSession(user.Email, sessionIdList[sessionLengthBox.SelectedIndex].ToString());
                 MessageBox.Show("Session Joined!");
                 lp.studentSessionsSelect.Items.Clear();
+                lp.studentSessionsSelect.Items.Add("--Select Session--");
+                lp.studentSessionsSelect.SelectedIndex = 0;
                 lp.AddStudentSessionsToComboBox();
-                //SendEmail();
+                SendEmail();
             }
             else MessageBox.Show("You must select course, tutor, and session!");
         }
