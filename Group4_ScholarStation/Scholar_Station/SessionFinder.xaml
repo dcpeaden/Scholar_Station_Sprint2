@@ -5,7 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Scholar_Station"
         mc:Ignorable="d"
-        Title="SessionFinder" Height="450" Width="292.913" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="images/graduation_education_icon.ico">
+        Title="SessionFinder" Height="437.563" Width="292.913" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="images/graduation_education_icon.ico" Background="White">
+    <Window.Foreground>
+        <ImageBrush ImageSource="images/IntroPageSS1.png"/>
+    </Window.Foreground>
+    <Window.BorderBrush>
+        <ImageBrush ImageSource="images/IntroPageSS1.png"/>
+    </Window.BorderBrush>
     <Grid Margin="0,0,507.333,-0.333">
         <ComboBox x:Name="departmentBox" HorizontalAlignment="Left" Margin="29,101,-250,0" VerticalAlignment="Top" Width="221" Height="29" SelectionChanged="departmentBox_SelectionChanged">
             <ComboBox.Effect>
@@ -41,7 +47,7 @@
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <Label x:Name="label_Copy3" Content="Search Tutor Session" HorizontalAlignment="Left" Margin="19,28,-261,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <Label x:Name="label_Copy3" Content="Search Tutor Session" HorizontalAlignment="Left" Margin="15,22,-274,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" FontFamily="Arial Rounded MT Bold" Width="259"/>
 
     </Grid>
 </Window>

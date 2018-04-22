@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="FeedbackForm" Height="324.247" Width="421.26" Icon="images/graduation_education_icon.ico" WindowStartupLocation="CenterScreen">
     <Grid Margin="0,0,-6.333,-0.333" HorizontalAlignment="Left" Width="421">
+        <Grid.Background>
+            <ImageBrush ImageSource="images/IntroPageSS1.png"/>
+        </Grid.Background>
         <TextBox x:Name="feedbackBox" HorizontalAlignment="Left" Height="171" Margin="23,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="365" SpellCheck.IsEnabled="True" RenderTransformOrigin="0.5,0.5">
             <TextBox.RenderTransform>
                 <TransformGroup>
@@ -18,7 +21,7 @@
             </TextBox.RenderTransform>
         </TextBox>
         <Button x:Name="SubmitButton" Content="Submit" HorizontalAlignment="Left" Margin="223,258,0,0" VerticalAlignment="Top" Width="75" Click="SubmitButton_Click" FontWeight="Bold"/>
-        <Label x:Name="label_Copy" Content="Session Feedback" HorizontalAlignment="Left" Margin="102,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.542,-0.17" FontSize="24" FontWeight="Bold"/>
+        <Label x:Name="label_Copy" Content="Session Feedback" HorizontalAlignment="Left" Margin="95,24,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.542,-0.17" FontSize="24" FontWeight="Bold" FontFamily="Arial Rounded MT Bold"/>
         <Button x:Name="CancelButton" Content="Cancel" Margin="313,258,0,0" VerticalAlignment="Top" Click="CancelButton_Click" FontWeight="Bold" HorizontalAlignment="Left" Width="75"/>
 
     </Grid>
