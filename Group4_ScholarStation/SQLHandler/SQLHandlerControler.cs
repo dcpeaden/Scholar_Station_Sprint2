@@ -130,7 +130,7 @@ namespace SQLHandler
             feedback.LeaveFeedback(email, sessionID, feedBack);
         }
 
-        public string CreateAccout(string firstName, string lastName, string email, string password)
+        public bool CreateAccout(string firstName, string lastName, string email, string password)
         {
             return createUser.Create_User(firstName, lastName, email, password);
         }

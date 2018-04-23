@@ -8,6 +8,6 @@ namespace SQLHandler.Interfaces
 {
     public interface ICreateUser
     {
-        string Create_User(string firstName, string lastName, string email, string password);
+        bool Create_User(string firstName, string lastName, string email, string password);
     }
 }
