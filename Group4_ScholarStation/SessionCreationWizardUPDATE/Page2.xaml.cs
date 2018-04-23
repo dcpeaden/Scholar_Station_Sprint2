@@ -31,12 +31,12 @@ namespace SessionCreationWizardUPDATE
             MessageBox.Show(dateString);
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void NextClicked(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new Page3());
+            this.NavigationService.Navigate(new Page4());
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void BackClicked(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new Page1());
         }

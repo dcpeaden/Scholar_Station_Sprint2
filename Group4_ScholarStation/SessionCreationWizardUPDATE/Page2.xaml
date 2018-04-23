@@ -9,12 +9,10 @@
       Title="Page2" >
 
     <Grid Background="#FFE9E9E9">
-        <TextBlock Text="Please select a preferred date." HorizontalAlignment="Center" FontSize="20"/>
-        <Label Content="Date:" VerticalAlignment="Center" Margin="150"/>
-        <DatePicker x:Name="datePicker" VerticalAlignment="Center" HorizontalAlignment="Center" CalendarClosed="DatePickerDateChosen"/>
-        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Height="35" Margin="115,0,120,0">
-            <Button Content="Back" Margin="110,0,0,0" MaxHeight="20" Click="Button_Click_1"/>
-            <Button Content="Next" Margin="15,0,0,0" MaxHeight="20" RenderTransformOrigin="0.503,0.716" Click="Button_Click"/>
-        </StackPanel>
+        <TextBlock HorizontalAlignment="Center" FontSize="20" Margin="111,0,109,315" Foreground="DarkSlateGray" FontFamily="Arial Rounded MT Bold" Width="305"><Run Text="Please select a preferred date."/></TextBlock>
+        <Label Content="Date:" VerticalAlignment="Center" Margin="155,161,145,163" Foreground="DarkSlateGray" FontFamily="Arial Rounded MT Bold"/>
+        <DatePicker x:Name="datePicker" VerticalAlignment="Center" HorizontalAlignment="Center" CalendarClosed="DatePickerDateChosen" FontFamily="Arial Rounded MT Bold" Foreground="DarkSlateGray"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="171,320,0,0" VerticalAlignment="Top" Width="75" Foreground="DarkSlateGray" FontFamily="Arial Rounded MT Bold" Click="BackClicked"/>
+        <Button Content="Next" HorizontalAlignment="Left" Margin="277,320,0,0" VerticalAlignment="Top" Width="75" Foreground="DarkSlateGray" FontFamily="Arial Rounded MT Bold" Click="NextClicked"/>
     </Grid>
 </Page>

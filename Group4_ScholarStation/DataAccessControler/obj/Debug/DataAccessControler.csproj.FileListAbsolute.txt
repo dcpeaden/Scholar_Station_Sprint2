@@ -56,3 +56,9 @@ C:\Users\ryans\Desktop\LastRepo\Scholar_Station_Sprint2\Group4_ScholarStation\Da
 C:\Users\ryans\Desktop\LastRepo\Scholar_Station_Sprint2\Group4_ScholarStation\DataAccessControler\obj\Debug\DataAccessControler.csproj.CoreCompileInputs.cache
 C:\Users\ryans\Desktop\LastRepo\Scholar_Station_Sprint2\Group4_ScholarStation\DataAccessControler\obj\Debug\DataAccessControler.dll
 C:\Users\ryans\Desktop\LastRepo\Scholar_Station_Sprint2\Group4_ScholarStation\DataAccessControler\obj\Debug\DataAccessControler.pdb
+\\fileprint1\Profiles_S1$\cpeaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\DataAccessControler\bin\Debug\DataAccessControler.dll
+\\fileprint1\Profiles_S1$\cpeaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\DataAccessControler\bin\Debug\DataAccessControler.pdb
+\\fileprint1\Profiles_S1$\cpeaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\DataAccessControler\obj\Debug\DataAccessControler.csprojResolveAssemblyReference.cache
+\\fileprint1\Profiles_S1$\cpeaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\DataAccessControler\obj\Debug\DataAccessControler.csproj.CoreCompileInputs.cache
+\\fileprint1\Profiles_S1$\cpeaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\DataAccessControler\obj\Debug\DataAccessControler.dll
+\\fileprint1\Profiles_S1$\cpeaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\DataAccessControler\obj\Debug\DataAccessControler.pdb
