@@ -23,13 +23,14 @@ namespace Scholar_Station
     /// </summary>
     public partial class UserCreationWizard : Page
     {
-        private ISQLHandler sqlHandler;
+        
         private IUserFactory user;
+        private ILoginInVarification loginInVarification;
 
         public UserCreationWizard()
         {
             InitializeComponent();
-            this.sqlHandler = new SQLHandlerControler();
+            this.loginInVarification = new LogInVarification();
         }
 
         private void signUpButton_Click(object sender, RoutedEventArgs e)
@@ -40,44 +41,45 @@ namespace Scholar_Station
             int userType = 1;
             string userEmail = emailBox.Text;
 
-
             user = new UserFactory();
             User newUser = user.CreateUser(name, userType, UserType.Standard, emailBox.Text);
-            if (Regex.IsMatch(emailBox.Text, @"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$"))
+
+            if (!loginInVarification.IsFormFilledOut(firstNameBox.Text, lastNameBox.Text, emailBox.Text))
             {
-                if (passwordBox1.Password == passwordBox2.Password)
-                {
-                    if (String.IsNullOrEmpty(firstNameBox.Text) && String.IsNullOrEmpty(lastNameBox.Text) && String.IsNullOrEmpty(emailBox.Text))
-                    {
-                        MessageBox.Show("Please fill out enter form!");
-                    }
-                    else if (passwordBox1.Password.Length >= 7)
-                    {
-                        MessageBox.Show(sqlHandler.CreateAccout(firstNameBox.Text, lastNameBox.Text, emailBox.Text, passwordBox1.Password));
-                        this.NavigationService.Navigate(new logInFrame());
-                    }
-                    else
-                    {
-                        MessageBox.Show("Password must be at least seven characters!");
-                        passwordBox1.Clear();
-                        passwordBox2.Clear();
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Your passwords do not match!");
-                    passwordBox1.Clear();
-                    passwordBox2.Clear();
-                }
+                MessageBox.Show("Please fill out enter form!");
             }
-            else
+            else if (!loginInVarification.CheckToSeeIfValidEmailFormat(emailBox.Text))
             {
                 MessageBox.Show("Invalid Email!");
                 emailBox.Clear();
+                
             }
-            
+            else if (!loginInVarification.CheckToSeeIfPasswordIsCorrectLength(passwordBox1.Password.Length))
+            {
+                MessageBox.Show("Password must be at least seven characters!");
+                passwordBox1.Clear();
+                passwordBox2.Clear();
+            }
+            else if (!loginInVarification.CheckToSeeIfPasswordsAreSame(passwordBox1.Password, passwordBox2.Password))
+            {
+                MessageBox.Show("Your passwords do not match!");
+                passwordBox1.Clear();
+                passwordBox2.Clear();
+            }
+            else if (loginInVarification.CreateAccount(firstNameBox.Text, lastNameBox.Text, emailBox.Text, passwordBox1.Password))
+            {
+                MessageBox.Show("Email alread used!");
+                firstNameBox.Clear();
+                lastNameBox.Clear();
+                emailBox.Clear();
+                passwordBox1.Clear();
+                passwordBox2.Clear();
+            }
+            else
+            {
+                this.NavigationService.Navigate(new LandingPage(newUser));
+            }
         }
-
         private void cancleButton_Click(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new logInFrame());

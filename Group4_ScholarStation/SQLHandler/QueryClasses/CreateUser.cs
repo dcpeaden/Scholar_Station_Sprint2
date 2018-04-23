@@ -20,20 +20,19 @@ namespace SQLHandler.QueryClasses
             this.update = new ConnectionControler();
         }
 
-       public string Create_User(string firstName, string lastName, string email, string password)
+       public bool Create_User(string firstName, string lastName, string email, string password)
         {
             string checkIfExist = "Select * from users Where user_email = '" + email + "'";
             if (reader.DataReader(checkIfExist).HasRows)
             {
-                return "User account email already exist. " + 
-                       "You are being redirected to your landing page!";
+                return true;
             }
             else
             {
                 string addUser = "INSERT INTO users  (user_email , user_password , user_type, user_fname, user_lname) " + 
                                  "VALUES('" + email + "','" + password + "','" + '1' + "','" + firstName + "','" + lastName + "')";
                 update.ExecuteQueries(addUser);
-                return "Account Created!";
+                return false;
             }
         }
     }

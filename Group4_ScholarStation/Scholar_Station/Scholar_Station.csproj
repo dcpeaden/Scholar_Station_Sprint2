@@ -64,12 +64,14 @@
     <Compile Include="FeedbackForm.xaml.cs">
       <DependentUpon>FeedbackForm.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ILoginInVarification.cs" />
     <Compile Include="IntroPage.xaml.cs">
       <DependentUpon>IntroPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="LandingPage.xaml.cs">
       <DependentUpon>LandingPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="LogInVarification.cs" />
     <Compile Include="SessionFinder.xaml.cs">
       <DependentUpon>SessionFinder.xaml</DependentUpon>
     </Compile>
