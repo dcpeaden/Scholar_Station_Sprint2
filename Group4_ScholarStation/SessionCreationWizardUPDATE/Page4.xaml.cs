@@ -17,7 +17,7 @@ using System.Windows.Shapes;
 namespace SessionCreationWizardUPDATE
 {
     /// <summary>
-    /// Interaction logic for Page3.xaml
+    /// Interaction logic for Page4.xaml
     /// </summary>
     public partial class Page4 : Page
     {
@@ -26,6 +26,16 @@ namespace SessionCreationWizardUPDATE
             InitializeComponent();
             SQLHandlerControler sql = new SQLHandlerControler();
             this.tutorContainer.Items.Add(sql.GetAllTutors());
+        }
+
+        private void finishClicked(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void backClicked(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new Page3());
         }
     }
 }

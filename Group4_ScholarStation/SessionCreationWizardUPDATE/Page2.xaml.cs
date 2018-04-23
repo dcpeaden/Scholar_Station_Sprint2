@@ -33,7 +33,7 @@ namespace SessionCreationWizardUPDATE
 
         private void NextClicked(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new Page4());
+            this.NavigationService.Navigate(new Page3());
         }
 
         private void BackClicked(object sender, RoutedEventArgs e)
