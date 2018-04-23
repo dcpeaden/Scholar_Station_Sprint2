@@ -43,3 +43,12 @@ C:\Users\ryans\Desktop\LastRepo\Scholar_Station_Sprint2\Group4_ScholarStation\SQ
 C:\Users\ryans\Desktop\LastRepo\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\obj\Debug\SQLHandler.pdb
 \\fileprint1\Profiles_S1$\cpeaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\obj\Debug\SQLHandler.dll
 \\fileprint1\Profiles_S1$\cpeaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\obj\Debug\SQLHandler.pdb
+\\fileprint1\Profiles_S1$\cpeaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\bin\Debug\SQLHandler.dll
+\\fileprint1\Profiles_S1$\cpeaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\bin\Debug\SQLHandler.pdb
+\\fileprint1\Profiles_S1$\cpeaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\bin\Debug\DataAccessControler.dll
+\\fileprint1\Profiles_S1$\cpeaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\bin\Debug\ScholarStationCL.dll
+\\fileprint1\Profiles_S1$\cpeaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\bin\Debug\DataAccessControler.pdb
+\\fileprint1\Profiles_S1$\cpeaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\bin\Debug\ScholarStationCL.pdb
+\\fileprint1\Profiles_S1$\cpeaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\obj\Debug\SQLHandler.csprojResolveAssemblyReference.cache
+\\fileprint1\Profiles_S1$\cpeaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\obj\Debug\SQLHandler.csproj.CoreCompileInputs.cache
+\\fileprint1\Profiles_S1$\cpeaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\obj\Debug\SQLHandler.csproj.CopyComplete
