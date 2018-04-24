@@ -49,5 +49,7 @@ using System.Threading.Tasks;
 
         bool CreateAccout(string firstName, string lastName, string email, string password);
 
+        void CloseSession(string sessionID);
+
     }
 }

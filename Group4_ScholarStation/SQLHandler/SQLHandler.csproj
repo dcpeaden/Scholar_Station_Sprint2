@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interfaces\ICancelSession.cs" />
+    <Compile Include="Interfaces\ICloseSession.cs" />
     <Compile Include="Interfaces\ICourse.cs" />
     <Compile Include="Interfaces\ICreateSession.cs" />
     <Compile Include="Interfaces\IDepartment.cs" />
@@ -59,6 +60,7 @@
     <Compile Include="Interfaces\IUserType.cs" />
     <Compile Include="Interfaces\IViewCurrentSessions.cs" />
     <Compile Include="QueryClasses\AddSessionFeedback.cs" />
+    <Compile Include="QueryClasses\CloseSession.cs" />
     <Compile Include="QueryClasses\CreateUser.cs" />
     <Compile Include="QueryClasses\GetSessionFeedback.cs" />
     <Compile Include="QueryClasses\QueryUserType.cs" />

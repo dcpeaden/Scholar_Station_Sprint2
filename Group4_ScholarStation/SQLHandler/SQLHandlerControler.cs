@@ -23,6 +23,7 @@ namespace SQLHandler
         private ILeaveSessionFeedback feedback;
         private IGetSessionFeedback getFeedback;
         private ICreateUser createUser;
+        private ICloseSession closeSession;
 
         public SQLHandlerControler()
         {
@@ -39,6 +40,7 @@ namespace SQLHandler
             this.feedback = new AddSessionFeedback();
             this.getFeedback = new GetSessionFeedback();
             this.createUser = new CreateUser();
+            this.closeSession = new CloseSession();
         }
 
         public IDataReader GetAllCourses()
@@ -145,6 +147,11 @@ namespace SQLHandler
         public bool CreateAccout(string firstName, string lastName, string email, string password)
         {
             return createUser.Create_User(firstName, lastName, email, password);
+        }
+
+        public void CloseSession(string sessionID)
+        {
+            closeSession.CloseOutSession(sessionID);
         }
     }
 }

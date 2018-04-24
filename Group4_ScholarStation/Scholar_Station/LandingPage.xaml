@@ -43,8 +43,7 @@
             <Button x:Name="backBtn" Content="Back" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="114" IsEnabled="True" Click="backBtn_Click" Canvas.Left="370" Canvas.Top="246"/>
         </Canvas>
 
-        <Canvas x:Name="stdUser" Width="525" Height="302" VerticalAlignment="Bottom" Visibility="Hidden">
-            <TextBlock Margin="354,10,-369,-10" Grid.Column="1" FontSize="14"><Hyperlink Click="logOut_Click">Log Out</Hyperlink></TextBlock>
+        <Canvas x:Name="stdUser" Width="525" Height="302" VerticalAlignment="Bottom" Visibility="Hidden"> 
             <Label x:Name="tutorSessionsLabel" Content="Sessions you're tutoring:" HorizontalAlignment="Left" Margin="23.05,83,0,0" VerticalAlignment="Top" Width="181" FontSize="14" FontWeight="Bold" Grid.Column="1"/>
             <Label x:Name="studentSessionsLabel" Content="Sessions you're attending:" HorizontalAlignment="Left" Margin="23.05,159,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Grid.Column="1"/>
             <ComboBox x:Name="tutorSessionsSelect" HorizontalAlignment="Left" Margin="23,109,0,0" VerticalAlignment="Top" Width="221" Grid.Column="1" SelectionChanged="tutorSessionsSelect_SelectionChanged" SelectedIndex="0"/>
