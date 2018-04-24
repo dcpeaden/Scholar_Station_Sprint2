@@ -43,6 +43,10 @@ using System.Threading.Tasks;
 
         void LeaveSessionFeedback(string email, string sessionID, string feedback);
 
+        IDataReader GetTutorFeedback(string sessionID);
+
+        IDataReader GetStudentFeedback(string sessionID);
+
         bool CreateAccout(string firstName, string lastName, string email, string password);
 
     }
