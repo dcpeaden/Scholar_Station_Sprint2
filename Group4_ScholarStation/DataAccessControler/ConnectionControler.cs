@@ -12,7 +12,7 @@ namespace DataAccessControler
 {
     public class ConnectionControler : IConnection, IUpdate, IRead
     {
-        private string connectionString = "user id='';" + "password='';" + "server=DESKTOP-GOIFFU5\\SSTATIONDB;" + "database= Scholar_Station; " + "Trusted_Connection=true;";
+        private string connectionString = "user id='';" + "password='';" + "server=localhost;" + "database= Scholar_Station; " + "Trusted_Connection=true;";
         private SqlConnection myConnection;
         private SqlDataReader dr;
 
