@@ -25,8 +25,6 @@ namespace SessionCreationWizardUPDATE
         public Page4()
         {
             InitializeComponent();
-            ConnectionControler conn = new ConnectionControler();
-            conn.openConnection();
             SQLHandlerControler sql = new SQLHandlerControler();
             this.tutorContainer.Items.Add(sql.GetAllTutors());
         }
