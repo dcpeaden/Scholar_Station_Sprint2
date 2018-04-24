@@ -31,6 +31,8 @@ namespace Scholar_Station
         private IList<string> studentSessionIDs;
         private IList<string> professorCourses;
         private IList<string> feedbackSessionIDs;
+        private IList<string> students;
+        private IList<string> tutors;
 
         public LandingPage(User user)
         {
@@ -266,10 +268,12 @@ namespace Scholar_Station
         {
             professor.Visibility = Visibility.Hidden;
             sessionFeedback.Visibility = Visibility.Visible;
+            feedbackHeadingLabel.Content = "Feedback For Session #" + feedbackSessionIDs[sessionSelect.SelectedIndex];
         }
 
         private void populateSessionSelectComboBox()
         {
+            sessionSelect.Items.Clear();
             sessionSelect.Items.Add("--Select Session--");
             sessionSelect.SelectedIndex = 0;
 
@@ -280,13 +284,29 @@ namespace Scholar_Station
         {
             IDataReader sessions = sqlHandler.GetCompletedSessionsByCourse(professorCourses[professorCourseSelect.SelectedIndex].ToString()); ;
             feedbackSessionIDs = new List<string>();
+            tutors = new List<string>();
+            students = new List<string>();
+
             feedbackSessionIDs.Add("null");
             while (sessions.Read())
             {
                 feedbackSessionIDs.Add(sessions.GetValue(8).ToString());
-                sessionSelect.Items.Add(getDate(sessions, 2) + "   "
-                                                    + sessions.GetValue(3).ToString());
+                tutors.Add(sessions.GetValue(0).ToString());
+                students.Add(sessions.GetValue(1).ToString());
+                sessionSelect.Items.Add("#" + sessions.GetValue(8).ToString() + "   " + getDate(sessions, 2) + "   "
+                                                    + sessions.GetValue(1).ToString());
             }
+        }
+
+        private void backBtn_Click(object sender, RoutedEventArgs e)
+        {
+            professor.Visibility = Visibility.Visible;
+            sessionFeedback.Visibility = Visibility.Hidden;
+            professorCourseSelect.SelectedIndex = 0;
+            sessionSelect.SelectedIndex = 0;
+            sessionsLabel.Visibility = Visibility.Hidden;
+            sessionSelect.Visibility = Visibility.Hidden;
+            viewSessionFeedback.Visibility = Visibility.Hidden;
         }
     }
 }
