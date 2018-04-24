@@ -1,4 +1,5 @@
-﻿using SQLHandler;
+﻿using DataAccessControler;
+using SQLHandler;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +25,8 @@ namespace SessionCreationWizardUPDATE
         public Page4()
         {
             InitializeComponent();
+            ConnectionControler conn = new ConnectionControler();
+            conn.openConnection();
             SQLHandlerControler sql = new SQLHandlerControler();
             this.tutorContainer.Items.Add(sql.GetAllTutors());
         }

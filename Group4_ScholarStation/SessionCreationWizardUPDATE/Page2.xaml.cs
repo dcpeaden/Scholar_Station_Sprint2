@@ -25,12 +25,6 @@ namespace SessionCreationWizardUPDATE
             InitializeComponent();
         }
 
-        private void DatePickerDateChosen(object sender, RoutedEventArgs e)
-        {
-            string dateString = this.datePicker.SelectedDate.Value.ToShortDateString();
-            MessageBox.Show(dateString);
-        }
-
         private void NextClicked(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new Page3());
@@ -39,6 +33,12 @@ namespace SessionCreationWizardUPDATE
         private void BackClicked(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new Page1());
+        }
+
+        private void dateTimeValueChanged(object sender, RoutedPropertyChangedEventArgs<object> e)
+        {
+            string dateString = this.dateTimePicker.Value.ToString();
+            MessageBox.Show(dateString);
         }
     }
 }

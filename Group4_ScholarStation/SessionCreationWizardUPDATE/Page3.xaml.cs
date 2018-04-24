@@ -1,4 +1,5 @@
-﻿using SQLHandler;
+﻿using DataAccessControler;
+using SQLHandler;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,16 +25,18 @@ namespace SessionCreationWizardUPDATE
         public Page3()
         {
             InitializeComponent();
+            ConnectionControler conn = new ConnectionControler();
+            conn.openConnection();
             SQLHandlerControler sql = new SQLHandlerControler();
             classContainer.Items.Add(sql.GetAllCourses());
         }
 
-        private void nextClicked(object sender, RoutedEventArgs e)
+        private void NextClicked(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new Page4());
         }
 
-        private void backClicked(object sender, RoutedEventArgs e)
+        private void BackClicked(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new Page2());
         }

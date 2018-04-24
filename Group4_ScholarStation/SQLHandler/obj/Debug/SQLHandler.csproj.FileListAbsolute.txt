@@ -52,3 +52,14 @@ C:\Users\ryans\Desktop\LastRepo\Scholar_Station_Sprint2\Group4_ScholarStation\SQ
 \\fileprint1\Profiles_S1$\cpeaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\obj\Debug\SQLHandler.csprojResolveAssemblyReference.cache
 \\fileprint1\Profiles_S1$\cpeaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\obj\Debug\SQLHandler.csproj.CoreCompileInputs.cache
 \\fileprint1\Profiles_S1$\cpeaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\obj\Debug\SQLHandler.csproj.CopyComplete
+C:\Users\Cole Peaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\bin\Debug\SQLHandler.dll
+C:\Users\Cole Peaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\bin\Debug\SQLHandler.pdb
+C:\Users\Cole Peaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\bin\Debug\DataAccessControler.dll
+C:\Users\Cole Peaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\bin\Debug\ScholarStationCL.dll
+C:\Users\Cole Peaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\bin\Debug\DataAccessControler.pdb
+C:\Users\Cole Peaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\bin\Debug\ScholarStationCL.pdb
+C:\Users\Cole Peaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\obj\Debug\SQLHandler.csprojResolveAssemblyReference.cache
+C:\Users\Cole Peaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\obj\Debug\SQLHandler.csproj.CoreCompileInputs.cache
+C:\Users\Cole Peaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\obj\Debug\SQLHandler.csproj.CopyComplete
+C:\Users\Cole Peaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\obj\Debug\SQLHandler.dll
+C:\Users\Cole Peaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\obj\Debug\SQLHandler.pdb

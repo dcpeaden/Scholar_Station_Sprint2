@@ -148,6 +148,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DataAccessControler\DataAccessControler.csproj">
+      <Project>{E6F2E850-BC91-4F6B-8E7E-A991C50EAB4B}</Project>
+      <Name>DataAccessControler</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SQLHandler\SQLHandler.csproj">
       <Project>{AB065320-E116-45AF-AEFD-4BA524D615F6}</Project>
       <Name>SQLHandler</Name>

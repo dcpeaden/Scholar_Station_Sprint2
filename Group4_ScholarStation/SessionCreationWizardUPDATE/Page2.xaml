@@ -1,18 +1,19 @@
-﻿<Page x:Class="SessionCreationWizardUPDATE.Page2"
+﻿<Page
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:SessionCreationWizardUPDATE"
+      xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit" x:Class="SessionCreationWizardUPDATE.Page2"
       mc:Ignorable="d" 
       d:DesignHeight="350" d:DesignWidth="525"
       Title="Page2" >
 
     <Grid Background="#FFE9E9E9">
-        <TextBlock HorizontalAlignment="Center" FontSize="20" Margin="111,0,109,315" Foreground="DarkSlateGray" FontFamily="Arial Rounded MT Bold" Width="305"><Run Text="Please select a preferred date."/></TextBlock>
-        <Label Content="Date:" VerticalAlignment="Center" Margin="155,161,145,163" Foreground="DarkSlateGray" FontFamily="Arial Rounded MT Bold"/>
-        <DatePicker x:Name="datePicker" VerticalAlignment="Center" HorizontalAlignment="Center" CalendarClosed="DatePickerDateChosen" FontFamily="Arial Rounded MT Bold" Foreground="DarkSlateGray"/>
+        <Label Content="Please choose a preferred date and time." HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20" Margin="0,20,0,0" Foreground="DarkSlateGray" FontFamily="Arial Rounded MT Bold" Width="414"/>
+        <Label Content="Date:" HorizontalAlignment="Center" VerticalAlignment="Center" Width="120" Foreground="DarkSlateGray" FontFamily="Arial Rounded MT Bold" Margin="167,164,238,162"/>
         <Button Content="Back" HorizontalAlignment="Left" Margin="171,320,0,0" VerticalAlignment="Top" Width="75" Foreground="DarkSlateGray" FontFamily="Arial Rounded MT Bold" Click="BackClicked"/>
         <Button Content="Next" HorizontalAlignment="Left" Margin="277,320,0,0" VerticalAlignment="Top" Width="75" Foreground="DarkSlateGray" FontFamily="Arial Rounded MT Bold" Click="NextClicked"/>
+        <xctk:DateTimePicker x:Name="dateTimePicker" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="214,166,192,164" Width="119" ValueChanged="dateTimeValueChanged"/>
     </Grid>
 </Page>
