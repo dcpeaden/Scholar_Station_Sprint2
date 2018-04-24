@@ -9,7 +9,7 @@
       Title="UserHome">
     <Grid Height="350" VerticalAlignment="Bottom">
         <Canvas x:Name="welcomeBanner" Width="525" Height="48" VerticalAlignment="Top" Margin="0,0,0,0" Canvas.Bottom="0" >
-            <Label x:Name="welcome"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="280" Height="48" FontSize="16" FontWeight="Bold" Grid.ColumnSpan="2"/>
+            <Label x:Name="welcome"  HorizontalAlignment="Left" VerticalAlignment="Center" Width="525" Height="48" FontSize="16" FontWeight="Bold" Grid.ColumnSpan="2"/>
         </Canvas>
 
         <Canvas x:Name="contactAdmin" Width="525" Height="302" VerticalAlignment="Bottom" Margin="0,0,0,0" Canvas.Bottom="0" Visibility="Hidden">
@@ -17,7 +17,8 @@
             <Button x:Name="backButton1" Content="To Login" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="114" Click="toLogin_Click" Canvas.Left="204" Canvas.Top="237"/>
         </Canvas>
 
-        <Canvas x:Name="professor" Width="525" Height="302" VerticalAlignment="Bottom" Margin="0,0,0.333,0" Canvas.Bottom="0" Visibility="Visible" HorizontalAlignment="Right">
+
+        <Canvas x:Name="professor" Width="525" Height="302" VerticalAlignment="Bottom" Margin="0,0,0,0" Canvas.Bottom="0" Visibility="Hidden">
             <Label x:Name="professorCoursesLabel" Content="Courses you're teaching:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="181" FontSize="14" FontWeight="Bold" Grid.Column="1" Canvas.Left="23" Canvas.Top="29"/>
             <ComboBox x:Name="professorCourseSelect" HorizontalAlignment="Left" VerticalAlignment="Top" Width="221" Grid.Column="1" SelectionChanged="professorCourseSelect_SelectionChanged" SelectedIndex="0" Cursor="None" Canvas.Left="23" Canvas.Top="63"/>
             <Button x:Name="professorCourseDetails" Content="View Course Sessions" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" IsEnabled="False" Grid.Column="1" Click="professorCourseDetails_Click" Canvas.Left="318" Canvas.Top="63"/>
@@ -30,6 +31,15 @@
             <Label x:Name="details" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="280" Height="280" FontSize="16" FontWeight="DemiBold" Grid.ColumnSpan="2"/>
             <Button x:Name="cancelSession" Content="Cancel Session" HorizontalAlignment="Left" Margin="30,185,0,0" VerticalAlignment="Bottom" Width="114" IsEnabled="False" Click="cancelSession_Click"/>
             <Button x:Name="closeSession" Content="Close Session" HorizontalAlignment="Right" Margin="257,185,0,0" VerticalAlignment="Bottom" Width="114" IsEnabled="True" Click="closeSession_Click"/>
+        </Canvas>
+
+        <Canvas x:Name="sessionFeedback" Width="525" Height="302" VerticalAlignment="Bottom" Margin="0,0,0,0" Canvas.Bottom="0" Visibility="Visible">
+            <Label x:Name="feedbackHeadingLabel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="193" FontSize="14" FontWeight="Bold" Grid.Column="1" Canvas.Left="167" Height="30"/>
+            <Label x:Name="tutorFeedbackLabel" Content="Tutor Feedback:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="181" FontSize="14" FontWeight="Bold" Grid.Column="1" Canvas.Left="23" Canvas.Top="45"/>
+            <TextBox x:Name="tutorTextBox" HorizontalAlignment="Left" Height="66" TextWrapping="Wrap" VerticalAlignment="Top" Width="461" ScrollViewer.VerticalScrollBarVisibility="Auto" Canvas.Left="23" Canvas.Top="79"/>
+            <Label x:Name="studentFeedbackLabel" Content="Student Feedback:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="181" FontSize="14" FontWeight="Bold" Grid.Column="1" Canvas.Left="23" Canvas.Top="145"/>
+            <TextBox x:Name="studentTextBox" HorizontalAlignment="Left" Height="66" TextWrapping="Wrap" VerticalAlignment="Top" Width="461" ScrollViewer.VerticalScrollBarVisibility="Auto" Canvas.Left="23" Canvas.Top="174"/>
+            <Button x:Name="backBtn" Content="Back" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="114" IsEnabled="True" Click="backBtn_Click" Canvas.Left="370" Canvas.Top="246"/>
         </Canvas>
 
         <Canvas x:Name="stdUser" Width="525" Height="302" VerticalAlignment="Bottom" Visibility="Hidden">
