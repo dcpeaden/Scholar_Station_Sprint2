@@ -48,6 +48,7 @@
     <Compile Include="Interfaces\ICourse.cs" />
     <Compile Include="Interfaces\ICreateSession.cs" />
     <Compile Include="Interfaces\IDepartment.cs" />
+    <Compile Include="Interfaces\IGetSessionFeedback.cs" />
     <Compile Include="Interfaces\IJoinSession.cs" />
     <Compile Include="Interfaces\ILeaveSessionFeedback.cs" />
     <Compile Include="Interfaces\ICreateUser.cs" />
@@ -59,6 +60,7 @@
     <Compile Include="Interfaces\IViewCurrentSessions.cs" />
     <Compile Include="QueryClasses\AddSessionFeedback.cs" />
     <Compile Include="QueryClasses\CreateUser.cs" />
+    <Compile Include="QueryClasses\GetSessionFeedback.cs" />
     <Compile Include="QueryClasses\QueryUserType.cs" />
     <Compile Include="QueryClasses\ViewCurrentSessions.cs" />
     <Compile Include="QueryClasses\CancelSessions.cs" />

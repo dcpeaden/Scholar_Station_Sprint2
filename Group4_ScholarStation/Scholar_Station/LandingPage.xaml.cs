@@ -73,15 +73,16 @@ namespace Scholar_Station
                 contactAdmin.Visibility = Visibility.Visible;
                 sessionFeedback.Visibility = Visibility.Hidden;
                 sessionDetails.Visibility = Visibility.Hidden;
-                welcomeBanner.Visibility = Visibility.Hidden;
-                contactAdminLabel.Content = user.Email + " does not exist in system.\n" 
-                                            + "To use Scholar Station, please contact admin.";
+                welcome.Visibility = Visibility.Hidden;
+                contactAdminLabel.Content = "     " + user.Email + " does not exist in system.\n" 
+                                            + "To use Scholar Station, please create an account.";
+                
             }
         }
 
         private void toLogin_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new logInFrame());
+            this.NavigationService.Navigate(new UserCreationWizard());
         }
 
         private void createSession_Click(object sender, RoutedEventArgs e)
@@ -269,6 +270,23 @@ namespace Scholar_Station
             professor.Visibility = Visibility.Hidden;
             sessionFeedback.Visibility = Visibility.Visible;
             feedbackHeadingLabel.Content = "Feedback For Session #" + feedbackSessionIDs[sessionSelect.SelectedIndex];
+
+            tutorTextBox.Clear();
+            studentTextBox.Clear();
+
+            IDataReader tutorFeedback = sqlHandler.GetTutorFeedback(feedbackSessionIDs[sessionSelect.SelectedIndex]);
+
+            while (tutorFeedback.Read())
+            {
+                tutorTextBox.Text = tutorFeedback.GetValue(0).ToString();
+            }
+
+            IDataReader studentFeedback = sqlHandler.GetStudentFeedback(feedbackSessionIDs[sessionSelect.SelectedIndex]);
+
+            while (studentFeedback.Read())
+            {
+                studentTextBox.Text = studentFeedback.GetValue(0).ToString();
+            }
         }
 
         private void populateSessionSelectComboBox()
