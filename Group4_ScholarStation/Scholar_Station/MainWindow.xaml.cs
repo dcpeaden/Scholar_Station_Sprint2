@@ -11,27 +11,16 @@ namespace Scholar_Station
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
-    {
-        private System.Windows.Threading.DispatcherTimer dispatcherTimer = new System.Windows.Threading.DispatcherTimer();
-        private SplashScreenWindow splashWindow;
+    { 
         public MainWindow()
         {
-            this.Hide();
             InitializeComponent();
-            splashWindow = new SplashScreenWindow();
-            splashWindow.Show();
-            dispatcherTimer.Tick += new EventHandler(dispatcherTimer_Tick);
-            dispatcherTimer.Interval = new TimeSpan(0, 0, 2);
-            dispatcherTimer.Start();
+            this.Hide();
+            IntroPage introPage = new IntroPage(this);
+            mainWindowFrame.NavigationService.Navigate(new logInFrame());
+            introPage.Show();
         }
 
-        private void dispatcherTimer_Tick(object sender, EventArgs e)
-        {
-            splashWindow.Hide();
-            this.Show();
-            mainWindowFrame.NavigationService.Navigate(new logInFrame());
-            dispatcherTimer.Stop();
-        }
         protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
         {
             bool wasCodeClosed = new StackTrace().GetFrames().FirstOrDefault(x => x.GetMethod() == typeof(Window).GetMethod("Close")) != null;

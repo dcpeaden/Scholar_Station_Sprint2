@@ -30,14 +30,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interfaces\ICancelSession.cs" />
@@ -46,6 +50,7 @@
     <Compile Include="Interfaces\IDepartment.cs" />
     <Compile Include="Interfaces\IJoinSession.cs" />
     <Compile Include="Interfaces\ILeaveSessionFeedback.cs" />
+    <Compile Include="Interfaces\ICreateUser.cs" />
     <Compile Include="Interfaces\ISessionID.cs" />
     <Compile Include="Interfaces\ISessions.cs" />
     <Compile Include="Interfaces\ISQLHandler.cs" />
@@ -53,6 +58,7 @@
     <Compile Include="Interfaces\IUserType.cs" />
     <Compile Include="Interfaces\IViewCurrentSessions.cs" />
     <Compile Include="QueryClasses\AddSessionFeedback.cs" />
+    <Compile Include="QueryClasses\CreateUser.cs" />
     <Compile Include="QueryClasses\QueryUserType.cs" />
     <Compile Include="QueryClasses\ViewCurrentSessions.cs" />
     <Compile Include="QueryClasses\CancelSessions.cs" />

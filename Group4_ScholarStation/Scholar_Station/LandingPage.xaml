@@ -17,7 +17,11 @@
             <Button x:Name="backButton1" Content="To Login" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="114" Click="toLogin_Click" Canvas.Left="204" Canvas.Top="237"/>
         </Canvas>
 
+<<<<<<< HEAD
         <Canvas x:Name="professor" Width="525" Height="302" VerticalAlignment="Bottom" Margin="0,0,0,0" Canvas.Bottom="0" Visibility="Hidden">
+=======
+        <Canvas x:Name="professor" Width="525" Height="302" VerticalAlignment="Bottom" Margin="0,0,0.333,0" Canvas.Bottom="0" Visibility="Visible" HorizontalAlignment="Right">
+>>>>>>> 3e95ed7734c4194098568342214ec6a195deb91d
             <Label x:Name="professorCoursesLabel" Content="Courses you're teaching:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="181" FontSize="14" FontWeight="Bold" Grid.Column="1" Canvas.Left="23" Canvas.Top="29"/>
             <ComboBox x:Name="professorCourseSelect" HorizontalAlignment="Left" VerticalAlignment="Top" Width="221" Grid.Column="1" SelectionChanged="professorCourseSelect_SelectionChanged" SelectedIndex="0" Cursor="None" Canvas.Left="23" Canvas.Top="63"/>
             <Button x:Name="professorCourseDetails" Content="View Course Sessions" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" IsEnabled="False" Grid.Column="1" Click="professorCourseDetails_Click" Canvas.Left="318" Canvas.Top="63"/>

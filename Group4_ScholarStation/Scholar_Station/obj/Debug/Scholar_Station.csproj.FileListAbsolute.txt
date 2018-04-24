@@ -356,14 +356,8 @@ C:\Users\ryans\Desktop\REPO\Scholar_Station_Sprint2\Group4_ScholarStation\Schola
 C:\Users\ryans\Desktop\REPO\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\Scholar_Station.csproj.CopyComplete
 C:\Users\ryans\Desktop\REPO\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\Scholar_Station.exe
 C:\Users\ryans\Desktop\REPO\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\Scholar_Station.pdb
-C:\Users\ryans\Desktop\REPO\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\SessionFinder.exe
 C:\Users\ryans\Desktop\REPO\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\EmailControler.dll
-C:\Users\ryans\Desktop\REPO\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\SessionFinder.pdb
-C:\Users\ryans\Desktop\REPO\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\SessionFinder.exe.config
 C:\Users\ryans\Desktop\REPO\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\EmailControler.pdb
-C:\Users\ryans\Desktop\REPO\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\Feedback_Form.exe
-C:\Users\ryans\Desktop\REPO\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\Feedback_Form.pdb
-C:\Users\ryans\Desktop\REPO\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\Feedback_Form.exe.config
 C:\Users\Kenneth Dale\Desktop\CEN3032\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\Feedback_Form.exe
 C:\Users\Kenneth Dale\Desktop\CEN3032\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\SessionFinder.exe
 C:\Users\Kenneth Dale\Desktop\CEN3032\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\EmailControler.dll
@@ -492,3 +486,91 @@ C:\Users\ryans\Desktop\repos\Scholar_Station_Sprint2\Group4_ScholarStation\Schol
 C:\Users\ryans\Desktop\repos\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\Scholar_Station.csproj.GenerateResource.cache
 C:\Users\ryans\Desktop\repos\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\Scholar_Station.csproj.CoreCompileInputs.cache
 C:\Users\ryans\Desktop\repos\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\Scholar_Station.csproj.CopyComplete
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\Scholar_Station.exe.config
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\Scholar_Station.exe
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\Scholar_Station.pdb
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\DataAccessControler.dll
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\ScholarStationCL.dll
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\SQLHandler.dll
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\EmailControler.dll
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\DataAccessControler.pdb
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\ScholarStationCL.pdb
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\SQLHandler.pdb
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\EmailControler.pdb
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\Scholar_Station.csprojResolveAssemblyReference.cache
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\LandingPage.g.cs
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\logInFrame.g.cs
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\MainWindow.g.cs
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\joinSessionFrame.g.cs
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\SplashScreenWindow.g.cs
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\tutorPage.g.cs
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\App.g.cs
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\Scholar_Station_MarkupCompile.cache
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\Scholar_Station_MarkupCompile.lref
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\LandingPage.baml
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\logInFrame.baml
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\MainWindow.baml
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\joinSessionFrame.baml
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\SplashScreenWindow.baml
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\tutorPage.baml
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\Scholar_Station.g.resources
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\Scholar_Station.Properties.Resources.resources
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\Scholar_Station.csproj.GenerateResource.cache
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\Scholar_Station.csproj.CoreCompileInputs.cache
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\Scholar_Station.csproj.CopyComplete
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\Scholar_Station.exe
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\Scholar_Station.pdb
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\SessionFinder.g.cs
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\SessionFinder.baml
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\FeedbackForm.g.cs
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\FeedbackForm.baml
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\IntroPage.g.cs
+C:\Users\ryans\Desktop\WorkThis\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\IntroPage.baml
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\Scholar_Station.exe.config
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\Scholar_Station.exe
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\Scholar_Station.pdb
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\DataAccessControler.dll
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\EmailControler.dll
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\ScholarStationCL.dll
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\SQLHandler.dll
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\DataAccessControler.pdb
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\EmailControler.pdb
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\ScholarStationCL.pdb
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\SQLHandler.pdb
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\Scholar_Station.csprojResolveAssemblyReference.cache
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\FeedbackForm.g.cs
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\IntroPage.g.cs
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\LandingPage.g.cs
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\logInFrame.g.cs
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\MainWindow.g.cs
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\joinSessionFrame.g.cs
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\SessionFinder.g.cs
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\SplashScreenWindow.g.cs
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\tutorPage.g.cs
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\App.g.cs
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\Scholar_Station_MarkupCompile.cache
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\Scholar_Station_MarkupCompile.lref
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\FeedbackForm.baml
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\IntroPage.baml
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\LandingPage.baml
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\logInFrame.baml
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\MainWindow.baml
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\joinSessionFrame.baml
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\SessionFinder.baml
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\SplashScreenWindow.baml
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\tutorPage.baml
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\Scholar_Station.g.resources
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\Scholar_Station.Properties.Resources.resources
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\Scholar_Station.csproj.GenerateResource.cache
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\Scholar_Station.csproj.CoreCompileInputs.cache
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\Scholar_Station.csproj.CopyComplete
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\Scholar_Station.exe
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\Scholar_Station.pdb
+C:\Users\ryans\Desktop\Repo\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\FeedbackForm.g.cs
+C:\Users\ryans\Desktop\Repo\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\IntroPage.g.cs
+C:\Users\ryans\Desktop\Repo\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\SessionFinder.g.cs
+C:\Users\ryans\Desktop\Repo\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\FeedbackForm.baml
+C:\Users\ryans\Desktop\Repo\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\IntroPage.baml
+C:\Users\ryans\Desktop\Repo\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\SessionFinder.baml
+C:\Users\ryans\Desktop\Repo\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\UserCreationWizard.g.cs
+C:\Users\ryans\Desktop\Repo\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\UserCreationWizard.baml

@@ -1,16 +1,27 @@
-﻿using DataAccessControler;
+﻿using EmailControler;
 using ScholarStation;
 using SQLHandler;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
-using EmailControler;
-using System.Collections;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
 
-namespace SessionFinder
+namespace Scholar_Station
 {
-    public partial class MainWindow : Window
+    /// <summary>
+    /// Interaction logic for SessionFinder.xaml
+    /// </summary>
+    public partial class SessionFinder : Window
     {
         private IList<string> tutor;
         private IList<string> sessionIdList;
@@ -18,9 +29,19 @@ namespace SessionFinder
         private IList<string> departments;
         private IList<string> classes;
         private ISQLHandler sqlHandler;
+        private LandingPage lp;
 
 
-        public MainWindow(User newStudentUser)
+        public SessionFinder(User newStudentUser, LandingPage p)
+        {
+            lp = p;
+            sqlHandler = new SQLHandlerControler();
+            this.user = newStudentUser;
+            InitializeComponent();
+            AddDepartmentsToComboBox();
+        }
+
+        public SessionFinder(User newStudentUser)
         {
             sqlHandler = new SQLHandlerControler();
             this.user = newStudentUser;
@@ -94,10 +115,18 @@ namespace SessionFinder
         //Join the session
         public void JoinTutorSession()
         {
-            if (sessionLengthBox.SelectedIndex != -1)
+            if (user == null)
+            {
+                MessageBox.Show("You must login before joining a session");
+            }
+            else if (sessionLengthBox.SelectedIndex != -1)
             {
                 sqlHandler.JoinSession(user.Email, sessionIdList[sessionLengthBox.SelectedIndex].ToString());
                 MessageBox.Show("Session Joined!");
+                lp.studentSessionsSelect.Items.Clear();
+                lp.studentSessionsSelect.Items.Add("--Select Session--");
+                lp.studentSessionsSelect.SelectedIndex = 0;
+                lp.AddStudentSessionsToComboBox();
                 SendEmail();
             }
             else MessageBox.Show("You must select course, tutor, and session!");

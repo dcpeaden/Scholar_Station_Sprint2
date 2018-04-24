@@ -89,7 +89,7 @@ namespace Scholar_Station
 
         private void joinSession_Click(object sender, RoutedEventArgs e)
         {
-            SessionFinder.MainWindow sessionSearch = new SessionFinder.MainWindow(user);
+            SessionFinder sessionSearch = new SessionFinder(user, this);
             sessionSearch.Show();
         }
 
@@ -123,7 +123,6 @@ namespace Scholar_Station
         {
             studentSessionsSelect.Items.Add("--Select Session--");
             studentSessionsSelect.SelectedIndex = 0;
-            
             AddStudentSessionsToComboBox();
         }
 
@@ -188,7 +187,13 @@ namespace Scholar_Station
             stdUser.Visibility = Visibility.Hidden;
 
             string str = "";
-            currentID = studentSessionIDs[studentSessionsSelect.SelectedIndex].ToString();
+
+            if (studentSessionsSelect.SelectedIndex != -1)
+            {
+                currentID = studentSessionIDs[studentSessionsSelect.SelectedIndex].ToString();
+            }
+            else MessageBox.Show("You must select a session to view!");
+            
 
             IDataReader sessions = sqlHandler.ViewCurrentSessionByID(studentSessionIDs[studentSessionsSelect.SelectedIndex].ToString());
 
@@ -212,7 +217,7 @@ namespace Scholar_Station
 
         private void closeSession_Click(object sender, RoutedEventArgs e)
         {
-            Feedback_Form.MainWindow feedback = new Feedback_Form.MainWindow(user, currentID);
+            FeedbackForm feedback = new FeedbackForm(user, currentID);
             feedback.Show();
         }
 

@@ -21,6 +21,7 @@ namespace SQLHandler
         private ICancelSession cancelSession;
         private IUserType userType;
         private ILeaveSessionFeedback feedback;
+        private ICreateUser createUser;
 
         public SQLHandlerControler()
         {
@@ -35,6 +36,7 @@ namespace SQLHandler
             this.cancelSession = new CancelSessions();
             this.userType = new QueryUserType();
             this.feedback = new AddSessionFeedback();
+            this.createUser = new CreateUser();
         }
 
         public IDataReader GetAllCourses()
@@ -118,14 +120,19 @@ namespace SQLHandler
             return viewSessions.ViewCurrentSessionByID(id);
         }
 
-        public IDataReader GetUserType(string email)
+        public IDataReader GetUserType(string email, string password)
         {
-            return userType.GetUserType(email);
+            return userType.GetUserType(email, password);
         }
 
         public void LeaveSessionFeedback(string email, string sessionID, string feedBack)
         {
             feedback.LeaveFeedback(email, sessionID, feedBack);
+        }
+
+        public bool CreateAccout(string firstName, string lastName, string email, string password)
+        {
+            return createUser.Create_User(firstName, lastName, email, password);
         }
     }
 }

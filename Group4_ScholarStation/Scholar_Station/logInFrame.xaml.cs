@@ -27,12 +27,12 @@ namespace Scholar_Station
             inputValidationCheck();
         }
 
-        private UserType getUserType(string email)
+        private UserType getUserType(string email, string password)
         {
             int thisType = 0;
             string type = "";
 
-            IDataReader userType = sqlHandler.GetUserType(email);
+            IDataReader userType = sqlHandler.GetUserType(email, password);
 
             while (userType.Read())
             {
@@ -52,7 +52,7 @@ namespace Scholar_Station
             if (Regex.IsMatch(emailBox.Text, @"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$"))
            {
                 user = new UserFactory();
-                User newUser = user.CreateUser("name", 1, getUserType(emailBox.Text), emailBox.Text);
+                User newUser = user.CreateUser("name", 1, getUserType(emailBox.Text, passwordBox.Password), emailBox.Text);
 
                 if (emailBox.Text != null)
                 {
@@ -63,6 +63,11 @@ namespace Scholar_Station
             {
                MessageBox.Show("You Must Enter a vaild Email!");
             }
+        }
+
+        private void SignInButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new UserCreationWizard());
         }
     }
 }

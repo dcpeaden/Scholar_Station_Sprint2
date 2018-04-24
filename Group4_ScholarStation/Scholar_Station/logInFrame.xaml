@@ -13,17 +13,25 @@
             <RowDefinition Height="3*"/>
             <RowDefinition Height="347*"/>
         </Grid.RowDefinitions>
-        <Button x:Name="LogInButton" Content="Log In" HorizontalAlignment="Left" Margin="188,194.667,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" Click="LogInButton_Click" FontWeight="Bold">
+        <Button x:Name="LogInButton" Content="Log In" HorizontalAlignment="Left" Margin="188,236.667,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" Click="LogInButton_Click" FontWeight="Bold">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <Label x:Name="label1" Content="User Sign In" HorizontalAlignment="Left" Margin="175,79.667,0,0" Grid.Row="1" VerticalAlignment="Top" Width="155" FontSize="24" FontWeight="Bold"/>
+        <Label x:Name="label1" Content="User Sign In" HorizontalAlignment="Left" Margin="175,79.667,0,0" Grid.Row="1" VerticalAlignment="Top" Width="155" FontSize="24" FontWeight="Bold" FontFamily="Arial Rounded MT Bold"/>
         <TextBox x:Name="emailBox" HorizontalAlignment="Left" Height="23" AcceptsReturn="False" Margin="177,152.667,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" >
             <TextBox.Effect>
                 <DropShadowEffect/>
             </TextBox.Effect>
         </TextBox>
-        <Label x:Name="label_Copy" Content="Enter Email" HorizontalAlignment="Left" Margin="175,126.667,0,0" Grid.Row="1" VerticalAlignment="Top" Width="133" RenderTransformOrigin="0.509,0.553" FontWeight="Bold"/>
+        <Label x:Name="label_Copy" Content="Email" HorizontalAlignment="Left" Margin="175,126.667,0,0" Grid.Row="1" VerticalAlignment="Top" Width="133" RenderTransformOrigin="0.509,0.553" FontWeight="Bold"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Height="23"  Margin="177,201.667,0,0" Grid.Row="1"  VerticalAlignment="Top" Width="144" >
+            <PasswordBox.Effect>
+                <DropShadowEffect/>
+            </PasswordBox.Effect>
+        </PasswordBox>
+        <Label x:Name="label_Copy1" Content="Password" HorizontalAlignment="Left" Margin="175,175.667,0,0" Grid.Row="1" VerticalAlignment="Top" Width="133" RenderTransformOrigin="0.509,0.553" FontWeight="Bold"/>
+        <Button x:Name="createAccountButton" Content="Create Account" HorizontalAlignment="Left" Margin="203,0,0,62" VerticalAlignment="Bottom" Width="94" Background="{x:Null}" FontFamily="Arial Rounded MT Bold" Foreground="DarkSlateGray" BorderBrush="{x:Null}" FontSize="11" IsHitTestVisible="True"  Click="SignInButton_Click" Grid.Row="1"/>
+
     </Grid>
 </Page>

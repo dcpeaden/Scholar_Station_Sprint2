@@ -39,9 +39,11 @@ using System.Threading.Tasks;
 
         IDataReader ViewCurrentSessionByID(string id);
 
-        IDataReader GetUserType(string email);
+        IDataReader GetUserType(string email, string password);
 
         void LeaveSessionFeedback(string email, string sessionID, string feedback);
+
+        bool CreateAccout(string firstName, string lastName, string email, string password);
 
     }
 }

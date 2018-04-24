@@ -61,8 +61,19 @@
     </ApplicationDefinition>
     <Compile Include="DateTime\Date.cs" />
     <Compile Include="DateTime\IDate.cs" />
+    <Compile Include="FeedbackForm.xaml.cs">
+      <DependentUpon>FeedbackForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ILoginInVarification.cs" />
+    <Compile Include="IntroPage.xaml.cs">
+      <DependentUpon>IntroPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="LandingPage.xaml.cs">
       <DependentUpon>LandingPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LogInVarification.cs" />
+    <Compile Include="SessionFinder.xaml.cs">
+      <DependentUpon>SessionFinder.xaml</DependentUpon>
     </Compile>
     <Compile Include="SessionLength\ISessionLength.cs" />
     <Compile Include="DateTime\ITime.cs" />
@@ -74,6 +85,17 @@
     <Compile Include="tutorPage.xaml.cs">
       <DependentUpon>tutorPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserCreationWizard.xaml.cs">
+      <DependentUpon>UserCreationWizard.xaml</DependentUpon>
+    </Compile>
+    <Page Include="FeedbackForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IntroPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="LandingPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -101,11 +123,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="SessionFinder.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="SplashScreenWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="tutorPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserCreationWizard.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -145,17 +175,13 @@
       <Project>{e6f2e850-bc91-4f6b-8e7e-a991c50eab4b}</Project>
       <Name>DataAccessControler</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Feedback_Form\Feedback_Form.csproj">
-      <Project>{8b47ce0f-26d2-47a4-bce2-f397bd9aa99e}</Project>
-      <Name>Feedback_Form</Name>
+    <ProjectReference Include="..\EmailControler\EmailControler.csproj">
+      <Project>{fc5f0708-cf5d-434d-9a17-9c896ec53f75}</Project>
+      <Name>EmailControler</Name>
     </ProjectReference>
     <ProjectReference Include="..\ScholarStationCL\ScholarStationCL.csproj">
       <Project>{49232f00-5d51-4613-8c29-ce2d88205a42}</Project>
       <Name>ScholarStationCL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SessionFinder\SessionFinder.csproj">
-      <Project>{1f7a0069-bfa7-431d-bb0f-6eb92ecf369b}</Project>
-      <Name>SessionFinder</Name>
     </ProjectReference>
     <ProjectReference Include="..\SQLHandler\SQLHandler.csproj">
       <Project>{ab065320-e116-45af-aefd-4ba524d615f6}</Project>
@@ -171,7 +197,20 @@
   <ItemGroup>
     <Resource Include="images\graduation_education_icon.ico" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="images\872773_find_512x512.png" />
+    <Resource Include="images\glass32.png" />
+    <Resource Include="images\glass48.png" />
+    <Resource Include="images\IntroPageSS1.png" />
+    <Resource Include="images\orange-graduation-cap-128.png" />
+    <Resource Include="images\orange-graduation-cap-256.png" />
+    <Resource Include="images\orange-graduation-cap-32.png" />
+    <Resource Include="images\orange-graduation-cap-48.png" />
+    <Resource Include="images\orange-graduation-cap-512.png" />
+    <Resource Include="images\orange-graduation-cap-64.png" />
+    <Resource Include="images\padlock-10-512.png" />
+    <Resource Include="images\White.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

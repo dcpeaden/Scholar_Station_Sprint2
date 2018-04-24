@@ -12,21 +12,20 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Feedback_Form
+namespace Scholar_Station
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for FeedbackForm.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class FeedbackForm : Window
     {
         ISQLHandler handler;
         private User user;
         private string sessionID;
 
-        public MainWindow(User user, string currentID)
+        public FeedbackForm(User user, string currentID)
         {
             InitializeComponent();
             this.user = user;
@@ -36,7 +35,7 @@ namespace Feedback_Form
 
         public void SendFeedback()
         {
-            if(String.IsNullOrEmpty(feedbackBox.Text))
+            if (String.IsNullOrEmpty(feedbackBox.Text))
             {
                 MessageBox.Show("You must enter feedback!");
             }
