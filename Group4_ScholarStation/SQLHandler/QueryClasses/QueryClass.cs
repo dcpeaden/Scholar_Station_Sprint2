@@ -10,7 +10,7 @@ using DataAccessControler;
 
 namespace SQLHandler
 {
-    class QueryClass : ICourse
+    public class QueryClass : ICourse
     {
         private IRead read;
 

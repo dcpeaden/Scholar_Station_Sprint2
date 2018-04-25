@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SQLHandler.Interfaces
 {
-    interface IGetSessionFeedback
+    public interface IGetSessionFeedback
     {
         IDataReader GetTutorFeedback(string sessionID);
         IDataReader GetStudentFeedback(string sessionID);

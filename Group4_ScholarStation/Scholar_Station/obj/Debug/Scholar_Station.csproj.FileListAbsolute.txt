@@ -576,3 +576,5 @@ C:\Users\Kenneth Dale\Desktop\CEN3032\Scholar_Station_Sprint2\Group4_ScholarStat
 C:\Users\Kenneth Dale\Desktop\CEN3032\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\IntroPage.baml
 C:\Users\Kenneth Dale\Desktop\CEN3032\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\SessionFinder.baml
 C:\Users\Kenneth Dale\Desktop\CEN3032\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\UserCreationWizard.baml
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\UserCreationWizard.g.cs
+C:\Users\ryans\Desktop\New folder\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\UserCreationWizard.baml

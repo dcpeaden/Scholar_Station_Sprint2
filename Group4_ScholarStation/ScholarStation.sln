@@ -22,6 +22,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLHandler", "SQLHandler\SQ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailControler", "EmailControler\EmailControler.csproj", "{FC5F0708-CF5D-434D-9A17-9C896EC53F75}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailUnitTest", "EmailUnitTest\EmailUnitTest.csproj", "{A0B12E93-2472-4C62-ACB0-DDF5712A842F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLHandlerUnitTest", "SQLHandlerUnitTest\SQLHandlerUnitTest.csproj", "{775229BA-FD11-40CD-9905-498D2F09147D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,6 +60,14 @@ Global
 		{FC5F0708-CF5D-434D-9A17-9C896EC53F75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC5F0708-CF5D-434D-9A17-9C896EC53F75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC5F0708-CF5D-434D-9A17-9C896EC53F75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0B12E93-2472-4C62-ACB0-DDF5712A842F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0B12E93-2472-4C62-ACB0-DDF5712A842F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0B12E93-2472-4C62-ACB0-DDF5712A842F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0B12E93-2472-4C62-ACB0-DDF5712A842F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{775229BA-FD11-40CD-9905-498D2F09147D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{775229BA-FD11-40CD-9905-498D2F09147D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{775229BA-FD11-40CD-9905-498D2F09147D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{775229BA-FD11-40CD-9905-498D2F09147D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

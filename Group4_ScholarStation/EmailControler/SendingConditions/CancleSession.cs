@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EmailControler
 {
-    class CancleSession : ISelectedEmailType
+    public class CancleSession : ISelectedEmailType
     {
         private IMailControler mailControler;
         string body;

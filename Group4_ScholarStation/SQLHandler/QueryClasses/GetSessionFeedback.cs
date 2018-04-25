@@ -10,7 +10,7 @@ using DataAccessControler;
 
 namespace SQLHandler.QueryClasses
 {
-    class GetSessionFeedback : IGetSessionFeedback
+    public class GetSessionFeedback : IGetSessionFeedback
     {
         private IRead read;
 
@@ -32,5 +32,6 @@ namespace SQLHandler.QueryClasses
             SqlDataReader feedback_dr = read.DataReader(myCommand);
             return feedback_dr;
         }
+
     }
 }

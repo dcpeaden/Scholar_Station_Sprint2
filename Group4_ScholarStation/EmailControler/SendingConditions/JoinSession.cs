@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EmailControler
 {
-    class JoinSession : ISelectedEmailType
+    public class JoinSession : ISelectedEmailType
     {
         private IMailControler mailControler;
         private string body;
