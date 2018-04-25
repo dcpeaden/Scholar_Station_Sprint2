@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Scholar_Station 
 {
-    class Date : IDate
+    public class Date : IDate
     {
         private int year;
         private int month;

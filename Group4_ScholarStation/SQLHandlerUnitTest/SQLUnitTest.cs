@@ -1,4 +1,5 @@
-﻿using System.Data;
+﻿using System.Collections.Generic;
+using System.Data;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using SQLHandler;
@@ -45,7 +46,7 @@ namespace SQLHandlerUnitTest
             IGetSessionFeedback feedback = new GetSessionFeedback();
 
             //Act
-            IDataReader returnedResults = feedback.GetStudentFeedback("7193");
+            IDataReader returnedResults = feedback.GetStudentFeedback("0");
 
             //Assert
             Assert.AreEqual("True" , returnedResults.Read().ToString());
@@ -59,7 +60,7 @@ namespace SQLHandlerUnitTest
             IGetSessionFeedback feedback = new GetSessionFeedback();
 
             //Act
-            IDataReader returnedResults = feedback.GetTutorFeedback("5101");
+            IDataReader returnedResults = feedback.GetTutorFeedback("0");
 
             //Assert
             Assert.AreEqual("True", returnedResults.Read().ToString());
@@ -90,7 +91,7 @@ namespace SQLHandlerUnitTest
             IDataReader returnedResults = course.GetAllCourses();
 
             //Assert
-            Assert.AreEqual("False", returnedResults.Read().ToString());
+            Assert.AreEqual("True", returnedResults.Read().ToString());
 
         }
 
@@ -101,7 +102,7 @@ namespace SQLHandlerUnitTest
             ICourse course = new QueryClass();
 
             //Act
-            IDataReader returnedResults = course.GetCourseByProfessor("dford@university.edu");
+            IDataReader returnedResults = course.GetCourseByProfessor("test");
 
             //Assert
             Assert.AreEqual("True", returnedResults.Read().ToString());
@@ -129,7 +130,7 @@ namespace SQLHandlerUnitTest
             ISessions avaliableSession = new QuerySessions();
 
             //Act
-            IDataReader returnedResults = avaliableSession.GetAvailableSessions("rk20@students.uwf.edu");
+            IDataReader returnedResults = avaliableSession.GetAvailableSessions("testData");
 
             //Assert
             Assert.AreEqual("True", returnedResults.Read().ToString());
@@ -143,7 +144,91 @@ namespace SQLHandlerUnitTest
             ITutor getTutor = new QueryTutor();
 
             //Act
-            IDataReader returnedResults = getTutor.GetTutor("CSC101");
+            IDataReader returnedResults = getTutor.GetTutor("test");
+
+            //Assert
+            Assert.AreEqual("True", returnedResults.Read().ToString());
+
+        }
+
+        [TestMethod]
+        public void TestGetAllTutorQuery()
+        {
+            //Arrange
+            ITutor getTutor = new QueryTutor();
+
+            //Act
+            IDataReader returnedResults = getTutor.GetAllTutors();
+
+            //Assert
+            Assert.AreEqual("True", returnedResults.Read().ToString());
+
+        }
+
+        [TestMethod]
+        public void TestGetUserTypeQuery()
+        {
+            //Arrange
+            IUserType userType = new QueryUserType();
+
+            //Act
+            IDataReader returnedResults = userType.GetUserType("testData", "testData");
+
+            //Assert
+            Assert.AreEqual("True", returnedResults.Read().ToString());
+
+        }
+
+        [TestMethod]
+        public void TestGetSessionIDQuery()
+        {
+            //Arrange
+            ISessionID sessionID = new SessionID();
+
+            //Act
+            IList<string> returnedResults = sessionID.GetSessionID("testData");
+
+            //Assert
+            Assert.AreEqual("0", returnedResults[0].ToString());
+
+        }
+
+        [TestMethod]
+        public void TestViewCurrentSessionQuery()
+        {
+            //Arrange
+            IViewCurrentSessions tutorSession = new ViewCurrentSessions();
+
+            //Act
+            IDataReader returnedResults = tutorSession.ViewCurrentSession("testData");
+
+            //Assert
+            Assert.AreEqual("True", returnedResults.Read().ToString());
+
+        }
+
+        [TestMethod]
+        public void TestViewCurrentStudentSessionQuery()
+        {
+            //Arrange
+            IViewCurrentSessions studentSession = new ViewCurrentSessions();
+
+            //Act
+            IDataReader returnedResults = studentSession.ViewCurrentSessionStudent("testData");
+
+            //Assert
+            Assert.AreEqual("True", returnedResults.Read().ToString());
+
+        }
+
+        [TestMethod]
+        public void TestViewCurrentStudentSessionIDQuery()
+        {
+            //Arrange
+            IViewCurrentSessions currentSessionID = new ViewCurrentSessions();
+
+            //Act
+            IDataReader returnedResults = currentSessionID.ViewCurrentSessionByID("0");
 
             //Assert
             Assert.AreEqual("True", returnedResults.Read().ToString());

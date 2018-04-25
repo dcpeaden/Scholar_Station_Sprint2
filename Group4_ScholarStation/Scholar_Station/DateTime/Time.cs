@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Scholar_Station
 {
-    class Time : ITime
+    public class Time : ITime
     {
         private DateTime time;
         private IList<string> listOfTimes;

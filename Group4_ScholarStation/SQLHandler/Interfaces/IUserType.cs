@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SQLHandler.Interfaces
 {
-    interface IUserType
+    public interface IUserType
     {
         IDataReader GetUserType(string email, string password);
     }
