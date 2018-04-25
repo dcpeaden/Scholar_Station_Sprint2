@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace SQLHandler.Interfaces
 {
-    class ViewCurrentSessions : IViewCurrentSessions
+    public class ViewCurrentSessions : IViewCurrentSessions
     {
         private IRead readFromDatabase;
 

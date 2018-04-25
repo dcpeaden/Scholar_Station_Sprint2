@@ -22,7 +22,7 @@ namespace SQLHandler
 
         public IDataReader GetAllCourses()
         {
-            string myCommand = "select course from course";
+            string myCommand = "select cr_name from course";
             SqlDataReader listOfCourses_dr = read.DataReader(myCommand);
             return listOfCourses_dr;
         }

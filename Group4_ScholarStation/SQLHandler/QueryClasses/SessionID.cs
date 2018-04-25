@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace SQLHandler.QueryClasses
 {
-    class SessionID : ISessionID
+    public class SessionID : ISessionID
     {
         private IRead readFromDatabase;
         private IList<string> sessionIdList;

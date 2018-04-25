@@ -14,7 +14,7 @@ namespace DataControlerUnitTest
             //Arrange
             var mockTest1 = new Mock<IUpdate>();
             string query = "FalseQuery";
-            mockTest1.Setup(x => x.ExecuteQueries(It.IsAny<string>())).Returns(false);
+            mockTest1.Setup(x => x.ExecuteQueries(query)).Returns(false);
 
             //Act
             bool resultFalse = mockTest1.Object.ExecuteQueries(query);
@@ -25,7 +25,7 @@ namespace DataControlerUnitTest
             //Arrange
             var mockTest2 = new Mock<IUpdate>();
             string query2 = "TrueQuery";
-            mockTest2.Setup(x => x.ExecuteQueries(It.IsAny<string>())).Returns(true);
+            mockTest2.Setup(x => x.ExecuteQueries(query2)).Returns(true);
 
             //Act
             bool resultTrue = mockTest2.Object.ExecuteQueries(query2);

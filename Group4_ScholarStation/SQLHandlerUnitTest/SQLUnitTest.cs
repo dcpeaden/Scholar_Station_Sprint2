@@ -1,4 +1,5 @@
-﻿using System.Data;
+﻿using System.Collections.Generic;
+using System.Data;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using SQLHandler;
@@ -38,6 +39,12 @@ namespace SQLHandlerUnitTest
             Assert.AreEqual(true, userCreated);
         }
 
+        /// <summary>
+        /// To test the below querys, the database must contain the information that
+        /// is being queryed. If things change and the test fail, then repopulate the 
+        /// database with the queryed information to produce TRUE results.
+        /// </summary>
+
         [TestMethod]
         public void TestStudentFeedbackQuery()
         {
@@ -45,7 +52,7 @@ namespace SQLHandlerUnitTest
             IGetSessionFeedback feedback = new GetSessionFeedback();
 
             //Act
-            IDataReader returnedResults = feedback.GetStudentFeedback("7193");
+            IDataReader returnedResults = feedback.GetStudentFeedback("0");
 
             //Assert
             Assert.AreEqual("True" , returnedResults.Read().ToString());
@@ -59,7 +66,7 @@ namespace SQLHandlerUnitTest
             IGetSessionFeedback feedback = new GetSessionFeedback();
 
             //Act
-            IDataReader returnedResults = feedback.GetTutorFeedback("5101");
+            IDataReader returnedResults = feedback.GetTutorFeedback("0");
 
             //Assert
             Assert.AreEqual("True", returnedResults.Read().ToString());
@@ -73,7 +80,7 @@ namespace SQLHandlerUnitTest
             ICourse course = new QueryClass();
 
             //Act
-            IDataReader returnedResults = course.GetCourse("MAT");
+            IDataReader returnedResults = course.GetCourse("BUS");
 
             //Assert
             Assert.AreEqual("True", returnedResults.Read().ToString());
@@ -85,12 +92,11 @@ namespace SQLHandlerUnitTest
         {
             //Arrange
             ICourse course = new QueryClass();
-
             //Act
             IDataReader returnedResults = course.GetAllCourses();
-
+       
             //Assert
-            Assert.AreEqual("False", returnedResults.Read().ToString());
+            Assert.AreEqual("True", returnedResults.Read().ToString());
 
         }
 
@@ -101,7 +107,7 @@ namespace SQLHandlerUnitTest
             ICourse course = new QueryClass();
 
             //Act
-            IDataReader returnedResults = course.GetCourseByProfessor("dford@university.edu");
+            IDataReader returnedResults = course.GetCourseByProfessor("test");
 
             //Assert
             Assert.AreEqual("True", returnedResults.Read().ToString());
@@ -129,7 +135,7 @@ namespace SQLHandlerUnitTest
             ISessions avaliableSession = new QuerySessions();
 
             //Act
-            IDataReader returnedResults = avaliableSession.GetAvailableSessions("rk20@students.uwf.edu");
+            IDataReader returnedResults = avaliableSession.GetAvailableSessions("testData");
 
             //Assert
             Assert.AreEqual("True", returnedResults.Read().ToString());
@@ -143,11 +149,89 @@ namespace SQLHandlerUnitTest
             ITutor getTutor = new QueryTutor();
 
             //Act
-            IDataReader returnedResults = getTutor.GetTutor("CSC101");
+            IDataReader returnedResults = getTutor.GetTutor("test");
 
             //Assert
             Assert.AreEqual("True", returnedResults.Read().ToString());
 
+        }
+
+        [TestMethod]
+        public void TestGetAllTutorsQuery()
+        {
+            //Arrange
+            ITutor getTutor = new QueryTutor();
+
+            //Act
+            IDataReader returnedResults = getTutor.GetAllTutors();
+
+            //Assert
+            Assert.AreEqual("True", returnedResults.Read().ToString());
+        }
+
+        [TestMethod]
+        public void TestGetUserTypeQuery()
+        {
+            //Arrange
+            IUserType getUserType = new QueryUserType();
+
+            //Act
+            IDataReader returnedResults = getUserType.GetUserType("testData", "testData");
+
+            //Assert
+            Assert.AreEqual("True", returnedResults.Read().ToString());
+        }
+
+        [TestMethod]
+        public void TestSessionIDQuery()
+        {
+            //Arrange
+            ISessionID getSessionId = new SessionID();
+
+            //Act
+            IList<string> returnedResults = getSessionId.GetSessionID("testData");
+
+            //Assert
+            Assert.AreEqual("0", returnedResults[0].ToString());
+        }
+
+        [TestMethod]
+        public void TestCurrentSessionQuery()
+        {
+            //Arrange
+            ViewCurrentSessions getCurrentSession = new ViewCurrentSessions();
+
+            //Act
+            IDataReader returnedResults = getCurrentSession.ViewCurrentSession("testData");
+
+            //Assert
+            Assert.AreEqual("True", returnedResults.Read().ToString());
+        }
+
+        [TestMethod]
+        public void TestCurrentSessionStudentQuery()
+        {
+            //Arrange
+            ViewCurrentSessions getCurrentSessionStudent = new ViewCurrentSessions();
+
+            //Act
+            IDataReader returnedResults = getCurrentSessionStudent.ViewCurrentSessionStudent("testData");
+
+            //Assert
+            Assert.AreEqual("True", returnedResults.Read().ToString());
+        }
+
+        [TestMethod]
+        public void TestCurrentSessionStudentIDQuery()
+        {
+            //Arrange
+            ViewCurrentSessions getCurrentSession = new ViewCurrentSessions();
+
+            //Act
+            IDataReader returnedResults = getCurrentSession.ViewCurrentSessionByID("0000");
+
+            //Assert
+            Assert.AreEqual("True", returnedResults.Read().ToString());
         }
 
     }

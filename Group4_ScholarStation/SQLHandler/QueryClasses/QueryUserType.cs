@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace SQLHandler.QueryClasses
 {
-    class QueryUserType : IUserType
+    public class QueryUserType : IUserType
     {
         private IRead read;
 
