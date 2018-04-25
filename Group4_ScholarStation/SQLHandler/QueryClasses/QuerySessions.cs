@@ -9,7 +9,7 @@ using DataAccessControler;
 
 namespace SQLHandler
 {
-    class QuerySessions : ISessions
+    public class QuerySessions : ISessions
     {
         private IRead read;
 

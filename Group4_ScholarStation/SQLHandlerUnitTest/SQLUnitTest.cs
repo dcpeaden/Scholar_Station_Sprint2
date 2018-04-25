@@ -52,6 +52,7 @@ namespace SQLHandlerUnitTest
 
         }
 
+        [TestMethod]
         public void TestTutorFeedbackQuery()
         {
             //Arrange
@@ -65,39 +66,84 @@ namespace SQLHandlerUnitTest
 
         }
 
+        [TestMethod]
         public void TestGetCourseQuery()
         {
             //Arrange
             ICourse course = new QueryClass();
 
             //Act
-            IDataReader returnedResults = course.GetCourse("MAT101");
+            IDataReader returnedResults = course.GetCourse("MAT");
 
             //Assert
             Assert.AreEqual("True", returnedResults.Read().ToString());
 
         }
 
+        [TestMethod]
         public void TestGetAllCourseQuery()
         {
             //Arrange
             ICourse course = new QueryClass();
 
             //Act
-            IDataReader returnedResults = course.GetCourse("MAT101");
+            IDataReader returnedResults = course.GetAllCourses();
 
             //Assert
-            Assert.AreEqual("True", returnedResults.Read().ToString());
+            Assert.AreEqual("False", returnedResults.Read().ToString());
 
         }
 
+        [TestMethod]
         public void TestCourseByProfessorQuery()
         {
             //Arrange
             ICourse course = new QueryClass();
 
             //Act
-            IDataReader returnedResults = course.GetCourse("MAT101");
+            IDataReader returnedResults = course.GetCourseByProfessor("dford@university.edu");
+
+            //Assert
+            Assert.AreEqual("True", returnedResults.Read().ToString());
+
+        }
+
+        [TestMethod]
+        public void TestGetDepartmentQuery()
+        {
+            //Arrange
+            IDepartment department = new QueryDepartment();
+
+            //Act
+            IDataReader returnedResults = department.GetDepartment();
+
+            //Assert
+            Assert.AreEqual("True", returnedResults.Read().ToString());
+
+        }
+
+        [TestMethod]
+        public void TestAvaliableSessionsQuery()
+        {
+            //Arrange
+            ISessions avaliableSession = new QuerySessions();
+
+            //Act
+            IDataReader returnedResults = avaliableSession.GetAvailableSessions("rk20@students.uwf.edu");
+
+            //Assert
+            Assert.AreEqual("True", returnedResults.Read().ToString());
+
+        }
+
+        [TestMethod]
+        public void TestGetTutorQuery()
+        {
+            //Arrange
+            ITutor getTutor = new QueryTutor();
+
+            //Act
+            IDataReader returnedResults = getTutor.GetTutor("CSC101");
 
             //Assert
             Assert.AreEqual("True", returnedResults.Read().ToString());

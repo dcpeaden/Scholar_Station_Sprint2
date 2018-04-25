@@ -40,5 +40,6 @@ namespace SQLHandler
             SqlDataReader listOfCourses_dr = read.DataReader(myCommand);
             return listOfCourses_dr;
         }
+
     }
 }
