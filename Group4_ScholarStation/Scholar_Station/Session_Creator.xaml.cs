@@ -15,7 +15,7 @@ namespace Scholar_Station
     /// <summary>
     /// Interaction logic for tutorPage.xaml
     /// </summary>
-    public partial class tutorPage : Page
+    public partial class Session_Creator : Window
     {
         private IList<string> sessionLengthList;
         private IList<string> addDate;
@@ -26,16 +26,16 @@ namespace Scholar_Station
         private ITime time;
         private IList<string> departments;
         private IList<string> classes;
-        private IList<string> sessionIdList;
         private User user;
+        private LandingPage lp;
 
-        public tutorPage(User user)
+        public Session_Creator(User user, LandingPage p)
         {
+            lp = p;
             sqlHandler = new SQLHandlerControler();
             this.user = user;
             InitializeComponent();
             AddDepartmentsToComboBox();
-            SessionIds();
         }
 
         /* Add departments to comboBox
@@ -73,7 +73,7 @@ namespace Scholar_Station
             date = new Date();
             addDate = date.FillDate();
             foreach (var date in addDate)
-            { 
+            {
                 dateBox.Items.Add(date);
             }
         }
@@ -94,37 +94,14 @@ namespace Scholar_Station
         {
             sessionLength = new SessionLength();
             sessionLengthList = sessionLength.AddSessionLength();
+            
             foreach (var t in sessionLengthList)
             {
                 sessionLengthBox.Items.Add(t);
             }
         }
 
-        //Fill cancled session comboBox with avaliable sessions from the database
-        public void SessionIds()
-        {
-            sessionIdBox.Items.Clear();
-            sessionIdList = sqlHandler.getSessionsID(user.Email);
-            foreach (var t in sessionIdList)
-            {
-                sessionIdBox.Items.Add(t);
-            }
-        }
-
-        public void CancelSession()
-        {
-            if (sessionIdBox.SelectedIndex != -1)
-            {
-                sqlHandler.CancelSessions(sessionIdList[sessionIdBox.SelectedIndex]);
-                MessageBox.Show("Session Canceled");
-                sessionIdBox.Items.RemoveAt(sessionIdBox.SelectedIndex);
-            }
-            else
-            {
-                MessageBox.Show("You Must Select A Session Id!");
-            }
-        }
-
+       
         //Add sessions to database
         public void AddToSessionsAndTutors()
         {
@@ -135,40 +112,17 @@ namespace Scholar_Station
 
             if (sessionLengthBox.SelectedIndex != -1)
             {
-               sqlHandler.CreateSession(user.Email, date, time, length, sellectedClass);
-               MessageBox.Show("Session Created!");
+                sqlHandler.CreateSession(user.Email, date, time, length, sellectedClass);
+                MessageBox.Show("Session Created!");
+                lp.tutorSessionsSelect.Items.Clear();
+                lp.tutorSessionsSelect.Items.Add("--Select Session--");
+                lp.tutorSessionsSelect.SelectedIndex = 0;
+                lp.AddSessionsToComboBox();
             }
             else MessageBox.Show("You must select course, tutor, and session!");
-
-            //Clear and refresh the session idBox to refill with new session id
-            sessionIdBox.Items.Clear();
-            SessionIds();
-        }
-        
-        public void ViewTutorsCurrentSessions()
-        {
-            textBox.Clear();
-            IDataReader currentSessionList = sqlHandler.ViewCurrentSession(user.Email);
-            while (currentSessionList.Read())
-            {
-                    textBox.Text += "Session ID: " + currentSessionList.GetValue(8).ToString() + "\n"
-                                              + "Date: " + currentSessionList.GetValue(2).ToString() + "\n"
-                                              + "Time: " + currentSessionList.GetValue(3).ToString() + "\n"
-                                              + "Length: " + currentSessionList.GetValue(4).ToString() + "\n"
-                                              + "Creator: " + currentSessionList.GetValue(5).ToString() + "\n"
-                                              + "Complete: " + currentSessionList.GetValue(6).ToString() + "\n"
-                                              + "Course: " + currentSessionList.GetValue(7).ToString() + "\n"
-                                              + "Student Email: " + currentSessionList.GetValue(1).ToString() + "\n"
-                                              + "\n";
-            }
-            
         }
 
-        
-        private void homeButton_Click(object sender, RoutedEventArgs e)
-        {
-            this.NavigationService.Navigate(new logInFrame());
-        }
+
 
         private void departmentBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -210,15 +164,9 @@ namespace Scholar_Station
             sessionLengthBox.Items.Clear();
         }
 
-        private void viewSessionsButton_Click(object sender, RoutedEventArgs e)
+        private void Close_Click(object sender, RoutedEventArgs e)
         {
-            ViewTutorsCurrentSessions();
+            this.Close();
         }
-
-        private void cancelSessionButton_Click(object sender, RoutedEventArgs e)
-        {
-            CancelSession();
-        }
-
     }
 }
