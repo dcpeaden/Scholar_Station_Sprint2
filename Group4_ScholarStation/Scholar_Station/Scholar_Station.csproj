@@ -74,6 +74,9 @@
     <Compile Include="CreationWizardPage5.xaml.cs">
       <DependentUpon>CreationWizardPage5.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CreationWizardWindow.xaml.cs">
+      <DependentUpon>CreationWizardWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DateTime\Date.cs" />
     <Compile Include="DateTime\IDate.cs" />
     <Compile Include="FeedbackForm.xaml.cs">
@@ -120,6 +123,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="CreationWizardPage5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CreationWizardWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

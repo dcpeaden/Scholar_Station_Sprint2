@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Scholar_Station"
         mc:Ignorable="d"
-        Title="CreationWizardWindow" Height="450" Width="800">
+        Title="CreationWizardWindow" Height="421.27" Width="327.828" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <TabItem>
+            <Frame Source="CreationWizard.xaml"/>
+        </TabItem>
     </Grid>
 </Window>
