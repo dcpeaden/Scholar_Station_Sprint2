@@ -59,6 +59,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CreationWizardPage1.xaml.cs">
+      <DependentUpon>CreationWizardPage1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CreationWizardPage2.xaml.cs">
+      <DependentUpon>CreationWizardPage2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CreationWizardPage3.xaml.cs">
+      <DependentUpon>CreationWizardPage3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CreationWizardPage4.xaml.cs">
+      <DependentUpon>CreationWizardPage4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CreationWizardPage5.xaml.cs">
+      <DependentUpon>CreationWizardPage5.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DateTime\Date.cs" />
     <Compile Include="DateTime\IDate.cs" />
     <Compile Include="FeedbackForm.xaml.cs">
@@ -88,6 +103,26 @@
     <Compile Include="UserCreationWizard.xaml.cs">
       <DependentUpon>UserCreationWizard.xaml</DependentUpon>
     </Compile>
+    <Page Include="CreationWizardPage1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CreationWizardPage2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CreationWizardPage3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CreationWizardPage4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CreationWizardPage5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="FeedbackForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
