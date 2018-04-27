@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Cole Peaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\App.xaml
-151559209284
+151819891597
 
-31-294426338
+31-847977556
 171715156765
-CreationWizardPage1.xaml;CreationWizardPage2.xaml;CreationWizardPage3.xaml;CreationWizardPage4.xaml;CreationWizardPage5.xaml;FeedbackForm.xaml;IntroPage.xaml;LandingPage.xaml;logInFrame.xaml;MainWindow.xaml;joinSessionFrame.xaml;SessionFinder.xaml;Session_Creator.xaml;SplashScreenWindow.xaml;UserCreationWizard.xaml;
+CreationWizard.xaml;CreationWizardPage2.xaml;CreationWizardPage3.xaml;CreationWizardPage4.xaml;CreationWizardPage5.xaml;FeedbackForm.xaml;IntroPage.xaml;LandingPage.xaml;logInFrame.xaml;MainWindow.xaml;joinSessionFrame.xaml;SessionFinder.xaml;Session_Creator.xaml;SplashScreenWindow.xaml;UserCreationWizard.xaml;
 
-False
+True
 

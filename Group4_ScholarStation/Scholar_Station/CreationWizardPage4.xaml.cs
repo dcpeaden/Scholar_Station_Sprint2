@@ -24,5 +24,15 @@ namespace Scholar_Station
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new CreationWizardPage3());
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new CreationWizardPage5());
+        }
     }
 }
