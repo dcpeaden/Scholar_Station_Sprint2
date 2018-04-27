@@ -33,7 +33,7 @@ namespace TestDateTime
 
             //Must be set to the next day. For example it today was 4/25/2018 then the date needs to be set to 4/26/2018.
             //Assert
-            Assert.AreEqual("4/26/2018", timeList[0].ToString());
+            Assert.AreEqual("4/28/2018", timeList[0].ToString());
         }
     }
 }

@@ -42,6 +42,7 @@ namespace Scholar_Station
             else
             {
                 handler.LeaveSessionFeedback(user.Email, sessionID, feedbackBox.Text);
+                handler.CloseSession(this.sessionID);
                 MessageBox.Show("Feedback Sent");
                 this.Close();
             }
