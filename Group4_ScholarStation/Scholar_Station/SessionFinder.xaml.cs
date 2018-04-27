@@ -21,7 +21,7 @@ namespace Scholar_Station
     /// <summary>
     /// Interaction logic for SessionFinder.xaml
     /// </summary>
-    public partial class SessionFinder : Window
+    public partial class SessionFinder2 : Window
     {
         private IList<string> tutor;
         private IList<string> sessionIdList;
@@ -32,7 +32,7 @@ namespace Scholar_Station
         private LandingPage lp;
 
 
-        public SessionFinder(User newStudentUser, LandingPage p)
+        public SessionFinder2(User newStudentUser, LandingPage p)
         {
             lp = p;
             sqlHandler = new SQLHandlerControler();
@@ -41,7 +41,7 @@ namespace Scholar_Station
             AddDepartmentsToComboBox();
         }
 
-        public SessionFinder(User newStudentUser)
+        public SessionFinder2(User newStudentUser)
         {
             sqlHandler = new SQLHandlerControler();
             this.user = newStudentUser;

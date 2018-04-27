@@ -107,3 +107,14 @@ C:\Users\ryans\Desktop\New folder (3)\Scholar_Station_Sprint2\Group4_ScholarStat
 C:\Users\ryans\Desktop\New folder (3)\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\obj\Debug\SQLHandler.csproj.CopyComplete
 C:\Users\ryans\Desktop\New folder (3)\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\obj\Debug\SQLHandler.dll
 C:\Users\ryans\Desktop\New folder (3)\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\obj\Debug\SQLHandler.pdb
+C:\Users\ryans\Desktop\sstation\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\bin\Debug\SQLHandler.dll
+C:\Users\ryans\Desktop\sstation\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\bin\Debug\SQLHandler.pdb
+C:\Users\ryans\Desktop\sstation\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\bin\Debug\DataAccessControler.dll
+C:\Users\ryans\Desktop\sstation\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\bin\Debug\ScholarStationCL.dll
+C:\Users\ryans\Desktop\sstation\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\bin\Debug\DataAccessControler.pdb
+C:\Users\ryans\Desktop\sstation\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\bin\Debug\ScholarStationCL.pdb
+C:\Users\ryans\Desktop\sstation\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\obj\Debug\SQLHandler.csprojResolveAssemblyReference.cache
+C:\Users\ryans\Desktop\sstation\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\obj\Debug\SQLHandler.csproj.CoreCompileInputs.cache
+C:\Users\ryans\Desktop\sstation\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\obj\Debug\SQLHandler.csproj.CopyComplete
+C:\Users\ryans\Desktop\sstation\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\obj\Debug\SQLHandler.dll
+C:\Users\ryans\Desktop\sstation\Scholar_Station_Sprint2\Group4_ScholarStation\SQLHandler\obj\Debug\SQLHandler.pdb
