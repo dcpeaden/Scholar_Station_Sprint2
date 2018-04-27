@@ -35,7 +35,7 @@ namespace Scholar_Station
         private void SearchButton_Click(object sender, RoutedEventArgs e)
         {
             User user = null;
-            SessionFinder finder = new SessionFinder(user);
+            SessionFinder2 finder = new SessionFinder2(user);
             finder.Show();
         }
 

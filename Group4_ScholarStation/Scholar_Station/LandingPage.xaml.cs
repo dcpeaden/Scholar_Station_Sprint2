@@ -92,7 +92,7 @@ namespace Scholar_Station
 
         private void joinSession_Click(object sender, RoutedEventArgs e)
         {
-            SessionFinder sessionSearch = new SessionFinder(user, this);
+            SessionFinder2 sessionSearch = new SessionFinder2(user, this);
             sessionSearch.Show();
         }
 
