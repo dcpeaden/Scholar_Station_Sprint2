@@ -78,13 +78,13 @@
     <Compile Include="SessionLength\ISessionLength.cs" />
     <Compile Include="DateTime\ITime.cs" />
     <Compile Include="SessionLength\SessionLength.cs" />
+    <Compile Include="Session_Creator.xaml.cs">
+      <DependentUpon>Session_Creator.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SplashScreenWindow.xaml.cs">
       <DependentUpon>SplashScreenWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="DateTime\Time.cs" />
-    <Compile Include="tutorPage.xaml.cs">
-      <DependentUpon>tutorPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="UserCreationWizard.xaml.cs">
       <DependentUpon>UserCreationWizard.xaml</DependentUpon>
     </Compile>
@@ -127,11 +127,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="SplashScreenWindow.xaml">
+    <Page Include="Session_Creator.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="tutorPage.xaml">
+    <Page Include="SplashScreenWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
