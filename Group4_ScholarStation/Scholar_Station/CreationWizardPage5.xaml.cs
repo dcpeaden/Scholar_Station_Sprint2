@@ -32,7 +32,10 @@ namespace Scholar_Station
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            
+            CreationWizardWindow window = new CreationWizardWindow();
+            window.Hide();
+            this.NavigationService.Navigate(window);
+            window.Close();
         }
     }
 }
