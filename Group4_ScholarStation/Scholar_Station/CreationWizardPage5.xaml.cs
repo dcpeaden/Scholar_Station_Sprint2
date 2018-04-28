@@ -1,4 +1,5 @@
 ﻿using ScholarStation;
+using SQLHandler;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,16 +23,28 @@ namespace Scholar_Station
     public partial class CreationWizardPage5 : Page
     {
         private IList<string> addTime;
+        private IList<string> addDate;
         private IList<string> sessionLengthList;
+        private IList<string> departments;
+        private IList<string> classes;
+        private ISQLHandler sqlHandler;
         private ISessionLength sessionLength;
         private ITime time;
         private User user;
         private LandingPage lp;
+        private string date;
+        private string selectedClass;
 
-        public CreationWizardPage5(User user, LandingPage p)
+        public CreationWizardPage5(User user, LandingPage p, IList<string> departments, IList<string> classes, string selectedClass, IList<string> addDate, string date)
         {
             lp = p;
             this.user = user;
+            this.departments = departments;
+            this.classes = classes;
+            this.addDate = addDate;
+            this.date = date;
+            this.selectedClass = selectedClass;
+            sqlHandler = new SQLHandlerControler();
             InitializeComponent();
             FillSessionLengthBox();
             FillTimeBox();
@@ -39,7 +52,7 @@ namespace Scholar_Station
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new CreationWizardPage4());
+            this.NavigationService.Navigate(new CreationWizardPage4(user, lp, departments, classes, selectedClass));
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -69,6 +82,28 @@ namespace Scholar_Station
             {
                 combo2.Items.Add(t);
             }
+        }
+
+        public void AddToSessionsAndTutors()
+        {
+            int dateInt = Convert.ToInt32(this.date);
+            string date = addDate[dateInt];
+
+            int classInt = Convert.ToInt32(this.selectedClass);
+            string time = addTime[combo.SelectedIndex];
+            string length = sessionLengthList[combo2.SelectedIndex];
+            string sellectedClass = classes[classInt];
+
+            if (combo2.SelectedIndex != -1)
+            {
+                sqlHandler.CreateSession(user.Email, date, time, length, sellectedClass);
+                MessageBox.Show("Session Created!");
+                lp.tutorSessionsSelect.Items.Clear();
+                lp.tutorSessionsSelect.Items.Add("--Select Session--");
+                lp.tutorSessionsSelect.SelectedIndex = 0;
+                lp.AddSessionsToComboBox();
+            }
+            else MessageBox.Show("You must select course, tutor, and session!");
         }
     }
 }

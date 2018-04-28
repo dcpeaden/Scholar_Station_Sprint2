@@ -46,7 +46,7 @@ namespace Scholar_Station
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new CreationWizardPage4(user, lp));
+            this.NavigationService.Navigate(new CreationWizardPage4(user, lp, departments, classes, selectedClass));
         }
 
         public void AddCoursesToComboBox()
@@ -59,6 +59,12 @@ namespace Scholar_Station
                 combo.Items.Add(classList.GetValue(0).ToString() + " " + classList.GetValue(1).ToString());
             }
 
+        }
+
+        public string selectedClass()
+        {
+            string selectedClass = classes[combo.SelectedIndex].ToString();
+            return selectedClass;
         }
     }
 }
