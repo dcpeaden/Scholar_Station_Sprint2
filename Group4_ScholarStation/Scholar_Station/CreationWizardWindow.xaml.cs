@@ -28,7 +28,7 @@ namespace Scholar_Station
             this.user = user;
             this.lp = lp;
             InitializeComponent();
-            Main.Content = new CreationWizardPage2(user, lp);
+            Main.Content = new CreationWizardPage2(user, lp, this);
         }
     }
 }

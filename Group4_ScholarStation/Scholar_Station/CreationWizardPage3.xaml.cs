@@ -30,34 +30,36 @@ namespace Scholar_Station
         private LandingPage lp;
         private string currentClass;
         private string selectedDept;
+        private CreationWizardWindow window;
 
-        public CreationWizardPage3(User user, LandingPage p, IList<string> departments, string dept) 
+        public CreationWizardPage3( CreationWizardWindow window, User user, LandingPage p, IList<string> departments, string dept) 
         {
             lp = p;
             this.departments = departments;
             this.selectedDept = dept;
             sqlHandler = new SQLHandlerControler();
             this.user = user;
+            this.window = window;
             InitializeComponent();
             AddCoursesToComboBox();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new CreationWizardPage2(user, lp));
+            this.NavigationService.Navigate(new CreationWizardPage2(user, lp, window));
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             selectedClass();
-            this.NavigationService.Navigate(new CreationWizardPage4(user, lp, departments, selectedDept, classes, currentClass));
+            this.NavigationService.Navigate(new CreationWizardPage4(window, user, lp, departments, selectedDept, classes, currentClass));
         }
 
         public void AddCoursesToComboBox()
         {
-            MessageBox.Show(departments.IndexOf(selectedDept).ToString());
+            int selectedDeptInt = Convert.ToInt32(departments.IndexOf(selectedDept));
             classes = new List<string>();
-            IDataReader classList = sqlHandler.GetCourse(departments.IndexOf(selectedDept).ToString());
+            IDataReader classList = sqlHandler.GetCourse(departments[selectedDeptInt]);
             while (classList.Read())
             {
                 classes.Add(classList.GetValue(0).ToString());

@@ -30,27 +30,30 @@ namespace Scholar_Station
         private string selectedClass;
         private string selectedDept;
         private string currentDate;
+        private CreationWizardWindow window;
 
-        public CreationWizardPage4(User user, LandingPage p, IList<string> departments, string dept, IList<string> classes, string selectedClass)
+        public CreationWizardPage4(CreationWizardWindow window, User user, LandingPage p, IList<string> departments, string dept, IList<string> classes, string selectedClass)
         {
             lp = p;
             this.departments = departments;
             this.selectedDept = dept;
             this.classes = classes;
             this.user = user;
+            this.window = window;
             this.selectedClass = selectedClass;
             InitializeComponent();
+            FillDateBox();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new CreationWizardPage3(user, lp, departments, selectedDept));
+            this.NavigationService.Navigate(new CreationWizardPage3(window, user, lp, departments, selectedDept));
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             selectedDateIndex();
-            this.NavigationService.Navigate(new CreationWizardPage5(user, lp, departments, selectedDept, classes, selectedClass, addDate, currentDate));
+            this.NavigationService.Navigate(new CreationWizardPage5(window, user, lp, departments, selectedDept, classes, selectedClass, addDate, currentDate));
         }
 
         public void FillDateBox()

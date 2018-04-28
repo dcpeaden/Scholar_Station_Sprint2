@@ -35,8 +35,9 @@ namespace Scholar_Station
         private string date;
         private string selectedClass;
         private string selectedDept;
+        private CreationWizardWindow window;
 
-        public CreationWizardPage5(User user, LandingPage p, IList<string> departments, string dept, IList<string> classes, string selectedClass, IList<string> addDate, string date)
+        public CreationWizardPage5(CreationWizardWindow window, User user, LandingPage p, IList<string> departments, string dept, IList<string> classes, string selectedClass, IList<string> addDate, string date)
         {
             lp = p;
             this.user = user;
@@ -45,6 +46,7 @@ namespace Scholar_Station
             this.classes = classes;
             this.addDate = addDate;
             this.date = date;
+            this.window = window;
             this.selectedClass = selectedClass;
             sqlHandler = new SQLHandlerControler();
             InitializeComponent();
@@ -54,14 +56,12 @@ namespace Scholar_Station
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new CreationWizardPage4(user, lp, departments, selectedDept, classes, selectedClass));
+            this.NavigationService.Navigate(new CreationWizardPage4(window, user, lp, departments, selectedDept, classes, selectedClass));
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            CreationWizardWindow window = new CreationWizardWindow(this.user, this.lp);
-            window.Hide();
-            this.NavigationService.Navigate(window);
+            AddToSessionsAndTutors();
             window.Close();
         }
 
@@ -88,10 +88,10 @@ namespace Scholar_Station
 
         public void AddToSessionsAndTutors()
         {
-            int dateInt = Convert.ToInt32(this.date);
+            int dateInt = Convert.ToInt32(addDate.IndexOf(this.date));
             string date = addDate[dateInt];
 
-            int classInt = Convert.ToInt32(this.selectedClass);
+            int classInt = Convert.ToInt32(classes.IndexOf(this.selectedClass));
             string time = addTime[combo.SelectedIndex];
             string length = sessionLengthList[combo2.SelectedIndex];
             string sellectedClass = classes[classInt];
