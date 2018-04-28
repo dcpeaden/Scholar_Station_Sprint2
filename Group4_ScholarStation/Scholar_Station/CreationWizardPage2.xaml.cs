@@ -60,8 +60,15 @@ namespace Scholar_Station
 
         public void selectedDeptPass()
         {
-            string newDept = departments[combo.SelectedIndex].ToString();
-            selectedDept = newDept;
+            try
+            {
+                string newDept = departments[combo.SelectedIndex].ToString();
+                selectedDept = newDept;
+            }
+            catch(Exception e)
+            {
+
+            }
         }
     }
 }

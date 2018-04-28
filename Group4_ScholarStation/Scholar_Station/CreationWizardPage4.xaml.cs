@@ -68,8 +68,15 @@ namespace Scholar_Station
 
         public void selectedDateIndex()
         {
-            string newDate = addDate[combo.SelectedIndex].ToString();
-            currentDate = newDate;
+            try
+            { 
+                string newDate = addDate[combo.SelectedIndex].ToString();
+                currentDate = newDate;
+            }
+            catch (Exception e)
+            {
+
+            }
         }
     }
 }

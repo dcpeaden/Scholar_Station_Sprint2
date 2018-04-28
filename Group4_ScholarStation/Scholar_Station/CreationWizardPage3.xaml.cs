@@ -59,19 +59,33 @@ namespace Scholar_Station
         {
             int selectedDeptInt = Convert.ToInt32(departments.IndexOf(selectedDept));
             classes = new List<string>();
-            IDataReader classList = sqlHandler.GetCourse(departments[selectedDeptInt]);
-            while (classList.Read())
+            try
             {
-                classes.Add(classList.GetValue(0).ToString());
-                combo.Items.Add(classList.GetValue(0).ToString() + " " + classList.GetValue(1).ToString());
+                IDataReader classList = sqlHandler.GetCourse(departments[selectedDeptInt]);
+                while (classList.Read())
+                {
+                    classes.Add(classList.GetValue(0).ToString());
+                    combo.Items.Add(classList.GetValue(0).ToString() + " " + classList.GetValue(1).ToString());
+                }
+            }
+            catch(Exception e)
+            {
+
             }
 
         }
 
         public void selectedClass()
         {
-            string selectedClass = classes[combo.SelectedIndex].ToString();
-            currentClass = selectedClass;
+            try
+            {
+                string selectedClass = classes[combo.SelectedIndex].ToString();
+                currentClass = selectedClass;
+            }
+            catch(Exception e)
+            {
+
+            }
         }
     }
 }

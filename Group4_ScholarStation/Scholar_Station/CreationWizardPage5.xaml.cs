@@ -88,24 +88,31 @@ namespace Scholar_Station
 
         public void AddToSessionsAndTutors()
         {
-            int dateInt = Convert.ToInt32(addDate.IndexOf(this.date));
-            string date = addDate[dateInt];
-
-            int classInt = Convert.ToInt32(classes.IndexOf(this.selectedClass));
-            string time = addTime[combo.SelectedIndex];
-            string length = sessionLengthList[combo2.SelectedIndex];
-            string sellectedClass = classes[classInt];
-
-            if (combo2.SelectedIndex != -1)
+            try
             {
-                sqlHandler.CreateSession(user.Email, date, time, length, sellectedClass);
-                MessageBox.Show("Session Created!");
-                lp.tutorSessionsSelect.Items.Clear();
-                lp.tutorSessionsSelect.Items.Add("--Select Session--");
-                lp.tutorSessionsSelect.SelectedIndex = 0;
-                lp.AddSessionsToComboBox();
+                int dateInt = Convert.ToInt32(addDate.IndexOf(this.date));
+                string date = addDate[dateInt];
+
+                int classInt = Convert.ToInt32(classes.IndexOf(this.selectedClass));
+                string time = addTime[combo.SelectedIndex];
+                string length = sessionLengthList[combo2.SelectedIndex];
+                string sellectedClass = classes[classInt];
+
+                if (combo2.SelectedIndex != -1)
+                {
+                    sqlHandler.CreateSession(user.Email, date, time, length, sellectedClass);
+                    MessageBox.Show("Session Created!");
+                    lp.tutorSessionsSelect.Items.Clear();
+                    lp.tutorSessionsSelect.Items.Add("--Select Session--");
+                    lp.tutorSessionsSelect.SelectedIndex = 0;
+                    lp.AddSessionsToComboBox();
+                }
+                else MessageBox.Show("You must select course, tutor, and session!");
             }
-            else MessageBox.Show("You must select course, tutor, and session!");
+            catch (Exception e)
+            {
+
+            }
         }
     }
 }
