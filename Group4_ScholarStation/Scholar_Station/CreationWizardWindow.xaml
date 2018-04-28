@@ -7,8 +7,6 @@
         mc:Ignorable="d"
         Title="CreationWizardWindow" Height="421.27" Width="327.828" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
-        <TabItem>
-            <Frame x:Name="Main" Source="CreationWizardPage2.xaml"/>
-        </TabItem>
+        <Frame x:Name="Main"/>
     </Grid>
 </Window>
