@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Data;
 using SQLHandler;
+using ScholarStation;
 
 namespace Scholar_Station
 {
@@ -23,29 +24,35 @@ namespace Scholar_Station
     public partial class CreationWizardPage3 : Page
     {
         private IList<string> classes;
+        private IList<string> departments;
         private ISQLHandler sqlHandler;
+        private User user;
+        private LandingPage lp;
 
-
-        public CreationWizardPage3()
+        public CreationWizardPage3(User user, LandingPage p, IList<string> departments) 
         {
+            lp = p;
+            this.departments = departments;
+            sqlHandler = new SQLHandlerControler();
+            this.user = user;
             InitializeComponent();
             AddCoursesToComboBox();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new CreationWizardPage2());
+            this.NavigationService.Navigate(new CreationWizardPage2(user, lp));
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new CreationWizardPage4());
+            this.NavigationService.Navigate(new CreationWizardPage4(user, lp));
         }
 
         public void AddCoursesToComboBox()
         {
             classes = new List<string>();
-            IDataReader classList = sqlHandler.GetCourse(departments[departmentBox.SelectedIndex].ToString());
+            IDataReader classList = sqlHandler.GetCourse(departments[combo.SelectedIndex].ToString());
             while (classList.Read())
             {
                 classes.Add(classList.GetValue(0).ToString());

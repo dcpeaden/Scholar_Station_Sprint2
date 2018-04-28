@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ScholarStation;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,20 +23,24 @@ namespace Scholar_Station
     {
         private IList<string> addDate;
         private IDate date;
+        private User user;
+        private LandingPage lp;
 
-        public CreationWizardPage4()
+        public CreationWizardPage4(User user, LandingPage p)
         {
+            lp = p;
+            this.user = user;
             InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new CreationWizardPage3());
+            this.NavigationService.Navigate(new CreationWizardPage3(user, lp));
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new CreationWizardPage5());
+            this.NavigationService.Navigate(new CreationWizardPage5(user, lp));
         }
 
         public void FillDateBox()

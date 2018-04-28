@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ScholarStation;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,10 +25,16 @@ namespace Scholar_Station
         private IList<string> sessionLengthList;
         private ISessionLength sessionLength;
         private ITime time;
+        private User user;
+        private LandingPage lp;
 
-        public CreationWizardPage5()
+        public CreationWizardPage5(User user, LandingPage p)
         {
+            lp = p;
+            this.user = user;
             InitializeComponent();
+            FillSessionLengthBox();
+            FillTimeBox();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

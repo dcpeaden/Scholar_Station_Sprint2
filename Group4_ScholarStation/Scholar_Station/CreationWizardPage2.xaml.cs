@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ScholarStation;
 using SQLHandler;
 
 namespace Scholar_Station
@@ -25,21 +26,21 @@ namespace Scholar_Station
     {
         private IList<string> departments;
         private ISQLHandler sqlHandler;
+        private User user;
+        private LandingPage lp;
 
-        public CreationWizardPage2()
+        public CreationWizardPage2(User user, LandingPage p)
         {
+            lp = p;
+            sqlHandler = new SQLHandlerControler();
+            this.user = user;
             InitializeComponent();
             AddDepartmentsToComboBox();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            this.NavigationService.Navigate(new CreationWizard());
-        }
-
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new CreationWizardPage3());
+            this.NavigationService.Navigate(new CreationWizardPage3(user, lp, departments));
         }
 
         public void AddDepartmentsToComboBox()
