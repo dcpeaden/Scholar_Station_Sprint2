@@ -28,6 +28,7 @@ namespace Scholar_Station
         private ISQLHandler sqlHandler;
         private User user;
         private LandingPage lp;
+        private string selectedDept;
 
         public CreationWizardPage2(User user, LandingPage p)
         {
@@ -40,7 +41,8 @@ namespace Scholar_Station
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new CreationWizardPage3(user, lp, departments));
+            selectedDeptPass();
+            this.NavigationService.Navigate(new CreationWizardPage3(user, lp, departments, selectedDept));
         }
 
         public void AddDepartmentsToComboBox()
@@ -52,6 +54,12 @@ namespace Scholar_Station
                 departments.Add(departmentList.GetValue(0).ToString());
                 combo.Items.Add(departmentList.GetValue(0).ToString() + " " + departmentList.GetValue(1).ToString());
             }
+        }
+
+        public void selectedDeptPass()
+        {
+            string newDept = departments[combo.SelectedIndex].ToString();
+            selectedDept = newDept;
         }
     }
 }

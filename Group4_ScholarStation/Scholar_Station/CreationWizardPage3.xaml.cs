@@ -29,11 +29,13 @@ namespace Scholar_Station
         private User user;
         private LandingPage lp;
         private string currentClass;
+        private string selectedDept;
 
-        public CreationWizardPage3(User user, LandingPage p, IList<string> departments) 
+        public CreationWizardPage3(User user, LandingPage p, IList<string> departments, string dept) 
         {
             lp = p;
             this.departments = departments;
+            this.selectedDept = dept;
             sqlHandler = new SQLHandlerControler();
             this.user = user;
             InitializeComponent();
@@ -48,13 +50,14 @@ namespace Scholar_Station
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             selectedClass();
-            this.NavigationService.Navigate(new CreationWizardPage4(user, lp, departments, classes, currentClass));
+            this.NavigationService.Navigate(new CreationWizardPage4(user, lp, departments, selectedDept, classes, currentClass));
         }
 
         public void AddCoursesToComboBox()
         {
+            MessageBox.Show(departments.IndexOf(selectedDept).ToString());
             classes = new List<string>();
-            IDataReader classList = sqlHandler.GetCourse(departments[combo.SelectedIndex].ToString());
+            IDataReader classList = sqlHandler.GetCourse(departments.IndexOf(selectedDept).ToString());
             while (classList.Read())
             {
                 classes.Add(classList.GetValue(0).ToString());

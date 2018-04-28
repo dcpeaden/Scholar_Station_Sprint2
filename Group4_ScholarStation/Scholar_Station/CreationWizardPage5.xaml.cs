@@ -34,12 +34,14 @@ namespace Scholar_Station
         private LandingPage lp;
         private string date;
         private string selectedClass;
+        private string selectedDept;
 
-        public CreationWizardPage5(User user, LandingPage p, IList<string> departments, IList<string> classes, string selectedClass, IList<string> addDate, string date)
+        public CreationWizardPage5(User user, LandingPage p, IList<string> departments, string dept, IList<string> classes, string selectedClass, IList<string> addDate, string date)
         {
             lp = p;
             this.user = user;
             this.departments = departments;
+            this.selectedDept = dept;
             this.classes = classes;
             this.addDate = addDate;
             this.date = date;
@@ -52,7 +54,7 @@ namespace Scholar_Station
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new CreationWizardPage4(user, lp, departments, classes, selectedClass));
+            this.NavigationService.Navigate(new CreationWizardPage4(user, lp, departments, selectedDept, classes, selectedClass));
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
