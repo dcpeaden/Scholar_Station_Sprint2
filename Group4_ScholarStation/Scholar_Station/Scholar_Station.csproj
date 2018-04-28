@@ -59,9 +59,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="CreationWizard.xaml.cs">
-      <DependentUpon>CreationWizard.xaml</DependentUpon>
-    </Compile>
     <Compile Include="CreationWizardPage2.xaml.cs">
       <DependentUpon>CreationWizardPage2.xaml</DependentUpon>
     </Compile>
@@ -106,10 +103,6 @@
     <Compile Include="UserCreationWizard.xaml.cs">
       <DependentUpon>UserCreationWizard.xaml</DependentUpon>
     </Compile>
-    <Page Include="CreationWizard.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="CreationWizardPage2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

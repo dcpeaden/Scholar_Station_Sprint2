@@ -716,7 +716,6 @@ C:\Users\Cole Peaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\Schol
 C:\Users\Cole Peaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\ScholarStationCL.pdb
 C:\Users\Cole Peaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\bin\Debug\SQLHandler.pdb
 C:\Users\Cole Peaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\Scholar_Station.csprojResolveAssemblyReference.cache
-C:\Users\Cole Peaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\CreationWizard.g.cs
 C:\Users\Cole Peaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\CreationWizardPage2.g.cs
 C:\Users\Cole Peaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\CreationWizardPage3.g.cs
 C:\Users\Cole Peaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\CreationWizardPage4.g.cs
@@ -735,7 +734,6 @@ C:\Users\Cole Peaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\Schol
 C:\Users\Cole Peaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\App.g.cs
 C:\Users\Cole Peaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\Scholar_Station_MarkupCompile.cache
 C:\Users\Cole Peaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\Scholar_Station_MarkupCompile.lref
-C:\Users\Cole Peaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\CreationWizard.baml
 C:\Users\Cole Peaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\CreationWizardPage2.baml
 C:\Users\Cole Peaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\CreationWizardPage3.baml
 C:\Users\Cole Peaden\Desktop\Scholar_Station_Sprint2\Group4_ScholarStation\Scholar_Station\obj\Debug\CreationWizardPage4.baml

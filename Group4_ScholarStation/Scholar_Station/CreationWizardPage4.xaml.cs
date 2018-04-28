@@ -28,6 +28,7 @@ namespace Scholar_Station
         private User user;
         private LandingPage lp;
         private string selectedClass;
+        private string currentDate;
 
         public CreationWizardPage4(User user, LandingPage p, IList<string> departments, IList<string> classes, string selectedClass)
         {
@@ -46,7 +47,8 @@ namespace Scholar_Station
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new CreationWizardPage5(user, lp, departments, classes, selectedClass, addDate, newDate));
+            selectedDateIndex();
+            this.NavigationService.Navigate(new CreationWizardPage5(user, lp, departments, classes, selectedClass, addDate, currentDate));
         }
 
         public void FillDateBox()
@@ -59,10 +61,10 @@ namespace Scholar_Station
             }
         }
 
-        public string selectedDateIndex()
+        public void selectedDateIndex()
         {
             string newDate = addDate[combo.SelectedIndex].ToString();
-            return newDate;
+            currentDate = newDate;
         }
     }
 }

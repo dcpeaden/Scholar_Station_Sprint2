@@ -87,8 +87,10 @@ namespace Scholar_Station
 
         private void createSession_Click(object sender, RoutedEventArgs e)
         {
-            Session_Creator sc = new Session_Creator(user, this);
-            sc.Show();
+            //Session_Creator sc = new Session_Creator(user, this);
+            //sc.Show();
+
+            
         }
 
         private void joinSession_Click(object sender, RoutedEventArgs e)

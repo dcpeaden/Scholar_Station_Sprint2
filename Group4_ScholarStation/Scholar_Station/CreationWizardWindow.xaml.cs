@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ScholarStation;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,8 +20,13 @@ namespace Scholar_Station
     /// </summary>
     public partial class CreationWizardWindow : Window
     {
-        public CreationWizardWindow()
+        private LandingPage lp;
+        private User user;
+
+        public CreationWizardWindow(User user, LandingPage lp)
         {
+            this.user = user;
+            this.lp = lp;
             InitializeComponent();
         }
     }
