@@ -20,6 +20,9 @@ namespace Scholar_Station
     /// </summary>
     public partial class CreationWizardPage4 : Page
     {
+        private IList<string> addDate;
+        private IDate date;
+
         public CreationWizardPage4()
         {
             InitializeComponent();
@@ -33,6 +36,16 @@ namespace Scholar_Station
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new CreationWizardPage5());
+        }
+
+        public void FillDateBox()
+        {
+            date = new Date();
+            addDate = date.FillDate();
+            foreach (var date in addDate)
+            {
+                combo.Items.Add(date);
+            }
         }
     }
 }

@@ -8,7 +8,7 @@
         Title="CreationWizardWindow" Height="421.27" Width="327.828" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
         <TabItem>
-            <Frame Source="CreationWizard.xaml"/>
+            <Frame Source="CreationWizardPage2.xaml"/>
         </TabItem>
     </Grid>
 </Window>

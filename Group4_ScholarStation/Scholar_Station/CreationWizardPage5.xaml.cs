@@ -20,6 +20,11 @@ namespace Scholar_Station
     /// </summary>
     public partial class CreationWizardPage5 : Page
     {
+        private IList<string> addTime;
+        private IList<string> sessionLengthList;
+        private ISessionLength sessionLength;
+        private ITime time;
+
         public CreationWizardPage5()
         {
             InitializeComponent();
@@ -36,6 +41,27 @@ namespace Scholar_Station
             window.Hide();
             this.NavigationService.Navigate(window);
             window.Close();
+        }
+
+        public void FillTimeBox()
+        {
+            time = new Time();
+            addTime = time.getTime();
+            foreach (var t in addTime)
+            {
+                combo.Items.Add(t);
+            }
+        }
+
+        public void FillSessionLengthBox()
+        {
+            sessionLength = new SessionLength();
+            sessionLengthList = sessionLength.AddSessionLength();
+
+            foreach (var t in sessionLengthList)
+            {
+                combo2.Items.Add(t);
+            }
         }
     }
 }
